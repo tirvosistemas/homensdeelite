@@ -1,5 +1,5 @@
 """Converte o material oficial em blocos de leitura, sem expor instruções ao aluno."""
-import re, json
+import re, json, sys, runpy
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 text=(root/'docs/conteudo-oficial.md').read_text()
@@ -41,5 +41,8 @@ for s in sections:
  if t=='RADAR DO MODO GADO':continue # derived inside the preceding index
  lesson['blocks'].append(s)
 course={'title':'A Jornada da Forja','intro':intro,'modules':modules}
+if '--base-json' in sys.argv:
+ print(json.dumps(course,ensure_ascii=False));sys.exit(0)
+course=runpy.run_path(str(root/'scripts/expand-content.py'))['expand'](course)
 (root/'src/course.json').write_text(json.dumps(course,ensure_ascii=False,indent=2))
 print(f'{len(modules)} módulos; {sum(u["kind"]=="lesson" for m in modules for u in m["lessons"])} aulas; {sum(len(m["lessons"]) for m in modules)} etapas')
