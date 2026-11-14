@@ -49,7 +49,7 @@ REPHRASE={
 }
 def clean(text):
  for old,new in REPHRASE.items():text=text.replace(old,new)
- text=re.sub(r'(?m)^(?:Ensinar|Trabalhar|Expandir|Aprofundar|Adicionar|Confrontar|Separar):?\s*$', '',text)
+ text=re.sub(r'(?m)^(?:Ensinar|Trabalhar|Expandir|Aprofundar|Adicionar|Confrontar|Separar)[:.]?\s*$', '',text)
  text=re.sub(r'(?m)^---\s*$', '',text)
  text=re.sub(r'\n{3,}','\n\n',text).strip()
  return text
@@ -88,6 +88,12 @@ def expand(course):
  for j in range(1,len(chunks),2):
   number=int(chunks[j]);chunk=chunks[j+1];module=course['modules'][number-1]
   headings=list(re.finditer(r'^# AULA (\d+) — (.+?)\s*$',chunk,re.M))
+  prefix=chunk[:headings[0].start()] if headings else ''
+  module['expansionTitle']=next((line[2:].strip() for line in prefix.splitlines() if line.startswith('# ') and not line.startswith('# =')),module['title'])
+  intro=re.sub(r'^# .*$', '', prefix, flags=re.M).strip()
+  if number==1:
+   intro='## Direção desta expansão\n\nA mudança começa ao reconhecer padrões e escolher novas respostas.\n\n**Você não controla as escolhas dos outros. Pode desenvolver limites e responsabilidade sobre sua próxima ação.**\n\nReconheça carência, idealização, medo de rejeição, dificuldade com a própria companhia e busca de validação. Responsabilização não significa justificar abusos sofridos.'
+  if intro:module['expansionIntro']=clean(intro)
   original={int(re.match(r'AULA (\d+)',u['title']).group(1)):u for u in module['lessons'] if u['kind']=='lesson'}
   extra=[]
   for k,h in enumerate(headings):
@@ -134,6 +140,8 @@ def expand(course):
  (6,9):'Qual é meu mínimo viável para um dia sem motivação?'
  }
  for (m,n),prompt in prompts.items():append(m,n,'Aplicação — Próximo passo',reflection=prompt)
+ first_exam=next(u for u in course['modules'][0]['lessons'] if u['kind']=='exam')
+ first_exam['blocks'].append({'title':'FERRAMENTA — REVISÃO DO ESPELHO INICIAL','body':'','interactive':True,'expansion':True})
  # Additional final reflections retain existing IDs/notes and append blocks.
  final=course['modules'][5]
  mirror=next(u for u in final['lessons'] if u['kind']=='reflection')

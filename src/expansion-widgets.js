@@ -80,14 +80,14 @@ export function mountExpansionWidget(el,a,s,ctx){
  }
  function bind(){
   if(a.type==='budget'){
-   el.querySelectorAll('[data-budget]').forEach(input=>input.oninput=()=>{s.points[Number(input.dataset.budget)]=Number(input.value);el.querySelector('[data-total]').textContent=`Total: ${s.points.reduce((x,y)=>x+y,0)} / 100`;save();});
+   el.querySelectorAll('[data-budget]').forEach(input=>input.oninput=()=>{s.points[Number(input.dataset.budget)]=Number(input.value);if(s.result){s.result=false;ctx.invalidate(a.key,a.unit.id);}el.querySelector('[data-total]').textContent=`Total: ${s.points.reduce((x,y)=>x+y,0)} / 100`;save();});
    el.querySelector('[data-budget-reflection]').oninput=e=>{s.reflection=e.target.value;save();};
    el.querySelector('[data-budget-save]').onclick=()=>{if(s.points.some(n=>!Number.isInteger(n)||n<0||n>100)||s.points.reduce((x,y)=>x+y,0)!==100||!s.reflection?.trim()){ctx.toast('Distribua exatamente 100 pontos e registre seu ajuste.');return;}s.result=true;ctx.completeActivity(a.key,10);save();draw();};
   }
   if(a.type==='sorting'){
    el.querySelector('form').onsubmit=e=>{e.preventDefault();const form=e.currentTarget;const values=Object.fromEntries(new FormData(form));if(!values.name.trim())return;s.entries.push(values);save();draw();};
    el.querySelectorAll('[data-sort]').forEach(input=>input.onchange=()=>{s.entries[Number(input.dataset.sort)].group=input.value;save();draw();});
-   el.querySelectorAll('[data-remove-entry]').forEach(btn=>btn.onclick=()=>{s.entries.splice(Number(btn.dataset.removeEntry),1);save();draw();});
+   el.querySelectorAll('[data-remove-entry]').forEach(btn=>btn.onclick=()=>{s.entries.splice(Number(btn.dataset.removeEntry),1);if(!s.entries.length)ctx.invalidate(a.key,a.unit.id);save();draw();});
    el.querySelector('[data-sorting-save]').onclick=()=>{if(!s.entries.length){ctx.toast('Registre ao menos uma situação.');return;}ctx.completeActivity(a.key,10);save();};
   }
   if(a.type==='sprint'){

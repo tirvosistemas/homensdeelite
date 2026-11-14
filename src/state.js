@@ -22,6 +22,10 @@ export function validateState(value){
   if(!object(a))throw Error('Resposta inválida.');
   for(const k of ['fields','saved'])if(a[k]!==undefined&&(!object(a[k])||!Object.values(a[k]).every(v=>typeof v==='string')))throw Error('Reflexão inválida.');
   if(a.values!==undefined&&(!Array.isArray(a.values)||!a.values.every(v=>v===null||(Number.isInteger(v)&&v>=0&&v<=50))))throw Error('Alternativas inválidas.');
+  if(a.baseline!==undefined&&(!Array.isArray(a.baseline)||a.baseline.length!==12||!a.baseline.every(v=>Number.isInteger(v)&&v>=0&&v<=2)))throw Error('Espelho inicial inválido.');
+  if(a.points!==undefined&&(!Array.isArray(a.points)||!a.points.every(v=>Number.isFinite(v)&&v>=0&&v<=100)))throw Error('Orçamento inválido.');
+  if(a.entries!==undefined&&(!Array.isArray(a.entries)||!a.entries.every(v=>object(v)&&typeof v.name==='string'&&typeof v.group==='string')))throw Error('Classificação inválida.');
+  if(a.steps!==undefined&&(!Array.isArray(a.steps)||!a.steps.every(v=>typeof v==='boolean')))throw Error('Etapas inválidas.');
   if(a.index!==undefined&&(!Number.isInteger(a.index)||a.index<0))throw Error('Índice inválido.');
   if(a.people!==undefined&&(!Array.isArray(a.people)||!a.people.every(p=>object(p)&&typeof p.name==='string'&&['Fortalece','Neutro','Drena'].includes(p.group))))throw Error('Influências inválidas.');
   if(a.rows!==undefined&&(!Array.isArray(a.rows)||!a.rows.every(r=>Array.isArray(r)&&r.length===4&&r.every(v=>Number.isInteger(v)&&v>=0&&v<=100))))throw Error('Semana inválida.');

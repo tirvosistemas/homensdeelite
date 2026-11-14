@@ -1,19 +1,25 @@
 # Homens de Elite — Jornada da Forja
 
-Primeira versão funcional da sala de aula interativa, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
+Sala de aula interativa com a expansão oficial da Fase I, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
 
 ## O que está implementado
 
-- Seis módulos, **27 aulas e 40 etapas** de treinamento, com o conteúdo oficial organizado em blocos e accordions.
+- Seis módulos, **67 aulas e 80 etapas** de treinamento, com o conteúdo oficial organizado em blocos e accordions.
 - Painel de jornada, busca de aulas, navegação anterior/próxima, estados de progresso e menu adaptável ao celular.
 - Índice do Modo Gado com 15 perguntas, cinco indicadores e faixas de resultado oficiais.
 - Termômetro de autodomínio, radar de reciprocidade, filtro de compatibilidade, auditorias de competência, ostentação, irmandade e autossuficiência.
 - Simuladores de decisão, treinador do não, exercícios de reflexão, regras SE/ENTÃO, mapa de 90 dias e plano antirrecaída.
 - Desafios de 7, 21 e 30 dias; painel semanal de compromissos; registros incompletos permanecem visíveis.
-- Avaliações dos módulos 1 a 5 e prova final de 24 questões cobrindo os seis módulos. A prova final encerra a avaliação do módulo 6. Aprovação: 70%.
+- Avaliações dos módulos 1 a 5 e prova final de 30 questões cobrindo os seis módulos. A prova final encerra a avaliação do módulo 6. Aprovação: 70%.
 - XP concedido uma vez por atividade, sete patentes, conquistas e encerramento condicionado às etapas concluídas.
 - Leitura por voz do navegador, com pausar, continuar, parar e destaque do trecho. Depende de suporte à Web Speech API e de vozes instaladas no dispositivo.
 - Anotações por aula, exportação do caderno e reflexões em Markdown, backup completo em JSON e restauração validada.
+
+## Expansão da Fase I
+
+As 27 aulas anteriores foram complementadas, sem substituição dos seus textos, e 40 aulas novas foram inseridas na ordem numérica de cada módulo. O [mapa completo da integração](docs/EXPANSAO.md) registra o destino de cada aula e a migração dos dados.
+
+Inclui Espelho da Arrancada com comparação final, Raio-X de 21 sinais, tradutor da carência, orçamento de atenção, sprint de aprendizagem, mapas de responsabilidade e influência, código pessoal para download e o desafio de 14 dias. As avaliações dos módulos 1 e 5 têm 25 questões; as dos módulos 2, 3 e 4 têm 20; a final tem 30.
 
 ## Executar
 
@@ -35,7 +41,7 @@ npm run build
 npm test
 ```
 
-`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`.
+`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md` e `docs/expansao-fase-1.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js` e `src/expansion-exams.js`.
 
 ## Arquivos
 

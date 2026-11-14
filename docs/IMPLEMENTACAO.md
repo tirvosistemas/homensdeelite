@@ -1,5 +1,7 @@
 # Registro da primeira implementação
 
+> Registro histórico. A expansão atual está documentada em [EXPANSAO.md](EXPANSAO.md): 67 aulas e 80 etapas. Os números abaixo descrevem a versão anterior à expansão.
+
 ## Decisões de organização
 
 O material foi estruturado em 27 aulas e 13 etapas adicionais (40 ao todo). A avaliação ampla da fase I funciona também como avaliação do último módulo. A sequência pedagógica está visível, mas a navegação entre aulas fica disponível para revisão. A conclusão de cada etapa exige suas atividades; o encerramento exige todas as etapas anteriores, incluindo os desafios de vários dias.

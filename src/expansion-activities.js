@@ -17,6 +17,7 @@ export const entryStatements=[
 ];
 export const expansionActivities=[
  scale('O ESPELHO DA ARRANCADA','O Espelho da Arrancada',entryStatements,['Sim','Às vezes','Não'],{result:'entry',baseline:true}),
+ scale('REVISÃO DO ESPELHO INICIAL','Revisão do espelho · Módulo 1',entryStatements,['Sim','Às vezes','Não'],{result:'entryComparison',comparisonScope:'module'}),
  scale('O ESPELHO DE RETORNO','O homem que entrou × o homem que está saindo',entryStatements,['Sim','Às vezes','Não'],{result:'entryComparison'}),
  {match:'RAIO-X DO MODO GADO',title:'Raio-X do Modo Gado · 21 sinais',type:'signals'},
  {match:'TRADUTOR DA CARÊNCIA',title:'Tradutor da carência',type:'translator'},

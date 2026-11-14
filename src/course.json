@@ -460,10 +460,18 @@
               "title": "AVALIAÇÃO DE DOMÍNIO — MÓDULO 1",
               "body": "",
               "interactive": true
+            },
+            {
+              "title": "FERRAMENTA — REVISÃO DO ESPELHO INICIAL",
+              "body": "",
+              "interactive": true,
+              "expansion": true
             }
           ]
         }
-      ]
+      ],
+      "expansionTitle": "DESPERTAR E QUEBRA DO MODO GADO",
+      "expansionIntro": "## Direção desta expansão\n\nA mudança começa ao reconhecer padrões e escolher novas respostas.\n\n**Você não controla as escolhas dos outros. Pode desenvolver limites e responsabilidade sobre sua próxima ação.**\n\nReconheça carência, idealização, medo de rejeição, dificuldade com a própria companhia e busca de validação. Responsabilização não significa justificar abusos sofridos."
     },
     {
       "id": "m2",
@@ -785,7 +793,9 @@
             }
           ]
         }
-      ]
+      ],
+      "expansionTitle": "AUTODOMÍNIO, TEMPERANÇA E SAÚDE",
+      "expansionIntro": "## NOVO PRINCÍPIO\n\n> **Liberdade não é fazer tudo o que sente vontade. Liberdade é não precisar obedecer a toda vontade que aparece.**"
     },
     {
       "id": "m3",
@@ -1111,7 +1121,8 @@
             }
           ]
         }
-      ]
+      ],
+      "expansionTitle": "CONSTRUÇÃO DE ESTATURA"
     },
     {
       "id": "m4",
@@ -1420,7 +1431,8 @@
             }
           ]
         }
-      ]
+      ],
+      "expansionTitle": "CÓDIGO DE HONRA, PALAVRA E POSTURA"
     },
     {
       "id": "m5",
@@ -1582,7 +1594,7 @@
             },
             {
               "title": "Expansão — RECIPROCIDADE",
-              "body": "Aprofundar.\n\nReciprocidade não é contabilidade.\n\nÉ padrão de investimento mútuo.",
+              "body": "Reciprocidade não é contabilidade.\n\nÉ padrão de investimento mútuo.",
               "interactive": false,
               "expansion": true
             },
@@ -1752,7 +1764,9 @@
             }
           ]
         }
-      ]
+      ],
+      "expansionTitle": "DISCERNIMENTO, RELACIONAMENTOS E A MULHER DE ALTO VALOR",
+      "expansionIntro": "## ABERTURA\n\nEste módulo não é:\n\n“Como conseguir qualquer mulher.”\n\nÉ:\n\n> **“Como escolher melhor, relacionar-se melhor e tornar-se um parceiro melhor.”**"
     },
     {
       "id": "m6",
@@ -2133,7 +2147,8 @@
             }
           ]
         }
-      ]
+      ],
+      "expansionTitle": "LIDERANÇA, FAMÍLIA, IRMANDADE E LEGADO"
     }
   ],
   "revision": 2,
