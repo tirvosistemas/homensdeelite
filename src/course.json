@@ -2981,5 +2981,1535 @@
       }
     ],
     "ending": "JORNADA DA FORJA CONCLUÍDA\n\nVocê não recebeu um título de perfeição.\n\nRecebeu algo mais útil:\n\n- um espelho;\n- uma direção;\n- um sistema;\n- uma missão.\n\nTalvez você tenha descoberto comportamentos dos quais não se orgulha.\n\nÓtimo.\n\nAquilo que você consegue enxergar pode começar a ser corrigido.\n\nTalvez tenha descoberto forças que não reconhecia.\n\nProteja-as.\n\nTalvez tenha percebido que ainda existe muito trabalho.\n\nExiste.\n\nEste treinamento nunca prometeu facilidade.\n\nA Fase I tinha uma missão:\n\n- acordar o homem;\n- colocá-lo diante de si mesmo;\n- quebrar padrões;\n- estabelecer disciplina;\n- construir direção.\n\nAgora começa outra pergunta:\n\n“O que você será capaz de construir com o homem que começou a forjar?”\n\nA FASE I TERMINOU.\n\nA FORMAÇÃO NÃO."
+  },
+  "consolidation": {
+    "id": "fase-2",
+    "title": "A Consolidação",
+    "subtitle": "Do conhecimento ao padrão de vida",
+    "revision": 1,
+    "opening": "## ABERTURA DA FASE II\n\n## VOCÊ JÁ SABE. AGORA PRECISA PROVAR.\n\nNa primeira fase você foi colocado diante do espelho.\n\nReconheceu comportamentos.\n\nQuestionou padrões.\n\nAnalisou impulsos.\n\nDefiniu princípios.\n\nCriou direção.\n\nMas existe uma diferença brutal entre:\n\n**entender**\n\ne\n\n**viver.**\n\nMilhares de homens sabem exatamente aquilo que deveriam fazer.\n\nSabem que deveriam dormir melhor.\n\nSabem que deveriam treinar.\n\nSabem que deveriam estudar.\n\nSabem que deveriam gastar menos.\n\nSabem que deveriam cumprir aquilo que prometem.\n\nSabem que deveriam largar determinados hábitos.\n\nSabem.\n\nE continuam exatamente no mesmo lugar.\n\nPorque conhecimento não executado não produz transformação.\n\nA Fase II existe para eliminar essa distância.\n\n## PRINCÍPIO CENTRAL DA CONSOLIDAÇÃO\n\n> **Aquilo que você repete se torna mais importante do que aquilo que você promete.**\n\nUma grande decisão pode iniciar uma mudança.\n\nMas são pequenas decisões repetidas que constroem um homem.\n\nPor isso esta fase trabalhará:\n\n**sistemas;**\n\n**rotina;**\n\n**execução;**\n\n**medição;**\n\n**repetição;**\n\n**correção;**\n\n**constância.**\n\nO objetivo não será produzir uma semana perfeita.\n\nSerá construir um homem capaz de continuar funcionando quando:\n\na motivação cair;\n\no entusiasmo desaparecer;\n\no dia estiver ruim;\n\nninguém estiver olhando;\n\nnão houver aplauso;\n\no resultado ainda não tiver aparecido.",
+    "modules": [
+      {
+        "id": "f2-m1",
+        "title": "DISCIPLINA, ROTINA E EXECUÇÃO",
+        "intro": "## OBJETIVO\n\nTransformar intenção em comportamento.\n\nA pergunta central do módulo:\n\n> **“Você consegue executar aquilo que decidiu quando ninguém está obrigando?”**",
+        "lessons": [
+          {
+            "id": "f2-m1-a1",
+            "title": "AULA 1 — DISCIPLINA NÃO É MOTIVAÇÃO",
+            "kind": "lesson",
+            "lessonNumber": 1,
+            "blocks": [
+              {
+                "title": "AULA 1 — DISCIPLINA NÃO É MOTIVAÇÃO",
+                "body": "Motivação é variável.\n\nExistem dias em que você acorda disposto.\n\nOutros em que acorda cansado.\n\nSe suas ações dependem exclusivamente de vontade, sua vida será governada por oscilações.\n\nDisciplina não significa nunca sentir preguiça.\n\nSignifica possuir um sistema capaz de funcionar apesar dela.\n\n## REGRA DA FORJA\n\n> **Não pergunte apenas: “Estou com vontade?”**\n>\n> Pergunte:\n>\n> **“Isso precisa ser feito?”**"
+              },
+              {
+                "title": "FERRAMENTA — MOTIVAÇÃO OU DEVER?",
+                "body": "",
+                "consolidation": "FERRAMENTA — MOTIVAÇÃO OU DEVER?"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a2",
+            "title": "AULA 2 — A GUERRA CONTRA O “DEPOIS”",
+            "kind": "lesson",
+            "lessonNumber": 2,
+            "blocks": [
+              {
+                "title": "AULA 2 — A GUERRA CONTRA O “DEPOIS”",
+                "body": "Uma das palavras mais perigosas para um homem sem sistema é:\n\n**depois.**\n\nDepois eu treino.\n\nDepois organizo.\n\nDepois estudo.\n\nDepois começo.\n\nDepois resolvo.\n\nO problema é que “depois” não possui horário.\n\nTransforme:\n\n“depois”\n\nem:\n\n> **“às 19h30.”**\n\nA tarefa que não possui lugar no tempo costuma perder para a distração que aparece primeiro."
+              },
+              {
+                "title": "FERRAMENTA — TRANSFORMADOR DE INTENÇÃO",
+                "body": "",
+                "consolidation": "FERRAMENTA — TRANSFORMADOR DE INTENÇÃO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a3",
+            "title": "AULA 3 — A REGRA DO PRIMEIRO MOVIMENTO",
+            "kind": "lesson",
+            "lessonNumber": 3,
+            "blocks": [
+              {
+                "title": "AULA 3 — A REGRA DO PRIMEIRO MOVIMENTO",
+                "body": "Procrastinação cresce quando pensamos na tarefa inteira.\n\n“Preciso estudar quatro horas.”\n\n“Preciso organizar toda minha vida.”\n\n“Preciso voltar para academia.”\n\nReduza para a primeira ação física.\n\nAbrir o livro.\n\nColocar o tênis.\n\nAbrir a planilha.\n\nCriar o documento.\n\nFazer a primeira ligação.\n\nO objetivo é diminuir a distância entre decisão e início."
+              },
+              {
+                "title": "FERRAMENTA — PRIMEIRO MOVIMENTO",
+                "body": "",
+                "consolidation": "FERRAMENTA — PRIMEIRO MOVIMENTO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a4",
+            "title": "AULA 4 — O MÍNIMO NÃO NEGOCIÁVEL",
+            "kind": "lesson",
+            "lessonNumber": 4,
+            "blocks": [
+              {
+                "title": "AULA 4 — O MÍNIMO NÃO NEGOCIÁVEL",
+                "body": "Existem dias excelentes.\n\nExistem dias medianos.\n\nExistem dias ruins.\n\nUm sistema robusto precisa sobreviver aos três.\n\nDefina um mínimo.\n\nExemplo:\n\nTreino ideal:\n\n60 minutos.\n\nMínimo em dia difícil:\n\n15 minutos de movimento.\n\nEstudo ideal:\n\n90 minutos.\n\nMínimo:\n\n20 minutos.\n\nA função do mínimo não é acomodar.\n\nÉ preservar identidade e continuidade."
+              },
+              {
+                "title": "FERRAMENTA — MEU MÍNIMO",
+                "body": "",
+                "consolidation": "FERRAMENTA — MEU MÍNIMO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a5",
+            "title": "AULA 5 — BLOQUEIE TEMPO, NÃO APENAS TAREFAS",
+            "kind": "lesson",
+            "lessonNumber": 5,
+            "blocks": [
+              {
+                "title": "AULA 5 — BLOQUEIE TEMPO, NÃO APENAS TAREFAS",
+                "body": "Lista de tarefas responde:\n\n“O que preciso fazer?”\n\nAgenda responde:\n\n> **“Quando isso acontecerá?”**\n\nUm homem pode possuir vinte tarefas e executar duas.\n\nPor isso atividades importantes precisam ocupar espaço real no dia."
+              },
+              {
+                "title": "FERRAMENTA — MAPA DO DIA",
+                "body": "",
+                "consolidation": "FERRAMENTA — MAPA DO DIA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a6",
+            "title": "AULA 6 — AS TRÊS VITÓRIAS DO DIA",
+            "kind": "lesson",
+            "lessonNumber": 6,
+            "blocks": [
+              {
+                "title": "AULA 6 — AS TRÊS VITÓRIAS DO DIA",
+                "body": "Não carregue quinze prioridades.\n\nEscolha três resultados essenciais.\n\nPergunta matinal:\n\n> **“Se apenas três coisas fossem concluídas hoje, quais fariam este dia valer?”**\n\nNão significa abandonar tarefas menores.\n\nSignifica impedir que detalhes ocupem o lugar do importante."
+              },
+              {
+                "title": "FERRAMENTA — 3 VITÓRIAS",
+                "body": "",
+                "consolidation": "FERRAMENTA — 3 VITÓRIAS"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a7",
+            "title": "AULA 7 — PREGUIÇA, CANSAÇO OU EVITAÇÃO?",
+            "kind": "lesson",
+            "lessonNumber": 7,
+            "blocks": [
+              {
+                "title": "AULA 7 — PREGUIÇA, CANSAÇO OU EVITAÇÃO?",
+                "body": "Nem toda falta de energia é preguiça.\n\nTalvez você esteja:\n\nfisicamente cansado;\n\ndormindo mal;\n\nsobrecarregado;\n\nansioso;\n\nevitando uma tarefa desconfortável.\n\nPergunte:\n\n**Meu corpo precisa de descanso ou minha mente quer escapar de desconforto?**"
+              },
+              {
+                "title": "FERRAMENTA — DIAGNÓSTICO DA RESISTÊNCIA",
+                "body": "",
+                "consolidation": "FERRAMENTA — DIAGNÓSTICO DA RESISTÊNCIA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a8",
+            "title": "AULA 8 — O PERIGO DO PERFECCIONISMO",
+            "kind": "lesson",
+            "lessonNumber": 8,
+            "blocks": [
+              {
+                "title": "AULA 8 — O PERIGO DO PERFECCIONISMO",
+                "body": "Perfeccionismo muitas vezes parece excelência.\n\nMas pode esconder medo.\n\n“Só começo quando estiver pronto.”\n\n“Só publico quando estiver perfeito.”\n\n“Só tento quando souber tudo.”\n\nResultado:\n\nnada sai.\n\nExcelência significa melhorar o trabalho.\n\nPerfeccionismo paralisante significa impedir que ele exista."
+              },
+              {
+                "title": "REGRA",
+                "body": "> **Primeiro torne real. Depois torne melhor.**"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a9",
+            "title": "AULA 9 — FECHAMENTO DO DIA",
+            "kind": "lesson",
+            "lessonNumber": 9,
+            "blocks": [
+              {
+                "title": "AULA 9 — FECHAMENTO DO DIA",
+                "body": "Um homem organizado não termina o dia apenas desabando.\n\nCinco minutos podem preparar o próximo.\n\nPerguntas:\n\nO que concluí?\n\nO que ficou pendente?\n\nQual é minha primeira tarefa amanhã?\n\nO que preciso preparar hoje?"
+              },
+              {
+                "title": "FERRAMENTA — FECHAMENTO NOTURNO",
+                "body": "",
+                "consolidation": "FERRAMENTA — FECHAMENTO NOTURNO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a10",
+            "title": "AULA 10 — A SEMANA PRECISA DE COMANDO",
+            "kind": "lesson",
+            "lessonNumber": 10,
+            "blocks": [
+              {
+                "title": "AULA 10 — A SEMANA PRECISA DE COMANDO",
+                "body": "Sem revisão semanal, pequenos desvios crescem.\n\nUma semana ruim vira mês ruim.\n\nPor isso, uma vez por semana:\n\nrevisar;\n\ncorrigir;\n\nreplanejar."
+              },
+              {
+                "title": "FERRAMENTA — REVISÃO DE COMANDO",
+                "body": "",
+                "consolidation": "FERRAMENTA — REVISÃO DE COMANDO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a11",
+            "title": "AULA 11 — DISCIPLINA SEM FANATISMO",
+            "kind": "lesson",
+            "lessonNumber": 11,
+            "blocks": [
+              {
+                "title": "AULA 11 — DISCIPLINA SEM FANATISMO",
+                "body": "Disciplina não significa viver em estado permanente de punição.\n\nO homem também precisa:\n\ndescansar;\n\nrir;\n\nconviver;\n\nrecuperar.\n\nO erro é confundir descanso planejado com fuga permanente."
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-a12",
+            "title": "AULA 12 — SISTEMA PESSOAL DE EXECUÇÃO",
+            "kind": "lesson",
+            "lessonNumber": 12,
+            "blocks": [
+              {
+                "title": "AULA 12 — SISTEMA PESSOAL DE EXECUÇÃO",
+                "body": "Reúna sua rotina em um sistema executável: horários de acordar e dormir, três prioridades, mínimos, revisão semanal, plano SE/ENTÃO e regras contra distração."
+              },
+              {
+                "title": "SISTEMA PESSOAL DE EXECUÇÃO",
+                "body": "",
+                "consolidation": "execution-system"
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-challenge",
+            "title": "DESAFIO — 14 DIAS SEM NEGOCIAR O ESSENCIAL",
+            "kind": "challenge",
+            "blocks": [
+              {
+                "title": "DESAFIO — 14 DIAS SEM NEGOCIAR O ESSENCIAL",
+                "body": "Registre ações realmente executadas. Em dias difíceis, utilize o mínimo ou a manutenção planejada.",
+                "consolidation": "module-challenge",
+                "module": 1
+              }
+            ]
+          },
+          {
+            "id": "f2-m1-exam",
+            "title": "AVALIAÇÃO DO MÓDULO 1",
+            "kind": "exam",
+            "blocks": [
+              {
+                "title": "AVALIAÇÃO DO MÓDULO 1",
+                "body": "Situações práticas. Aprovação a partir de 70%. Revise o raciocínio após cada resposta.",
+                "consolidation": "module-exam",
+                "module": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f2-m2",
+        "title": "CORPO, SAÚDE, ENERGIA E PRESENÇA",
+        "intro": "## PRINCÍPIO\n\n> **Seu corpo é a estrutura física através da qual você executará sua missão.**\n\nNão transforme cuidado físico apenas em estética.\n\nEnergia importa.\n\nMobilidade importa.\n\nForça importa.\n\nSaúde importa.",
+        "lessons": [
+          {
+            "id": "f2-m2-a1",
+            "title": "AULA 1 — PARE DE TRATAR O CORPO COMO ACESSÓRIO",
+            "kind": "lesson",
+            "lessonNumber": 1,
+            "blocks": [
+              {
+                "title": "AULA 1 — PARE DE TRATAR O CORPO COMO ACESSÓRIO",
+                "body": "Se seu corpo está constantemente:\n\nexausto;\n\nsem movimento;\n\nmal alimentado;\n\nsem sono;\n\nmal cuidado,\n\nsua capacidade de trabalhar e pensar também sofre.\n\nCorpo não é decoração.\n\nÉ infraestrutura."
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a2",
+            "title": "AULA 2 — TREINO: O OBJETIVO É CAPACIDADE",
+            "kind": "lesson",
+            "lessonNumber": 2,
+            "blocks": [
+              {
+                "title": "AULA 2 — TREINO: O OBJETIVO É CAPACIDADE",
+                "body": "O treinamento não determinará uma modalidade obrigatória.\n\nO aluno poderá escolher:\n\nmusculação;\n\ncorrida;\n\nciclismo;\n\nesporte;\n\nlutas;\n\ncaminhada;\n\ntreino funcional;\n\nou combinação adequada.\n\nObjetivos gerais:\n\nforça;\n\nresistência;\n\nmobilidade;\n\ncomposição corporal saudável;\n\nconsistência.\n\nSe houver condição médica, lesão ou limitação relevante, o aluno deverá procurar orientação profissional apropriada."
+              },
+              {
+                "title": "FERRAMENTA — MAPA FÍSICO",
+                "body": "",
+                "consolidation": "FERRAMENTA — MAPA FÍSICO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a3",
+            "title": "AULA 3 — CONSISTÊNCIA VENCE EXAGERO",
+            "kind": "lesson",
+            "lessonNumber": 3,
+            "blocks": [
+              {
+                "title": "AULA 3 — CONSISTÊNCIA VENCE EXAGERO",
+                "body": "Treinar violentamente por quatro dias e abandonar por vinte não é disciplina.\n\nMelhor:\n\num plano sustentável.\n\nNão confundir sofrimento máximo com progresso máximo."
+              },
+              {
+                "title": "FERRAMENTA — TREINO SUSTENTÁVEL",
+                "body": "",
+                "consolidation": "FERRAMENTA — TREINO SUSTENTÁVEL"
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a4",
+            "title": "AULA 4 — ALIMENTAÇÃO SEM TEATRO",
+            "kind": "lesson",
+            "lessonNumber": 4,
+            "blocks": [
+              {
+                "title": "AULA 4 — ALIMENTAÇÃO SEM TEATRO",
+                "body": "Não há uma dieta universal neste módulo.\n\nPrincípios gerais:\n\ncomida de verdade com frequência;\n\nproteína adequada segundo necessidade individual;\n\nfrutas;\n\nvegetais;\n\nágua;\n\nmoderação de ultraprocessados;\n\natenção a excesso;\n\nregularidade.\n\nEvite pseudociência e dietas universais.\n\nNecessidades clínicas ou específicas devem ser tratadas com profissional qualificado."
+              },
+              {
+                "title": "FERRAMENTA — AUDITORIA DE ALIMENTAÇÃO",
+                "body": "",
+                "consolidation": "FERRAMENTA — AUDITORIA DE ALIMENTAÇÃO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a5",
+            "title": "AULA 5 — SONO É DISCIPLINA",
+            "kind": "lesson",
+            "lessonNumber": 5,
+            "blocks": [
+              {
+                "title": "AULA 5 — SONO É DISCIPLINA",
+                "body": "Você não ganha medalha por dormir quatro horas sem necessidade.\n\nSono ruim reduz capacidade de:\n\natenção;\n\nmemória;\n\nregulação emocional;\n\ntreino;\n\ntrabalho.\n\nPrincípios gerais:\n\nhorário relativamente consistente;\n\nambiente escuro;\n\nredução de estímulo próximo ao sono;\n\ncuidado com cafeína tarde;\n\nrotina de desaceleração.\n\nProblemas persistentes de sono devem ser avaliados profissionalmente."
+              },
+              {
+                "title": "FERRAMENTA — RAIO-X DO SONO",
+                "body": "",
+                "consolidation": "FERRAMENTA — RAIO-X DO SONO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a6",
+            "title": "AULA 6 — HIGIENE E APRESENTAÇÃO",
+            "kind": "lesson",
+            "lessonNumber": 6,
+            "blocks": [
+              {
+                "title": "AULA 6 — HIGIENE E APRESENTAÇÃO",
+                "body": "Não existe masculinidade em negligenciar higiene.\n\nCuidar de:\n\nbanho;\n\ndentes;\n\nunhas;\n\ncabelo;\n\nbarba;\n\npele quando necessário;\n\nroupa;\n\ncalçado;\n\nodor.\n\nApresentação demonstra cuidado."
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a7",
+            "title": "AULA 7 — POSTURA E LINGUAGEM CORPORAL",
+            "kind": "lesson",
+            "lessonNumber": 7,
+            "blocks": [
+              {
+                "title": "AULA 7 — POSTURA E LINGUAGEM CORPORAL",
+                "body": "Presença não exige regras caricatas.\n\nPratique:\n\nficar ereto sem rigidez;\n\nolhar para pessoas ao conversar;\n\nnão esconder constantemente as mãos;\n\nnão falar olhando sempre para baixo;\n\nocupar espaço de maneira natural.\n\nPresença começa antes das palavras."
+              },
+              {
+                "title": "FERRAMENTA — CHECKLIST DE PRESENÇA",
+                "body": "",
+                "consolidation": "FERRAMENTA — CHECKLIST DE PRESENÇA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a8",
+            "title": "AULA 8 — ENERGIA É UM RECURSO",
+            "kind": "lesson",
+            "lessonNumber": 8,
+            "blocks": [
+              {
+                "title": "AULA 8 — ENERGIA É UM RECURSO",
+                "body": "Nem toda hora do dia possui o mesmo nível de energia.\n\nObserve quando você pensa melhor.\n\nQuando treina melhor.\n\nQuando começa a cair.\n\nColoque tarefas importantes nas melhores janelas quando possível."
+              },
+              {
+                "title": "FERRAMENTA — MAPA DE ENERGIA",
+                "body": "",
+                "consolidation": "FERRAMENTA — MAPA DE ENERGIA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a9",
+            "title": "AULA 9 — SAÚDE PREVENTIVA",
+            "kind": "lesson",
+            "lessonNumber": 9,
+            "blocks": [
+              {
+                "title": "AULA 9 — SAÚDE PREVENTIVA",
+                "body": "Homens também precisam cuidar da saúde antes de uma crise.\n\nPratique:\n\nconsultas quando indicadas;\n\nsaúde bucal;\n\nvacinas conforme orientação;\n\nexames conforme idade, histórico e profissional;\n\nnão ignorar sintomas persistentes;\n\nnão automedicar indiscriminadamente."
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-a10",
+            "title": "AULA 10 — PRESENÇA É CONSISTÊNCIA VISÍVEL",
+            "kind": "lesson",
+            "lessonNumber": 10,
+            "blocks": [
+              {
+                "title": "AULA 10 — PRESENÇA É CONSISTÊNCIA VISÍVEL",
+                "body": "Uma boa presença não precisa ser cara.\n\nA diferença está em:\n\nlimpeza;\n\najuste;\n\ncuidado;\n\npostura;\n\nenergia;\n\neducação."
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-challenge",
+            "title": "DESAFIO — 21 DIAS DE CORPO EM ORDEM",
+            "kind": "challenge",
+            "blocks": [
+              {
+                "title": "DESAFIO — 21 DIAS DE CORPO EM ORDEM",
+                "body": "Registre ações realmente executadas. Em dias difíceis, utilize o mínimo ou a manutenção planejada.",
+                "consolidation": "module-challenge",
+                "module": 2
+              }
+            ]
+          },
+          {
+            "id": "f2-m2-exam",
+            "title": "AVALIAÇÃO DO MÓDULO 2",
+            "kind": "exam",
+            "blocks": [
+              {
+                "title": "AVALIAÇÃO DO MÓDULO 2",
+                "body": "Situações práticas. Aprovação a partir de 70%. Revise o raciocínio após cada resposta.",
+                "consolidation": "module-exam",
+                "module": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f2-m3",
+        "title": "TRABALHO, COMPETÊNCIA E PRODUTIVIDADE",
+        "intro": "## PRINCÍPIO\n\n> **Você não aumenta seu valor profissional apenas querendo ganhar mais. Aumenta quando aumenta sua capacidade de resolver problemas.**",
+        "lessons": [
+          {
+            "id": "f2-m3-a1",
+            "title": "AULA 1 — NÃO CONFUNDA OCUPAÇÃO COM PRODUÇÃO",
+            "kind": "lesson",
+            "lessonNumber": 1,
+            "blocks": [
+              {
+                "title": "AULA 1 — NÃO CONFUNDA OCUPAÇÃO COM PRODUÇÃO",
+                "body": "Estar ocupado não significa produzir.\n\nVocê pode passar dez horas:\n\nrespondendo;\n\narrumando;\n\nreorganizando;\n\nconversando\n\ne não entregar nada importante.\n\nPergunta:\n\n> “O que ficou pronto?”"
+              },
+              {
+                "title": "FERRAMENTA — PRODUÇÃO X MOVIMENTO",
+                "body": "",
+                "consolidation": "FERRAMENTA — PRODUÇÃO X MOVIMENTO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a2",
+            "title": "AULA 2 — TRABALHO PROFUNDO",
+            "kind": "lesson",
+            "lessonNumber": 2,
+            "blocks": [
+              {
+                "title": "AULA 2 — TRABALHO PROFUNDO",
+                "body": "Algumas tarefas exigem concentração.\n\nSe você interrompe a cada três minutos para:\n\nmensagem;\n\nnotificação;\n\nvídeo;\n\ne-mail,\n\na qualidade cai.\n\nUse blocos de concentração."
+              },
+              {
+                "title": "FERRAMENTA — BLOCO DE FOCO",
+                "body": "",
+                "consolidation": "FERRAMENTA — BLOCO DE FOCO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a3",
+            "title": "AULA 3 — PRIORIZE RESULTADOS",
+            "kind": "lesson",
+            "lessonNumber": 3,
+            "blocks": [
+              {
+                "title": "AULA 3 — PRIORIZE RESULTADOS",
+                "body": "Pergunte:\n\nQual entrega gera maior impacto?\n\nQual problema está bloqueando todo o resto?\n\nO que só eu posso fazer?"
+              },
+              {
+                "title": "FERRAMENTA — MATRIZ DE IMPACTO",
+                "body": "",
+                "consolidation": "FERRAMENTA — MATRIZ DE IMPACTO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a4",
+            "title": "AULA 4 — COMPETÊNCIA É CAPITAL",
+            "kind": "lesson",
+            "lessonNumber": 4,
+            "blocks": [
+              {
+                "title": "AULA 4 — COMPETÊNCIA É CAPITAL",
+                "body": "Habilidades acumulam valor.\n\nNão fique apenas consumindo conteúdo.\n\nConstrua competência comprovável."
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a5",
+            "title": "AULA 5 — APRENDA COM PROJETOS REAIS",
+            "kind": "lesson",
+            "lessonNumber": 5,
+            "blocks": [
+              {
+                "title": "AULA 5 — APRENDA COM PROJETOS REAIS",
+                "body": "Se quer aprender:\n\nescreva;\n\nconstrua;\n\nvenda;\n\nprograme;\n\nedite;\n\nconserte;\n\napresente.\n\nProjeto real revela lacunas que teoria esconde."
+              },
+              {
+                "title": "FERRAMENTA — PROJETO DE COMPETÊNCIA",
+                "body": "",
+                "consolidation": "FERRAMENTA — PROJETO DE COMPETÊNCIA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a6",
+            "title": "AULA 6 — FEEDBACK NÃO É ATAQUE",
+            "kind": "lesson",
+            "lessonNumber": 6,
+            "blocks": [
+              {
+                "title": "AULA 6 — FEEDBACK NÃO É ATAQUE",
+                "body": "Homem inseguro interpreta toda crítica como humilhação.\n\nAprenda a perguntar:\n\nExiste algo verdadeiro aqui?\n\nPosso melhorar?\n\nA pessoa possui contexto?\n\nSeparar:\n\nconteúdo;\n\ntom;\n\nintenção.\n\nMesmo feedback mal apresentado pode conter informação útil."
+              },
+              {
+                "title": "SIMULADOR — RECEBENDO CRÍTICA",
+                "body": "",
+                "consolidation": "SIMULADOR — RECEBENDO CRÍTICA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a7",
+            "title": "AULA 7 — PONTUALIDADE E PRAZO",
+            "kind": "lesson",
+            "lessonNumber": 7,
+            "blocks": [
+              {
+                "title": "AULA 7 — PONTUALIDADE E PRAZO",
+                "body": "Atraso ocasional acontece.\n\nAtraso como identidade destrói confiança.\n\nPratique:\n\nmargem;\n\ncomunicação;\n\nplanejamento;\n\naviso antecipado."
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a8",
+            "title": "AULA 8 — PROFISSIONAL INDISPENSÁVEL NÃO É PROFISSIONAL INSUBSTITUÍVEL",
+            "kind": "lesson",
+            "lessonNumber": 8,
+            "blocks": [
+              {
+                "title": "AULA 8 — PROFISSIONAL INDISPENSÁVEL NÃO É PROFISSIONAL INSUBSTITUÍVEL",
+                "body": "Não tente prender empresa escondendo informação.\n\nValor profissional vem de:\n\ncompetência;\n\nconfiabilidade;\n\ndocumentação;\n\ncomunicação;\n\niniciativa;\n\ncapacidade de ensinar."
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a9",
+            "title": "AULA 9 — APRENDA A VENDER SEU TRABALHO",
+            "kind": "lesson",
+            "lessonNumber": 9,
+            "blocks": [
+              {
+                "title": "AULA 9 — APRENDA A VENDER SEU TRABALHO",
+                "body": "Vender não é mentir.\n\nÉ conseguir explicar:\n\nqual problema resolve;\n\nqual resultado entrega;\n\nqual diferencial possui.\n\nMesmo funcionário precisa saber comunicar valor."
+              },
+              {
+                "title": "FERRAMENTA — PROPOSTA DE VALOR PROFISSIONAL",
+                "body": "",
+                "consolidation": "FERRAMENTA — PROPOSTA DE VALOR PROFISSIONAL"
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a10",
+            "title": "AULA 10 — REPUTAÇÃO PROFISSIONAL",
+            "kind": "lesson",
+            "lessonNumber": 10,
+            "blocks": [
+              {
+                "title": "AULA 10 — REPUTAÇÃO PROFISSIONAL",
+                "body": "Pergunte:\n\nAs pessoas sabem que você:\n\ncumpre?\n\nresponde?\n\nresolve?\n\navisa?\n\nentrega?\n\nassume?\n\nSua reputação precede oportunidades."
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-a11",
+            "title": "AULA 11 — PLANO DE COMPETÊNCIA DE 12 MESES",
+            "kind": "lesson",
+            "lessonNumber": 11,
+            "blocks": [
+              {
+                "title": "AULA 11 — PLANO DE COMPETÊNCIA DE 12 MESES",
+                "body": "Escolher:\n\numa competência central;\n\nduas complementares;\n\num projeto;\n\numa certificação quando relevante;\n\numa evidência de domínio."
+              },
+              {
+                "title": "FERRAMENTA — MAPA PROFISSIONAL 12M",
+                "body": "",
+                "consolidation": "FERRAMENTA — MAPA PROFISSIONAL 12M"
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-challenge",
+            "title": "DESAFIO — ENTREGUE ALGO QUE POSSA SER MOSTRADO",
+            "kind": "challenge",
+            "blocks": [
+              {
+                "title": "DESAFIO — ENTREGUE ALGO QUE POSSA SER MOSTRADO",
+                "body": "Registre ações realmente executadas. Em dias difíceis, utilize o mínimo ou a manutenção planejada.",
+                "consolidation": "module-challenge",
+                "module": 3
+              }
+            ]
+          },
+          {
+            "id": "f2-m3-exam",
+            "title": "AVALIAÇÃO DO MÓDULO 3",
+            "kind": "exam",
+            "blocks": [
+              {
+                "title": "AVALIAÇÃO DO MÓDULO 3",
+                "body": "Situações práticas. Aprovação a partir de 70%. Revise o raciocínio após cada resposta.",
+                "consolidation": "module-exam",
+                "module": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f2-m4",
+        "title": "DINHEIRO, ORDEM E CONSTRUÇÃO PATRIMONIAL",
+        "intro": "## PRINCÍPIO\n\n> **Dinheiro não torna um homem digno. Mas desordem financeira pode tornar sua vida permanentemente vulnerável.**\n\nEsta etapa será educação financeira básica.\n\nNão fornecer recomendações personalizadas de investimento.",
+        "lessons": [
+          {
+            "id": "f2-m4-a1",
+            "title": "AULA 1 — VOCÊ PRECISA SABER PARA ONDE O DINHEIRO VAI",
+            "kind": "lesson",
+            "lessonNumber": 1,
+            "blocks": [
+              {
+                "title": "AULA 1 — VOCÊ PRECISA SABER PARA ONDE O DINHEIRO VAI",
+                "body": "Se não sabe:\n\nquanto ganha;\n\nquanto gasta;\n\nquanto deve;\n\nquanto sobra,\n\nnão possui controle.\n\nPossui impressão."
+              },
+              {
+                "title": "FERRAMENTA — RAIO-X FINANCEIRO",
+                "body": "",
+                "consolidation": "FERRAMENTA — RAIO-X FINANCEIRO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a2",
+            "title": "AULA 2 — GASTO NÃO É APENAS DINHEIRO; É FUTURO",
+            "kind": "lesson",
+            "lessonNumber": 2,
+            "blocks": [
+              {
+                "title": "AULA 2 — GASTO NÃO É APENAS DINHEIRO; É FUTURO",
+                "body": "Cada gasto possui custo de oportunidade.\n\nPergunta:\n\n> “O que deixo de construir quando compro isso?”\n\nNão significa nunca gastar.\n\nSignifica enxergar troca."
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a3",
+            "title": "AULA 3 — NECESSIDADE, CONFORTO E STATUS",
+            "kind": "lesson",
+            "lessonNumber": 3,
+            "blocks": [
+              {
+                "title": "AULA 3 — NECESSIDADE, CONFORTO E STATUS",
+                "body": "Observe três categorias.\n\nNecessidade:\n\nmantém vida funcionando.\n\nConforto:\n\nmelhora experiência.\n\nStatus:\n\nparte relevante da compra está na impressão causada.\n\nNenhuma categoria é automaticamente proibida.\n\nO problema é chamar status de necessidade."
+              },
+              {
+                "title": "FERRAMENTA — CLASSIFICADOR DE GASTOS",
+                "body": "",
+                "consolidation": "FERRAMENTA — CLASSIFICADOR DE GASTOS"
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a4",
+            "title": "AULA 4 — DÍVIDA PRECISA DE ESTRATÉGIA",
+            "kind": "lesson",
+            "lessonNumber": 4,
+            "blocks": [
+              {
+                "title": "AULA 4 — DÍVIDA PRECISA DE ESTRATÉGIA",
+                "body": "Conceitos gerais:\n\nlistar dívida;\n\ntaxa/custo;\n\nprazo;\n\npagamento mínimo;\n\nevitar novas dívidas;\n\nnegociação quando possível;\n\npriorização.\n\nPara decisões específicas, buscar orientação financeira apropriada quando necessário."
+              },
+              {
+                "title": "FERRAMENTA — MAPA DE DÍVIDAS",
+                "body": "",
+                "consolidation": "FERRAMENTA — MAPA DE DÍVIDAS"
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a5",
+            "title": "AULA 5 — RESERVA É TEMPO COMPRADO",
+            "kind": "lesson",
+            "lessonNumber": 5,
+            "blocks": [
+              {
+                "title": "AULA 5 — RESERVA É TEMPO COMPRADO",
+                "body": "Reserva reduz fragilidade.\n\nUma emergência sem reserva vira dívida.\n\nUma demissão sem reserva vira desespero.\n\nNão estabelecer valor universal.\n\nEnsinar construção gradual conforme realidade."
+              },
+              {
+                "title": "FERRAMENTA — META DE RESERVA",
+                "body": "",
+                "consolidation": "FERRAMENTA — META DE RESERVA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a6",
+            "title": "AULA 6 — PARE DE AUMENTAR O PADRÃO DE VIDA AUTOMATICAMENTE",
+            "kind": "lesson",
+            "lessonNumber": 6,
+            "blocks": [
+              {
+                "title": "AULA 6 — PARE DE AUMENTAR O PADRÃO DE VIDA AUTOMATICAMENTE",
+                "body": "Renda aumenta.\n\nGastos aumentam.\n\nNada sobra.\n\nIsso é inflação de estilo de vida.\n\nParte de todo aumento de renda pode ser direcionada à construção antes de criar novos custos permanentes."
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a7",
+            "title": "AULA 7 — COMPRE FERRAMENTAS, NÃO APENAS SÍMBOLOS",
+            "kind": "lesson",
+            "lessonNumber": 7,
+            "blocks": [
+              {
+                "title": "AULA 7 — COMPRE FERRAMENTAS, NÃO APENAS SÍMBOLOS",
+                "body": "Dinheiro pode comprar:\n\ntreinamento;\n\nequipamento;\n\nlivro;\n\nsoftware;\n\nmáquina;\n\nferramenta;\n\nexperiência.\n\nPergunte:\n\n> “Isso aumenta minha capacidade ou apenas minha aparência?”"
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a8",
+            "title": "AULA 8 — CONSUMO EMOCIONAL",
+            "kind": "lesson",
+            "lessonNumber": 8,
+            "blocks": [
+              {
+                "title": "AULA 8 — CONSUMO EMOCIONAL",
+                "body": "Algumas pessoas gastam quando:\n\ntristes;\n\nansiosas;\n\nentediadas;\n\nquerendo impressionar.\n\nIdentifique gatilhos."
+              },
+              {
+                "title": "FERRAMENTA — DIÁRIO DO GASTO IMPULSIVO",
+                "body": "",
+                "consolidation": "FERRAMENTA — DIÁRIO DO GASTO IMPULSIVO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a9",
+            "title": "AULA 9 — CONSTRUÇÃO PATRIMONIAL É JOGO LONGO",
+            "kind": "lesson",
+            "lessonNumber": 9,
+            "blocks": [
+              {
+                "title": "AULA 9 — CONSTRUÇÃO PATRIMONIAL É JOGO LONGO",
+                "body": "Princípios:\n\ngastar menos do que ganha;\n\nreduzir dívida cara;\n\nreserva;\n\ninvestir conforme perfil, objetivos e entendimento;\n\nevitar promessas de enriquecimento rápido;\n\naumentar renda através de competência.\n\nSem indicar ativos específicos."
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-a10",
+            "title": "AULA 10 — DINHEIRO E CARÁTER",
+            "kind": "lesson",
+            "lessonNumber": 10,
+            "blocks": [
+              {
+                "title": "AULA 10 — DINHEIRO E CARÁTER",
+                "body": "Perguntas:\n\nVocê paga aquilo que deve?\n\nCumpre acordos?\n\nEsconde dívida?\n\nGasta dinheiro que pertence a outra finalidade?\n\nDinheiro revela decisões."
+              },
+              {
+                "title": "FERRAMENTA — CÓDIGO FINANCEIRO PESSOAL",
+                "body": "",
+                "consolidation": "FERRAMENTA — CÓDIGO FINANCEIRO PESSOAL"
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-challenge",
+            "title": "DESAFIO — 30 DIAS DE ORDEM FINANCEIRA",
+            "kind": "challenge",
+            "blocks": [
+              {
+                "title": "DESAFIO — 30 DIAS DE ORDEM FINANCEIRA",
+                "body": "Registre ações realmente executadas. Em dias difíceis, utilize o mínimo ou a manutenção planejada.",
+                "consolidation": "module-challenge",
+                "module": 4
+              }
+            ]
+          },
+          {
+            "id": "f2-m4-exam",
+            "title": "AVALIAÇÃO DO MÓDULO 4",
+            "kind": "exam",
+            "blocks": [
+              {
+                "title": "AVALIAÇÃO DO MÓDULO 4",
+                "body": "Situações práticas. Aprovação a partir de 70%. Revise o raciocínio após cada resposta.",
+                "consolidation": "module-exam",
+                "module": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f2-m5",
+        "title": "COMUNICAÇÃO, PRESENÇA SOCIAL E RESPEITO",
+        "intro": "## OBJETIVO\n\nConstruir um homem capaz de entrar em ambientes, conversar, ouvir, expressar opinião, estabelecer limite e manter postura.\n\nSem conteúdo romântico.",
+        "lessons": [
+          {
+            "id": "f2-m5-a1",
+            "title": "AULA 1 — PRESENÇA ANTES DA PALAVRA",
+            "kind": "lesson",
+            "lessonNumber": 1,
+            "blocks": [
+              {
+                "title": "AULA 1 — PRESENÇA ANTES DA PALAVRA",
+                "body": "Antes de falar, você comunica:\n\npostura;\n\nolhar;\n\nexpressão;\n\nvelocidade;\n\nansiedade;\n\natenção.\n\nNão significa atuar.\n\nSignifica estar presente."
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a2",
+            "title": "AULA 2 — OLHE PARA QUEM ESTÁ FALANDO",
+            "kind": "lesson",
+            "lessonNumber": 2,
+            "blocks": [
+              {
+                "title": "AULA 2 — OLHE PARA QUEM ESTÁ FALANDO",
+                "body": "Contato visual natural demonstra atenção.\n\nNão transformar em disputa.\n\nOlhar não é intimidar.\n\nÉ presença."
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a3",
+            "title": "AULA 3 — VOZ CLARA",
+            "kind": "lesson",
+            "lessonNumber": 3,
+            "blocks": [
+              {
+                "title": "AULA 3 — VOZ CLARA",
+                "body": "Pratique:\n\nvolume adequado;\n\nritmo;\n\npausas;\n\ndicção;\n\nrespiração.\n\nEvitar falar rápido por ansiedade."
+              },
+              {
+                "title": "FERRAMENTA — TREINO DE VOZ",
+                "body": "",
+                "consolidation": "FERRAMENTA — TREINO DE VOZ"
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a4",
+            "title": "AULA 4 — APRENDA A OUVIR",
+            "kind": "lesson",
+            "lessonNumber": 4,
+            "blocks": [
+              {
+                "title": "AULA 4 — APRENDA A OUVIR",
+                "body": "Muitos homens escutam apenas esperando sua vez.\n\nEscuta real pergunta:\n\nO que a pessoa está dizendo?\n\nO que ela precisa que eu entenda?\n\nNão interromper automaticamente."
+              },
+              {
+                "title": "FERRAMENTA — ESCUTA EM 3 CAMADAS",
+                "body": "",
+                "consolidation": "FERRAMENTA — ESCUTA EM 3 CAMADAS"
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a5",
+            "title": "AULA 5 — FALE COM CLAREZA",
+            "kind": "lesson",
+            "lessonNumber": 5,
+            "blocks": [
+              {
+                "title": "AULA 5 — FALE COM CLAREZA",
+                "body": "Evite:\n\ninsinuação;\n\nindireta;\n\nsarcasmo permanente;\n\nmensagem ambígua.\n\nDiga aquilo que precisa dizer."
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a6",
+            "title": "AULA 6 — ASSERTIVIDADE",
+            "kind": "lesson",
+            "lessonNumber": 6,
+            "blocks": [
+              {
+                "title": "AULA 6 — ASSERTIVIDADE",
+                "body": "Estrutura:\n\n**Quando X acontece...**\n\n**o impacto é Y...**\n\n**eu preciso/decido Z.**\n\nSem humilhação."
+              },
+              {
+                "title": "TREINADOR DE ASSERTIVIDADE",
+                "body": "",
+                "consolidation": "TREINADOR DE ASSERTIVIDADE"
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a7",
+            "title": "AULA 7 — DISCORDAR SEM TRANSFORMAR TUDO EM GUERRA",
+            "kind": "lesson",
+            "lessonNumber": 7,
+            "blocks": [
+              {
+                "title": "AULA 7 — DISCORDAR SEM TRANSFORMAR TUDO EM GUERRA",
+                "body": "Homem maduro consegue dizer:\n\n“Discordo.”\n\nSem:\n\ngritar;\n\nridicularizar;\n\ncancelar amizade automaticamente;\n\ninsultar."
+              },
+              {
+                "title": "SIMULADOR — DISCORDÂNCIA",
+                "body": "",
+                "consolidation": "SIMULADOR — DISCORDÂNCIA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a8",
+            "title": "AULA 8 — RESPEITO NÃO É SUBMISSÃO",
+            "kind": "lesson",
+            "lessonNumber": 8,
+            "blocks": [
+              {
+                "title": "AULA 8 — RESPEITO NÃO É SUBMISSÃO",
+                "body": "Você pode respeitar alguém e negar.\n\nPode respeitar e discordar.\n\nPode respeitar e sair."
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a9",
+            "title": "AULA 9 — HUMOR, BRINCADEIRA E LIMITE",
+            "kind": "lesson",
+            "lessonNumber": 9,
+            "blocks": [
+              {
+                "title": "AULA 9 — HUMOR, BRINCADEIRA E LIMITE",
+                "body": "Homens frequentemente usam brincadeira como vínculo.\n\nMas existe diferença entre:\n\nbrincadeira;\n\nhumilhação.\n\nSe alguém claramente pede para parar, respeite.\n\nE aprenda a estabelecer seu próprio limite sem escândalo."
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a10",
+            "title": "AULA 10 — CONVERSAS DIFÍCEIS",
+            "kind": "lesson",
+            "lessonNumber": 10,
+            "blocks": [
+              {
+                "title": "AULA 10 — CONVERSAS DIFÍCEIS",
+                "body": "Preparação:\n\nqual é o fato?\n\nqual é o objetivo?\n\nqual limite?\n\nqual solução possível?\n\nNão conversar no auge da raiva quando não é necessário."
+              },
+              {
+                "title": "FERRAMENTA — PREPARADOR DE CONVERSA DIFÍCIL",
+                "body": "",
+                "consolidation": "FERRAMENTA — PREPARADOR DE CONVERSA DIFÍCIL"
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-a11",
+            "title": "AULA 11 — REPUTAÇÃO SOCIAL",
+            "kind": "lesson",
+            "lessonNumber": 11,
+            "blocks": [
+              {
+                "title": "AULA 11 — REPUTAÇÃO SOCIAL",
+                "body": "Pergunta:\n\nAs pessoas saem de uma conversa com você pensando:\n\nele escuta;\n\nele cumpre;\n\nele respeita;\n\nele sabe se posicionar?\n\nOu:\n\nele fala apenas de si;\n\ninterrompe;\n\nfofoca;\n\npromete;\n\nnão entrega?"
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-challenge",
+            "title": "DESAFIO — 7 CONVERSAS CONSCIENTES",
+            "kind": "challenge",
+            "blocks": [
+              {
+                "title": "DESAFIO — 7 CONVERSAS CONSCIENTES",
+                "body": "Registre ações realmente executadas. Em dias difíceis, utilize o mínimo ou a manutenção planejada.",
+                "consolidation": "module-challenge",
+                "module": 5
+              }
+            ]
+          },
+          {
+            "id": "f2-m5-exam",
+            "title": "AVALIAÇÃO DO MÓDULO 5",
+            "kind": "exam",
+            "blocks": [
+              {
+                "title": "AVALIAÇÃO DO MÓDULO 5",
+                "body": "Situações práticas. Aprovação a partir de 70%. Revise o raciocínio após cada resposta.",
+                "consolidation": "module-exam",
+                "module": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f2-m6",
+        "title": "AMBIENTE, IRMANDADE E INFLUÊNCIA",
+        "intro": "## PRINCÍPIO\n\n> **Você não é apenas resultado das suas escolhas. Também é influenciado pelas escolhas que seu ambiente facilita todos os dias.**",
+        "lessons": [
+          {
+            "id": "f2-m6-a1",
+            "title": "AULA 1 — AMBIENTE VENCE INTENÇÃO COM FREQUÊNCIA",
+            "kind": "lesson",
+            "lessonNumber": 1,
+            "blocks": [
+              {
+                "title": "AULA 1 — AMBIENTE VENCE INTENÇÃO COM FREQUÊNCIA",
+                "body": "Se existe:\n\ncomida ruim visível;\n\ntelefone na mão;\n\npessoas chamando para excessos;\n\nmesa desorganizada;\n\nnenhum horário,\n\na disciplina precisa lutar o tempo inteiro.\n\nOrganize o campo."
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a2",
+            "title": "AULA 2 — SEU QUARTO, SUA CASA, SUA MESA",
+            "kind": "lesson",
+            "lessonNumber": 2,
+            "blocks": [
+              {
+                "title": "AULA 2 — SEU QUARTO, SUA CASA, SUA MESA",
+                "body": "Desordem física não torna alguém automaticamente indisciplinado.\n\nMas ambiente caótico pode aumentar atrito.\n\nCriar espaço funcional."
+              },
+              {
+                "title": "FERRAMENTA — AUDITORIA DO AMBIENTE",
+                "body": "",
+                "consolidation": "FERRAMENTA — AUDITORIA DO AMBIENTE"
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a3",
+            "title": "AULA 3 — AMBIENTE DIGITAL",
+            "kind": "lesson",
+            "lessonNumber": 3,
+            "blocks": [
+              {
+                "title": "AULA 3 — AMBIENTE DIGITAL",
+                "body": "Quem entra no seu cérebro todos os dias?\n\nPerfis.\n\nVídeos.\n\nNotícias.\n\nGrupos.\n\nAlgoritmos.\n\nVocê escolheu essas influências ou apenas acumulou?"
+              },
+              {
+                "title": "FERRAMENTA — LIMPEZA DE INFLUÊNCIA",
+                "body": "",
+                "consolidation": "FERRAMENTA — LIMPEZA DE INFLUÊNCIA"
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a4",
+            "title": "AULA 4 — AMIGOS NÃO PRECISAM SER CÓPIAS",
+            "kind": "lesson",
+            "lessonNumber": 4,
+            "blocks": [
+              {
+                "title": "AULA 4 — AMIGOS NÃO PRECISAM SER CÓPIAS",
+                "body": "Irmandade saudável não exige que todos tenham:\n\nmesma profissão;\n\nmesmas ideias;\n\nmesma personalidade.\n\nMas alguns valores precisam ser compatíveis:\n\nlealdade;\n\nrespeito;\n\nresponsabilidade;\n\nlimite."
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a5",
+            "title": "AULA 5 — AMIGO QUE PUXA PARA BAIXO",
+            "kind": "lesson",
+            "lessonNumber": 5,
+            "blocks": [
+              {
+                "title": "AULA 5 — AMIGO QUE PUXA PARA BAIXO",
+                "body": "Sinais:\n\nridiculariza toda tentativa de crescer;\n\npressiona para vícios;\n\ndesrespeita família;\n\nincentiva irresponsabilidade;\n\nusa humilhação como vínculo;\n\nsó aparece para farra.\n\nNão significa abandonar automaticamente.\n\nSignifica controlar exposição."
+              },
+              {
+                "title": "FERRAMENTA — MAPA DA IRMANDADE 2.0",
+                "body": "",
+                "consolidation": "FERRAMENTA — MAPA DA IRMANDADE 2.0"
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a6",
+            "title": "AULA 6 — SEJA O AMIGO QUE VOCÊ QUER TER",
+            "kind": "lesson",
+            "lessonNumber": 6,
+            "blocks": [
+              {
+                "title": "AULA 6 — SEJA O AMIGO QUE VOCÊ QUER TER",
+                "body": "Você cobra:\n\nlealdade?\n\nSeja leal.\n\nPresença?\n\nEsteja presente.\n\nVerdade?\n\nFale verdade.\n\nApoio?\n\nApoie."
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a7",
+            "title": "AULA 7 — NÃO CONFUNDA IRMANDADE COM DEPENDÊNCIA",
+            "kind": "lesson",
+            "lessonNumber": 7,
+            "blocks": [
+              {
+                "title": "AULA 7 — NÃO CONFUNDA IRMANDADE COM DEPENDÊNCIA",
+                "body": "Homens precisam de amigos.\n\nMas não terceirize decisões.\n\nConselho não elimina responsabilidade."
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a8",
+            "title": "AULA 8 — CRIE UM CÍRCULO DE CRESCIMENTO",
+            "kind": "lesson",
+            "lessonNumber": 8,
+            "blocks": [
+              {
+                "title": "AULA 8 — CRIE UM CÍRCULO DE CRESCIMENTO",
+                "body": "Não precisa ser grupo formal.\n\nPode haver:\n\num homem mais experiente;\n\num colega de treino;\n\num profissional;\n\num amigo responsável.\n\nConstrua rede saudável."
+              },
+              {
+                "title": "FERRAMENTA — MEU CONSELHO DE HOMENS",
+                "body": "",
+                "consolidation": "FERRAMENTA — MEU CONSELHO DE HOMENS"
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a9",
+            "title": "AULA 9 — TORNE-SE INFLUÊNCIA",
+            "kind": "lesson",
+            "lessonNumber": 9,
+            "blocks": [
+              {
+                "title": "AULA 9 — TORNE-SE INFLUÊNCIA",
+                "body": "Quando você muda, ambiente percebe.\n\nNão faça discursos incessantes.\n\nViva.\n\nPessoas observam constância melhor do que frases."
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-a10",
+            "title": "AULA 10 — NÃO TENTE SALVAR TODO MUNDO",
+            "kind": "lesson",
+            "lessonNumber": 10,
+            "blocks": [
+              {
+                "title": "AULA 10 — NÃO TENTE SALVAR TODO MUNDO",
+                "body": "Você não conseguirá obrigar amigos a mudar.\n\nOfereça ajuda.\n\nDê exemplo.\n\nEstabeleça limite.\n\nMas não carregue quem se recusa a caminhar."
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-challenge",
+            "title": "DESAFIO — REORGANIZAÇÃO DO CAMPO",
+            "kind": "challenge",
+            "blocks": [
+              {
+                "title": "DESAFIO — REORGANIZAÇÃO DO CAMPO",
+                "body": "Registre ações realmente executadas. Em dias difíceis, utilize o mínimo ou a manutenção planejada.",
+                "consolidation": "module-challenge",
+                "module": 6
+              }
+            ]
+          },
+          {
+            "id": "f2-m6-exam",
+            "title": "AVALIAÇÃO DO MÓDULO 6",
+            "kind": "exam",
+            "blocks": [
+              {
+                "title": "AVALIAÇÃO DO MÓDULO 6",
+                "body": "Situações práticas. Aprovação a partir de 70%. Revise o raciocínio após cada resposta.",
+                "consolidation": "module-exam",
+                "module": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f2-m7",
+        "title": "CONSTÂNCIA, SISTEMA DE VIDA E MISSÃO DE 90 DIAS",
+        "intro": "## POSICIONAMENTO\n\nEste módulo encerra a Fase II.\n\nAté agora o aluno trabalhou:\n\nexecução;\n\ncorpo;\n\ntrabalho;\n\ndinheiro;\n\ncomunicação;\n\nambiente.\n\nAgora precisa integrar tudo.",
+        "lessons": [
+          {
+            "id": "f2-m7-a1",
+            "title": "AULA 1 — VOCÊ NÃO PRECISA DE UMA VIDA PERFEITA. PRECISA DE UM SISTEMA.",
+            "kind": "lesson",
+            "lessonNumber": 1,
+            "blocks": [
+              {
+                "title": "AULA 1 — VOCÊ NÃO PRECISA DE UMA VIDA PERFEITA. PRECISA DE UM SISTEMA.",
+                "body": "Sistema é conjunto de regras e rotinas que reduz improviso.\n\nExemplo:\n\nhorário;\n\nplanejamento;\n\ntreino;\n\nestudo;\n\nrevisão;\n\norçamento."
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a2",
+            "title": "AULA 2 — OS PILARES DO HOMEM EM CONSOLIDAÇÃO",
+            "kind": "lesson",
+            "lessonNumber": 2,
+            "blocks": [
+              {
+                "title": "AULA 2 — OS PILARES DO HOMEM EM CONSOLIDAÇÃO",
+                "body": "Observe sete pilares:\n\n## 1. CORPO\n\n## 2. MENTE\n\n## 3. TRABALHO\n\n## 4. DINHEIRO\n\n## 5. PALAVRA\n\n## 6. AMBIENTE\n\n## 7. SERVIÇO/RESPONSABILIDADE\n\nNão é necessário maximizar todos ao mesmo tempo.\n\nO objetivo é impedir abandono completo."
+              },
+              {
+                "title": "FERRAMENTA — PAINEL DOS 7 PILARES",
+                "body": "",
+                "consolidation": "FERRAMENTA — PAINEL DOS 7 PILARES"
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a3",
+            "title": "AULA 3 — NÃO TENTE CRESCER EM SETE DIREÇÕES AO MESMO TEMPO",
+            "kind": "lesson",
+            "lessonNumber": 3,
+            "blocks": [
+              {
+                "title": "AULA 3 — NÃO TENTE CRESCER EM SETE DIREÇÕES AO MESMO TEMPO",
+                "body": "Escolha:\n\numa frente principal;\n\nduas secundárias;\n\nquatro em manutenção."
+              },
+              {
+                "title": "FERRAMENTA — FRENTE PRINCIPAL",
+                "body": "",
+                "consolidation": "FERRAMENTA — FRENTE PRINCIPAL"
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a4",
+            "title": "AULA 4 — O PODER DO CICLO DE 90 DIAS",
+            "kind": "lesson",
+            "lessonNumber": 4,
+            "blocks": [
+              {
+                "title": "AULA 4 — O PODER DO CICLO DE 90 DIAS",
+                "body": "Um ano parece distante.\n\nUma semana pode ser curta.\n\nNoventa dias são suficientes para construir resultado perceptível e curtos o bastante para manter foco."
+              },
+              {
+                "title": "MISSÃO 90 DIAS — ESTRUTURA",
+                "body": "Você definirá:\n\n1 meta principal.\n\n3 indicadores.\n\n3 hábitos.\n\n1 coisa que deve abandonar.\n\n1 habilidade a desenvolver.\n\n1 resultado concreto."
+              },
+              {
+                "title": "FERRAMENTA — QUARTEL-GENERAL 90D",
+                "body": "",
+                "consolidation": "FERRAMENTA — QUARTEL-GENERAL 90D"
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a5",
+            "title": "AULA 5 — DEFINA RESULTADO, NÃO APENAS DESEJO",
+            "kind": "lesson",
+            "lessonNumber": 5,
+            "blocks": [
+              {
+                "title": "AULA 5 — DEFINA RESULTADO, NÃO APENAS DESEJO",
+                "body": "Fraco:\n\n“Quero melhorar profissionalmente.”\n\nForte:\n\n“Até dia X vou concluir projeto Y.”\n\nFraco:\n\n“Quero ficar saudável.”\n\nMais concreto:\n\n“Treinarei X vezes por semana durante 90 dias.”"
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a6",
+            "title": "AULA 6 — INDICADORES",
+            "kind": "lesson",
+            "lessonNumber": 6,
+            "blocks": [
+              {
+                "title": "AULA 6 — INDICADORES",
+                "body": "Aquilo que não é observado tende a ser esquecido.\n\nIndicadores não precisam dominar a vida.\n\nMas precisam mostrar direção.\n\nExemplos:\n\ntreinos por semana;\n\nhoras de estudo;\n\nvalor poupado;\n\nprojetos entregues;\n\ndias de sono no horário."
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a7",
+            "title": "AULA 7 — CHECKPOINT DE 30 DIAS",
+            "kind": "lesson",
+            "lessonNumber": 7,
+            "blocks": [
+              {
+                "title": "AULA 7 — CHECKPOINT DE 30 DIAS",
+                "body": "Perguntas:\n\nEstou avançando?\n\nO sistema funciona?\n\nA meta continua válida?\n\nO que precisa ser ajustado?\n\nNão mudar objetivo toda semana por impaciência."
+              },
+              {
+                "title": "CHECKPOINT DE 30 DIAS",
+                "body": "",
+                "consolidation": "checkpoint",
+                "day": 30
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a8",
+            "title": "AULA 8 — CHECKPOINT DE 60 DIAS",
+            "kind": "lesson",
+            "lessonNumber": 8,
+            "blocks": [
+              {
+                "title": "AULA 8 — CHECKPOINT DE 60 DIAS",
+                "body": "Observar:\n\nfadiga;\n\nrelaxamento;\n\nresultado;\n\ndesvio."
+              },
+              {
+                "title": "CHECKPOINT DE 60 DIAS",
+                "body": "",
+                "consolidation": "checkpoint",
+                "day": 60
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a9",
+            "title": "AULA 9 — CHECKPOINT DE 90 DIAS",
+            "kind": "lesson",
+            "lessonNumber": 9,
+            "blocks": [
+              {
+                "title": "AULA 9 — CHECKPOINT DE 90 DIAS",
+                "body": "Perguntas:\n\nO que construí?\n\nQual evidência existe?\n\nO que aprendi?\n\nO que abandono?\n\nO que continua?"
+              },
+              {
+                "title": "CHECKPOINT DE 90 DIAS",
+                "body": "",
+                "consolidation": "checkpoint",
+                "day": 90
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a10",
+            "title": "AULA 10 — CONSTÂNCIA NÃO É PERFEIÇÃO",
+            "kind": "lesson",
+            "lessonNumber": 10,
+            "blocks": [
+              {
+                "title": "AULA 10 — CONSTÂNCIA NÃO É PERFEIÇÃO",
+                "body": "Uma sequência quebrada não significa fracasso.\n\nO perigo real é:\n\n“Já errei mesmo.”\n\ne transformar um erro em semana inteira."
+              },
+              {
+                "title": "REGRA 1–2",
+                "body": "Princípio do treinamento:\n\n> **Evite falhar duas vezes seguidas quando isso estiver sob seu controle.**\n\nPerdeu um treino?\n\nVolte no próximo.\n\nPerdeu um dia de estudo?\n\nVolte no próximo."
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a11",
+            "title": "AULA 11 — O PROTOCOLO DE RETORNO",
+            "kind": "lesson",
+            "lessonNumber": 11,
+            "blocks": [
+              {
+                "title": "AULA 11 — O PROTOCOLO DE RETORNO",
+                "body": "1. Reconheça.\n\n2. Descubra o gatilho.\n\n3. Corrija o ambiente.\n\n4. Execute a menor ação possível.\n\n5. Retorne ao plano normal."
+              },
+              {
+                "title": "FERRAMENTA — BOTÃO DE RETORNO",
+                "body": "",
+                "consolidation": "FERRAMENTA — BOTÃO DE RETORNO"
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-a12",
+            "title": "AULA 12 — QUEM VOCÊ SE TORNOU CAPAZ DE SER?",
+            "kind": "lesson",
+            "lessonNumber": 12,
+            "blocks": [
+              {
+                "title": "AULA 12 — QUEM VOCÊ SE TORNOU CAPAZ DE SER?",
+                "body": "A consolidação não termina porque o homem nunca mais terá problema.\n\nTermina quando ele possui ferramentas para continuar.\n\nAntes:\n\ndependia de impulso.\n\nAgora:\n\npossui sistema.\n\nAntes:\n\ncomeçava.\n\nAgora:\n\nsabe retornar.\n\nAntes:\n\nfalava.\n\nAgora:\n\nprocura evidência."
+              }
+            ]
+          },
+          {
+            "id": "f2-m7-challenge",
+            "title": "DESAFIO — 30 DIAS DE CONSOLIDAÇÃO TOTAL",
+            "kind": "challenge",
+            "blocks": [
+              {
+                "title": "DESAFIO — 30 DIAS DE CONSOLIDAÇÃO TOTAL",
+                "body": "Registre ações realmente executadas. Em dias difíceis, utilize o mínimo ou a manutenção planejada.",
+                "consolidation": "module-challenge",
+                "module": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "before": [
+      {
+        "id": "f2-entrada",
+        "title": "ÍNDICE DE CONSOLIDAÇÃO",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "ÍNDICE DE CONSOLIDAÇÃO",
+            "body": "Observe sua rotina recente. Este é um retrato de suas respostas, não uma medida de valor pessoal.",
+            "consolidation": "diagnostic"
+          }
+        ]
+      },
+      {
+        "id": "f2-contrato",
+        "title": "CONTRATO DA CONSOLIDAÇÃO",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "CONTRATO DA CONSOLIDAÇÃO",
+            "body": "> Na Fase I eu aprendi a enxergar.\n>\n> Na Fase II eu me comprometo a executar.\n>\n> Não utilizarei falta de motivação como desculpa permanente.\n>\n> Não fingirei progresso.\n>\n> Não marcarei atividades que não executei.\n>\n> Não transformarei um erro em abandono.\n>\n> Construirei evidências.\n>\n> Meu objetivo não será parecer disciplinado.\n>\n> Meu objetivo será tornar minha rotina mais disciplinada.",
+            "consolidation": "contract"
+          }
+        ]
+      }
+    ],
+    "passages": [
+      {
+        "id": "f2-passagem-1",
+        "title": "7 DIAS DE EXECUÇÃO",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "7 DIAS DE EXECUÇÃO",
+            "body": "Cumpra seus mínimos pessoais durante sete dias.",
+            "consolidation": "passage-days",
+            "days": 7,
+            "passage": 1
+          }
+        ]
+      },
+      {
+        "id": "f2-passagem-2",
+        "title": "CORPO SOB COMANDO",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "CORPO SOB COMANDO",
+            "body": "Cumpra uma semana organizada de movimento, sono e apresentação.",
+            "consolidation": "passage-days",
+            "days": 7,
+            "passage": 2
+          }
+        ]
+      },
+      {
+        "id": "f2-passagem-3",
+        "title": "PRODUZA VALOR",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "PRODUZA VALOR",
+            "body": "Entregue algo real no trabalho ou estudo.",
+            "consolidation": "passage",
+            "days": 0,
+            "passage": 3
+          }
+        ]
+      },
+      {
+        "id": "f2-passagem-4",
+        "title": "ENCARE SEUS NÚMEROS",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "ENCARE SEUS NÚMEROS",
+            "body": "Revise seu Raio-X Financeiro completo e registre o que aprendeu.",
+            "consolidation": "financial-passage",
+            "days": 0,
+            "passage": 4
+          }
+        ]
+      },
+      {
+        "id": "f2-passagem-5",
+        "title": "UMA CONVERSA QUE VOCÊ ESTAVA EVITANDO",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "UMA CONVERSA QUE VOCÊ ESTAVA EVITANDO",
+            "body": "Realize uma conversa assertiva e segura. Registre apenas o aprendizado, sem informações privadas.",
+            "consolidation": "passage",
+            "days": 0,
+            "passage": 5
+          }
+        ]
+      },
+      {
+        "id": "f2-passagem-6",
+        "title": "REORGANIZE O CAMPO",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "REORGANIZE O CAMPO",
+            "body": "Elimine uma influência negativa e fortaleça uma positiva.",
+            "consolidation": "passage",
+            "days": 0,
+            "passage": 6
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "id": "f2-prova",
+        "title": "PROVA FINAL — FASE II",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "PROVA FINAL — FASE II",
+            "body": "40 situações e decisões para integrar os sete módulos. Aprovação: 70%.",
+            "consolidation": "final-exam"
+          }
+        ]
+      },
+      {
+        "id": "f2-saida",
+        "title": "DIAGNÓSTICO DE SAÍDA",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "DIAGNÓSTICO DE SAÍDA",
+            "body": "Responda às mesmas afirmações de entrada para comparar suas respostas atuais.",
+            "consolidation": "exit"
+          }
+        ]
+      },
+      {
+        "id": "f2-dossie",
+        "title": "DOSSIÊ DA CONSOLIDAÇÃO",
+        "kind": "phase2",
+        "blocks": [
+          {
+            "title": "DOSSIÊ DA CONSOLIDAÇÃO",
+            "body": "O QUE VOCÊ TRANSFORMOU EM SISTEMA",
+            "consolidation": "dossier"
+          }
+        ]
+      }
+    ],
+    "ending": "## A CONSOLIDAÇÃO FOI CONCLUÍDA\n\nNa Jornada da Forja você aprendeu a enxergar.\n\nNa Consolidação, precisou executar.\n\nIsso muda tudo.\n\nÉ fácil concordar com disciplina.\n\nDifícil é levantar quando não existe vontade.\n\nÉ fácil falar de saúde.\n\nDifícil é organizar a rotina.\n\nÉ fácil falar de competência.\n\nDifícil é estudar quando ninguém cobra.\n\nÉ fácil falar de dinheiro.\n\nDifícil é dizer não ao impulso.\n\nÉ fácil falar de postura.\n\nDifícil é sustentar uma conversa desconfortável.\n\nÉ fácil começar.\n\nDifícil é continuar.\n\nEssa fase não tinha como objetivo criar um homem perfeito.\n\nTinha como objetivo criar algo mais importante:\n\n## UM HOMEM COM SISTEMA.\n\nUm homem que sabe:\n\ncomeçar;\n\nexecutar;\n\nmedir;\n\ncorrigir;\n\nretornar;\n\ncontinuar.\n\nVocê não precisa depender permanentemente de entusiasmo.\n\nAgora possui ferramentas.\n\nNão precisa esperar que sua vida fique fácil.\n\nPrecisa tornar-se mais preparado para lidar com ela.\n\n## FRASE FINAL\n\n> **A Fase I acordou você.**\n>\n> **A Fase II colocou você de pé.**\n>\n> **Agora queremos descobrir até onde um homem disciplinado consegue construir.**\n\n## FASE II — CONCLUÍDA.\n\n## A FORJA CONTINUA."
   }
 }
