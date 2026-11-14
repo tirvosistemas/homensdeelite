@@ -1,4 +1,4 @@
-import {esc,bar,markdown} from './ui.js';
+import {esc,bar} from './ui.js';
 import {xp,rank,streak,gadoScore,grade} from './state.js';
 import {areaResults,missionFields} from './phase-data.js';
 const missing='<p class="muted">Sem registro disponível. Os dados antigos não são inventados nem exigidos novamente.</p>';

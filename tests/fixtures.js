@@ -1,4 +1,4 @@
-import {fresh,dateKey} from '../src/state.js';
+import {fresh} from '../src/state.js';
 import {definition,requiredActivity} from '../src/widgets.js';
 export function seedUnit(s,u,mi){s.completed[u.id]=true;u.blocks.forEach((b,i)=>{const a=definition(b,mi),key=u.id+'-b'+i;if(!requiredActivity(a))return;s.completed[key]=true;const old=s.answers[key]||{};
  if(a.type==='quiz')s.answers[key]={...old,values:a.questions.map(q=>q[2]),result:true};

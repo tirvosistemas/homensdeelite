@@ -31,6 +31,7 @@ export function validateState(value){
   if(a.initialValues!==undefined&&(!Array.isArray(a.initialValues)||a.initialValues.length!==15||!a.initialValues.every(v=>Number.isInteger(v)&&v>=0&&v<=3)))throw Error('Índice inicial inválido.');
   for(const k of ['started','accepted','recorded'])if(a[k]!==undefined&&(!Number.isFinite(a[k])||a[k]<0))throw Error('Data de atividade inválida.');
   if(a.logged!==undefined&&(!object(a.logged)||!Object.entries(a.logged).every(([k,v])=>['0','1','2'].includes(k)&&Number.isFinite(v)&&v>=0)))throw Error('Registro diário inválido.');
+  if(a.history!==undefined&&(!Array.isArray(a.history)||!a.history.every(h=>object(h)&&Number.isFinite(h.started)&&object(h.fields)&&Object.values(h.fields).every(v=>typeof v==='string')&&(h.logged===undefined||(object(h.logged)&&Object.values(h.logged).every(Number.isFinite))))))throw Error('Histórico de missão inválido.');
   if(a.index!==undefined&&(!Number.isInteger(a.index)||a.index<0))throw Error('Índice inválido.');
   if(a.people!==undefined&&(!Array.isArray(a.people)||!a.people.every(p=>object(p)&&typeof p.name==='string'&&['Fortalece','Neutro','Drena'].includes(p.group))))throw Error('Influências inválidas.');
   if(a.rows!==undefined&&(!Array.isArray(a.rows)||!a.rows.every(r=>Array.isArray(r)&&r.length===4&&r.every(v=>Number.isInteger(v)&&v>=0&&v<=100))))throw Error('Semana inválida.');
