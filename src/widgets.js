@@ -1,11 +1,12 @@
+import {mountExpansionWidget, expansionScaleResult, initialSnapshot, enhancedFormSummary, bindEnhancedForm} from './expansion-widgets.js';
 import {activities,activityFor} from './activities.js';
 import {exams,finalExam} from './exams.js';
 import {esc,bar,field} from './ui.js';
 import {grade,gadoScore,dateKey,daysSince,challengeStats} from './state.js';
 let ctx;
 export const setContext=c=>ctx=c;
-export function definition(block,m){if(block.title.startsWith('AVALIAÇÃO'))return {type:'quiz',title:'Avaliação de domínio',questions:exams[m],exam:true};if(block.title.startsWith('PROVA FINAL'))return {type:'quiz',title:'Prova final da Fase I',questions:finalExam,exam:true,final:true};return activityFor(block.title);}
-export const requiredActivity=a=>a&&!['comparison','alerts','pledge'].includes(a.type);
+export function definition(block,m){if(block.reference)return {type:'reference',title:block.title,target:block.reference};if(block.reflection)return {type:'form',title:'Meu próximo passo',fields:[block.reflection]};if(block.title.startsWith('AVALIAÇÃO'))return {type:'quiz',title:'Avaliação de domínio',questions:exams[m],exam:true};if(block.title.startsWith('PROVA FINAL'))return {type:'quiz',title:'Prova final da Fase I',questions:finalExam,exam:true,final:true};const a=activityFor(block.title);return a?{...a,...(block.additionalSignals?{additionalSignals:block.additionalSignals}:{})}:a;}
+export const requiredActivity=a=>a&&!['comparison','alerts','pledge','signals','translator','reference'].includes(a.type);
 export const widgetShell=(key)=>`<div class="widget" data-widget="${esc(key)}"></div>`;
 const educational='<p class="muted"><small>Ferramenta educacional de autorreflexão. Não é diagnóstico médico ou psicológico.</small></p>';
 const choice=(text,index,selected=false)=>`<button type="button" class="choice ${selected?'selected':''}" data-choice="${index}" aria-pressed="${selected}"><span class="choice-index">${index+1}</span>${esc(text)}</button>`;
@@ -15,7 +16,7 @@ function title(a){return `<div class="eyebrow">${a.exam?'Avaliação de domínio
 function answer(key,defaults={}){if(!ctx.s.answers[key]||typeof ctx.s.answers[key]!=='object')ctx.s.answers[key]={...defaults};return ctx.s.answers[key];}
 function finish(a,points=10){ctx.completeActivity(a.key,points);}
 export function mountWidgets(container,unit){unit.blocks.forEach((b,i)=>{const a=definition(b,unit.moduleIndex);if(!a)return;const key=unit.id+'-b'+i;const el=container.querySelector(`[data-widget="${key}"]`);if(el)mount(el,{...a,key,unit});});}
-function mount(el,a){const s=answer(a.key);let timer;
+function mount(el,a){const s=answer(a.key);if(mountExpansionWidget(el,a,s,ctx))return;let timer;
  const draw=()=>{clearInterval(timer);el.innerHTML=title(a)+render(a,s);bind();};
  const save=()=>ctx.save();
  function bind(){
@@ -34,7 +35,8 @@ function mount(el,a){const s=answer(a.key);let timer;
   const done=el.querySelector('[data-finish]');if(done)done.onclick=()=>{
    const length=a.items?.length||a.questions?.length;
    if(!s.values||Array.from({length},(_,i)=>s.values[i]).some(x=>!Number.isInteger(x)))return;
-   s.result=true;
+   if(a.result==='entryComparison'&&!initialSnapshot(ctx)){ctx.toast('Responda primeiro ao Espelho da Arrancada.');return;}
+   s.result=true;if(a.baseline&&!s.baseline)s.baseline=[...s.values];
    if(a.type==='scale')finish(a);
    else{const g=grade(a.questions,s.values);if(!a.exam||g.passed)finish(a,a.exam?100:10);else ctx.toast('Revise as explicações e tente novamente.');}
    save();draw();
@@ -51,6 +53,7 @@ function mount(el,a){const s=answer(a.key);let timer;
   if(a.type==='promises')bindPromises();
   if(a.type==='pause')bindPause();
   if(a.type==='brotherhood')bindBrotherhood();
+  bindEnhancedForm(el,a,s);
   const pledge=el.querySelector('[data-pledge]');if(pledge)pledge.onclick=()=>{ctx.pledge();};
  }
  function bindChallenge(){
@@ -96,9 +99,9 @@ function mount(el,a){const s=answer(a.key);let timer;
 }
 function render(a,s){
  if(a.type==='quiz'||a.type==='scale')return renderQuestions(a,s);
- if(a.type==='form')return `<p>Registre com honestidade. Se um campo não se aplicar, explique brevemente.</p><form class="fields">${a.fields.map((f,i)=>field(f,'f'+i,s.fields?.['f'+i]||'','textarea')).join('')}${a.count?`<label class="field">Quantos desses princípios você já demonstra hoje?<select name="count">${Array.from({length:6},(_,i)=>`<option ${String(i)===s.fields?.count?'selected':''}>${i}</option>`).join('')}</select></label>`:''}<button class="primary">${esc(a.button||'Salvar reflexão')} · +10 XP</button></form>${s.saved?`<dl class="saved-summary"><h3>${esc(a.title)}</h3>${a.fields.map((f,i)=>`<dt>${esc(f)}</dt><dd>${esc(s.saved['f'+i])}</dd>`).join('')}</dl>`:''}`;
+ if(a.type==='form')return `<p>Registre com honestidade. Se um campo não se aplicar, explique brevemente.</p><form class="fields ${a.columns?'two-col':''}">${a.fields.map((f,i)=>field(f,'f'+i,s.fields?.['f'+i]||'','textarea')).join('')}${a.count?`<label class="field">Quantos desses princípios você já demonstra hoje?<select name="count">${Array.from({length:6},(_,i)=>`<option ${String(i)===s.fields?.count?'selected':''}>${i}</option>`).join('')}</select></label>`:''}<button class="primary">${esc(a.button||'Salvar reflexão')} · +10 XP</button></form>${s.saved?`<dl class="saved-summary"><h3>${esc(a.title)}</h3>${a.fields.map((f,i)=>`<dt>${esc(f)}</dt><dd>${esc(s.saved['f'+i])}</dd>`).join('')}</dl>${enhancedFormSummary(a,s)}`:''}`;
  if(a.type==='comparison')return `<div class="two-col"><div class="comparison"><h3>Consumidor</h3>${a.pairs.map(p=>`<p>${esc(p[0])}</p>`).join('')}</div><div class="comparison"><h3>Construtor</h3>${a.pairs.map(p=>`<p>${esc(p[1])}</p>`).join('')}</div></div>`;
- if(a.type==='checklist'){const count=(s.checked||[]).filter(Boolean).length;return a.items.map((v,i)=>`<label class="check-row"><input type="checkbox" data-check="${i}" ${s.checked?.[i]?'checked':''}>${esc(v)}</label>`).join('')+`<button data-check-done class="primary">Concluir check-up</button>${s.result?`<div class="feedback">Você marcou ${count} de ${a.items.length} áreas. Próximas áreas a desenvolver: ${esc(a.items.filter((_,i)=>!s.checked?.[i]).slice(0,3).join(', ')||'mantenha os cuidados que já pratica')}.</div>`:''}`;}
+ if(a.type==='checklist'){const count=(s.checked||[]).filter(Boolean).length;return a.items.map((v,i)=>`<label class="check-row"><input type="checkbox" data-check="${i}" ${s.checked?.[i]?'checked':''}>${esc(v)}</label>`).join('')+`<button data-check-done class="primary">Concluir check-up</button>${s.result?`<div class="feedback">Você marcou ${count} de ${a.items.length} áreas. Próximas áreas a desenvolver ou conversar: ${esc(a.items.filter((_,i)=>!s.checked?.[i]).slice(0,3).join(', ')||'mantenha os cuidados que já pratica')}.</div>`:''}`;}
  if(a.type==='challenge')return renderChallenge(a,s);
  if(a.type==='wordweek')return renderWeek(s);
  if(a.type==='promises'){const counts=s.counts||[0,0,0,0];return `<p>Considere categorias distintas: cumpridas no prazo, atrasadas sem aviso e abandonadas.</p><div class="two-col">${['Promessas importantes feitas','Cumpridas no prazo','Atrasadas sem avisar','Abandonadas'].map((l,j)=>`<label class="field">${l}<select data-number="${j}">${Array.from({length:51},(_,i)=>`<option value="${i}" ${counts[j]===i?'selected':''}>${i}</option>`).join('')}</select></label>`).join('')}</div><button class="primary" data-calculate>Calcular índice</button>${s.result?`<div class="feedback"><strong>${counts[0]?Math.round(counts[1]/counts[0]*100):0}% de palavra cumprida</strong><p>Seu objetivo não é parecer confiável. É tornar seu histórico confiável.</p></div>`:''}`;}
@@ -117,7 +120,7 @@ function renderQuestions(a,s){
  return `${!isQuiz?educational:''}<div class="section-head"><small>Pergunta ${i+1} de ${all.length}</small><small>${isQuiz&&a.exam?'Aprovação: 70%':'Responda no seu ritmo'}</small></div>${bar((i+1)/all.length*100)}<p style="margin-top:22px;font-size:17px"><strong>${esc(isQuiz?q[0]:q)}</strong></p>${buttons}${isQuiz&&s.revealed?`<div class="feedback ${selected===q[2]?'':'warning'}"><strong>${selected===q[2]?'Boa decisão.':'Observe o raciocínio.'}</strong><br>${esc(q[3])}<br>Resposta recomendada: ${esc(q[1][q[2]])}</div>`:''}<div class="widget-nav"><button data-prev ${i===0?'disabled':''}>← Anterior</button>${i<all.length-1?`<button data-next class="primary" ${selected===undefined?'disabled':''}>Próxima →</button>`:`<button data-finish class="primary" ${selected===undefined?'disabled':''}>Ver resultado</button>`}</div>`;
 }
 function quizResult(a,s){const g=grade(a.questions,s.values||[]);const groups=a.final?exams.map((_,m)=>{const indices=a.questions.map((q,i)=>q[4]===m?i:-1).filter(i=>i>=0);return {m,score:indices.filter(i=>s.values[i]===a.questions[i][2]).length,of:indices.length};}).sort((a,b)=>b.score-a.score):[];return `<div class="result-score">${g.percent}%</div><h3>${g.passed?'Domínio demonstrado':'Revise alguns conceitos'}</h3><p>${g.correct} acertos · ${g.total-g.correct} pontos para revisar. ${a.exam?(g.passed?'Aprovado · recompensa de 100 XP concedida uma única vez.':'Aprovação a partir de 70%. Você pode refazer.'): 'Atividade concluída · +10 XP na primeira conclusão.'}</p>${groups.length?`<div class="feedback">Melhor desempenho: módulo ${groups[0].m+1}.<br>Prioridade de revisão: ${groups.at(-1).score===groups.at(-1).of?'nenhuma — todos os módulos com domínio completo':`módulo ${groups.at(-1).m+1}`}.</div>`:''}<div class="reading">${a.questions.map((q,i)=>`<details><summary>${s.values[i]===q[2]?'✓':'↻'} ${esc(q[0])}</summary><p>Sua resposta: ${esc(q[1][s.values[i]])}</p><p>Recomendação: ${esc(q[1][q[2]])}</p><p>${esc(q[3])}</p></details>`).join('')}</div><button data-redo>Refazer avaliação</button>`;}
-function scaleResult(a,s){const values=s.values||[];let content='';const sorted=a.items.map((name,i)=>({name,value:values[i],max:a.options.length-1})).sort((a,b)=>b.value-a.value);
+function scaleResult(a,s){const extra=expansionScaleResult(a,s,ctx);if(extra!==null)return extra+(a.baseline?'':'<button data-redo>Refazer reflexão</button>');const values=s.values||[];let content='';const sorted=a.items.map((name,i)=>({name,value:values[i],max:a.options.length-1})).sort((a,b)=>b.value-a.value);
  if(a.result==='gado'){const g=gadoScore(values);const bands=[['Baixa dependência de validação','Você demonstra relativa independência nessa área. Continue observando pontos isolados, porque ninguém está completamente livre de comportamentos de validação.'],['Pontos de atenção','Existem comportamentos que podem estar entregando parte da sua direção à aprovação externa. Este é um bom momento para corrigir antes que se tornem padrão.'],['Dependência significativa de validação','Sua rotina e emoções provavelmente já são afetadas por busca de aprovação. O objetivo agora é reconstruir limites, direção e capacidade de tolerar rejeição.'],['Modo Gado em alta intensidade','Existe forte tendência de abandonar a si mesmo em busca de atenção ou relacionamento. Não use o resultado para se humilhar. Use-o para identificar exatamente onde sua reconstrução deve começar.']];content=`<div class="result-score">${g.total}<small> / 45</small></div><h3>${bands[g.band][0]}</h3><p>${bands[g.band][1]}</p><h3>Radar do Modo Gado</h3>${resultRows(g.areas.map(v=>({...v,max:9})))}<div class="feedback">Áreas que merecem atenção: ${esc(g.areas.filter(x=>x.value>0).slice(0,3).map(x=>x.name).join(', ')||'nenhuma pontuação elevada neste registro')}.</div>`;}
  else if(a.result==='compatibility'){content=`<h3>Áreas que você ainda precisa conhecer melhor</h3><p>${esc(a.items.filter((_,i)=>values[i]===1).join(', ')||'Você não marcou áreas desconhecidas. Continue observando ao longo do tempo.')}</p><h3>Possíveis incompatibilidades</h3><p>${esc(a.items.filter((_,i)=>values[i]===2).join(', ')||'Nenhuma marcada.')}</p><p>Este registro não é uma nota para outra pessoa. Use-o para orientar diálogo e observação.</p>`;}
  else if(a.result==='reciprocity'){const sum=values.reduce((a,b)=>a+b,0);content=`<h3>${sum<=5?'Reciprocidade baixa':sum<=11?'Reciprocidade inconclusiva':'Reciprocidade consistente'}</h3><p>Seu registro aponta ${sum} de 16 pontos de reciprocidade percebida. Esta leitura educacional não substitui observação ao longo do tempo, contexto e conversa.</p>${resultRows(sorted)}`;}

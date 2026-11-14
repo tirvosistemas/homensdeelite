@@ -105,6 +105,35 @@ def expand(course):
    report.append({'module':number,'lesson':n,'status':status,'id':unit['id'],'title':name})
   lessons=list(original.values())+extra
   module['lessons']=sorted(lessons,key=lambda u:u['lessonNumber'])+[u for u in module['lessons'] if u['kind']!='lesson']
+ # Add practical components specified in prose and reuse existing tools via links.
+ def append(module,n,title,**data):
+  unit=next(u for u in course['modules'][module-1]['lessons'] if u.get('lessonNumber')==n)
+  unit['blocks'].append({'title':title,'body':'','interactive':True,'expansion':True,**data})
+ append(2,8,'FERRAMENTA — AUDITORIA DO SONO')
+ append(3,10,'FERRAMENTA — CHECKPOINTS DE 90 DIAS')
+ append(5,12,'FERRAMENTA — CONVERSAS ANTES DO COMPROMISSO')
+ for m,n,target,label in [(1,8,'m1-u2','Conselho dos cinco homens'),(1,10,'m1-u4','Força com controle'),(2,11,'m2-u1','Meus cinco planos SE/ENTÃO'),(3,7,'m3-u4','As quatro caixas'),(3,8,'m3-u4','Auditoria de ostentação'),(3,10,'m3-u5','Meu mapa de 90 dias'),(4,5,'m4-u2','Treinador do não'),(4,8,'m4-u4','Matriz de autossuficiência'),(4,10,'m4-u5','Semana da palavra'),(5,3,'m5-u1','Sinais de caráter'),(5,5,'m5-u1','Radar de reciprocidade'),(6,7,'m6-u3','Auditoria da irmandade'),(6,10,'m6-u5','Protocolo de retorno')]:
+  append(m,n,'Retomar — '+label,reference=target)
+ # A small personal application bridges reading and practice in otherwise text-only new lessons.
+ prompts={
+ (1,10):'Em qual situação preciso trocar força sobre os outros por domínio sobre mim?',
+ (2,9):'Qual cuidado concreto com meu corpo vai sustentar minhas responsabilidades nesta semana?',
+ (2,11):'Qual dos cinco planos SE/ENTÃO vou praticar primeiro e em que situação?',
+ (3,5):'Qual entrega vou melhorar mesmo que ninguém confira?',
+ (3,7):'Qual decisão financeira preciso reorganizar entre sobrevivência, construção, proteção e lazer?',
+ (4,5):'Qual pedido preciso recusar com clareza e respeito?',
+ (4,7):'Que informação confiada a mim preciso proteger e como farei isso?',
+ (4,8):'Qual habilidade prática vou aprender, com orientação confiável, nesta semana?',
+ (4,9):'Qual decisão correta preciso tomar mesmo sem possibilidade de ser observado?',
+ (4,10):'Que reparação ou aviso de atraso preciso realizar antes do próximo compromisso?',
+ (5,7):'Como vou demonstrar interesse com clareza e respeitar a liberdade da resposta?',
+ (5,8):'Qual iniciativa de responsabilidade posso assumir ouvindo também a outra pessoa?',
+ (5,10):'Que aspecto ainda preciso conhecer antes de assumir um compromisso maior?',
+ (6,6):'Que amizade posso fortalecer com presença, apoio e confronto respeitoso?',
+ (6,8):'Como vou oferecer orientação somente quando houver abertura?',
+ (6,9):'Qual é meu mínimo viável para um dia sem motivação?'
+ }
+ for (m,n),prompt in prompts.items():append(m,n,'Aplicação — Próximo passo',reflection=prompt)
  # Additional final reflections retain existing IDs/notes and append blocks.
  final=course['modules'][5]
  mirror=next(u for u in final['lessons'] if u['kind']=='reflection')

@@ -1,3 +1,4 @@
+import {expansionExams} from './expansion-exams.js';
 // Questões complementares derivadas dos temas do conteúdo oficial.
 // [enunciado, alternativas, índice correto, explicação]
 export const exams=[
@@ -62,4 +63,7 @@ export const exams=[
 ['Ao melhorar de vida, o treinamento recomenda:',['Abandonar os sistemas que ajudaram.','Manter constância e descanso consciente.','Acreditar que nunca mais falhará.'],1,'Resultados precisam de manutenção; evolução continua.']
 ]
 ];
-export const finalExam=exams.flatMap((qs,m)=>qs.filter((_,i)=>[1,3,5,7].includes(i)).map(q=>[...q,m]));
+const originalFinal=exams.flatMap((qs,m)=>qs.filter((_,i)=>[1,3,5,7].includes(i)).map(q=>[...q,m]));
+exams.forEach((questions,m)=>questions.push(...expansionExams[m]));
+// Keep the original 24 answer positions; add one scenario from each module.
+export const finalExam=[...originalFinal,...expansionExams.map((qs,m)=>[...qs[0],m])];

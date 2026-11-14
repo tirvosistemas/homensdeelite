@@ -29,10 +29,38 @@ export function validateState(value){
  }
  if(value.last!==null&&typeof value.last!=='string')throw Error('Última aula inválida.');
  if(typeof value.pledged!=='boolean')throw Error('Código de conduta inválido.');
- return {...fresh(),...value};
+ return {...fresh(),...value,curriculumRevision:value.curriculumRevision||1};
 }
 export function loadState(storage){try{const raw=storage.getItem(KEY);return {state:raw?validateState(JSON.parse(raw)):fresh(),error:null}}catch(e){return {state:fresh(),error:'Não foi possível carregar o progresso local. Exporte seus dados antes de limpar o navegador.'}}}
 export function saveState(storage,state){try{storage.setItem(KEY,JSON.stringify(state));return true}catch{return false}}
 export function grade(questions,answers){const correct=questions.reduce((n,q,i)=>n+(answers[i]===q[2]?1:0),0);return {correct,total:questions.length,percent:Math.round(correct/questions.length*100),passed:correct/questions.length>=.7};}
 export const gadoGroups=[['Carência e ansiedade',[4,5,13]],['Falta de limites',[2,6,11]],['Idealização e insistência',[1,8,14]],['Validação e aparência',[3,7,12]],['Centralidade do relacionamento',[0,9,10]]];
 export function gadoScore(answers){const total=answers.reduce((a,b)=>a+b,0);return {total,band:total<=10?0:total<=20?1:total<=30?2:3,areas:gadoGroups.map(([name,indices])=>({name,value:indices.reduce((n,i)=>n+answers[i],0)})).sort((a,b)=>b.value-a.value)};}
+
+// Expansion migration preserves answer positions, notes and earned XP.
+export function reconcileCurriculum(s,course,definitions){
+ const units=course.modules.flatMap(m=>m.lessons);
+ const revision=s.curriculumRevision||1;
+ if(revision<(course.revision||1)){
+  for(const u of units)if(u.blocks.some(b=>b.expansion))delete s.completed[u.id];
+ }
+ for(const {key,definition:a,unit} of definitions){
+  if(!a)continue;
+  const saved=s.answers[key];let valid=true;
+  if(a.type==='quiz'||a.type==='scale'){
+   const count=(a.questions||a.items).length;
+   const firstMissing=Array.from({length:count},(_,i)=>i).find(i=>!Number.isInteger(saved?.values?.[i]));
+   if(firstMissing!==undefined){valid=false;if(saved){saved.result=false;saved.index=firstMissing;saved.revealed=false;}}
+  }
+  if(a.type==='form')valid=!!saved?.saved&&a.fields.every((_,i)=>String(saved.saved['f'+i]||'').trim());
+  if(a.type==='challenge'){
+   const c=s.challenges[key];
+   if(c){c.rows=Array.from({length:a.days},(_,i)=>Array.from({length:a.items.length},(_,j)=>c.rows[i]?.[j]===true));valid=c.rows.every(r=>r.every(Boolean));}else valid=false;
+  }
+  if(!valid){delete s.completed[key];delete s.completed[unit.id];}
+ }
+ const pledge=units.find(u=>u.kind==='pledge');
+ if(units.some(u=>u.kind!=='pledge'&&!s.completed[u.id])){s.pledged=false;if(pledge)delete s.completed[pledge.id];}
+ s.curriculumRevision=course.revision||1;
+ return s;
+}

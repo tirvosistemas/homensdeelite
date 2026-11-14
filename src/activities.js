@@ -1,3 +1,4 @@
+import {expansionActivities} from './expansion-activities.js';
 const form=(match,title,fields,extra={})=>({match,title,type:'form',fields,...extra});
 const scale=(match,title,items,options,extra={})=>({match,title,type:'scale',items,options,...extra});
 const challenge=(match,days,items,medal)=>({match,title:match,type:'challenge',days,items,medal});
@@ -58,4 +59,8 @@ export const activities=[
  form('FERRAMENTA — O ESPELHO','Minha declaração pessoal',['O homem que sou hoje','O homem que preciso me tornar','O comportamento que termina agora','A disciplina que começa agora','Minha missão nos próximos 90 dias']),
  {match:'O CÓDIGO DOS HOMENS',title:'Eu assumo este código',type:'pledge'}
 ];
-export const activityFor=title=>activities.find(a=>title.includes(a.match));
+// Preserve old field/choice indices so existing answers keep their meaning.
+activities.find(a=>a.match==='SE / ENTÃO').fields.push('Regra 4 — SE','Regra 4 — ENTÃO','Regra 5 — SE','Regra 5 — ENTÃO');
+activities.find(a=>a.match==='21 DIAS DE DOMÍNIO').items.push('Autocontrole digital','Consumo consciente','Promessa diária cumprida');
+activities.find(a=>a.match==='MATRIZ DE AUTOSSUFICIÊNCIA').items.push('Cozinha — preparar refeições','Primeiros socorros — buscar formação adequada','Automóvel — quando aplicável','Viagem — planejar com autonomia','Segurança doméstica básica');
+export const activityFor=title=>[...expansionActivities,...activities].find(a=>title.includes(a.match));

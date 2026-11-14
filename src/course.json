@@ -354,6 +354,13 @@
               "body": "",
               "interactive": true,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Conselho dos cinco homens",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m1-u2"
             }
           ],
           "lessonNumber": 8
@@ -394,6 +401,20 @@
               "body": "A força precisa caminhar com controle, responsabilidade e respeito.\n\nMensagem central:\n\n> **Homem forte não é o homem que consegue dominar os outros. É aquele que primeiro consegue dominar a si mesmo.**\n\nproteção;\n\nresponsabilidade;\n\nfirmeza;\n\ncoragem;\n\ndisciplina;\n\ncapacidade;\n\nrespeito;\n\nlimites.\n\nDistinguir de:\n\ncontrole;\n\nviolência;\n\narrogância;\n\nhumilhação;\n\nciúme possessivo;\n\nautoritarismo.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Força com controle",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m1-u4"
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Em qual situação preciso trocar força sobre os outros por domínio sobre mim?"
             }
           ],
           "lessonNumber": 10
@@ -661,6 +682,12 @@
               "body": "disciplina também significa dormir.\n\nNão transformar exaustão em medalha.\n\nObserve sua rotina:\n\nhora de dormir;\n\nhora de levantar;\n\ncelular na cama;\n\ncafeína tarde;\n\nambiente;\n\nregularidade.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "FERRAMENTA — AUDITORIA DO SONO",
+              "body": "",
+              "interactive": true,
+              "expansion": true
             }
           ],
           "lessonNumber": 8
@@ -675,6 +702,13 @@
               "body": "força;\n\nmobilidade;\n\ncapacidade cardiovascular;\n\nalimentação;\n\nhigiene;\n\nsaúde preventiva;\n\npostura.\n\nCuidar do corpo não exige transformá-lo em objeto de culto.\n\nCorpo é instrumento da missão.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual cuidado concreto com meu corpo vai sustentar minhas responsabilidades nesta semana?"
             }
           ],
           "lessonNumber": 9
@@ -709,6 +743,20 @@
               "body": "Construa cinco respostas antecipadas para momentos de pressão.\n\nExemplo:\n\nSE eu ficar ansioso esperando mensagem,\n\nENTÃO volto à minha tarefa por 30 minutos antes de olhar o telefone.\n\nSE meu amigo insistir para eu beber mais,\n\nENTÃO respondo que encerrei.\n\nSE eu perder um treino,\n\nENTÃO faço o próximo sem tentar “compensar” exageradamente.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Meus cinco planos SE/ENTÃO",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m2-u1"
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual dos cinco planos SE/ENTÃO vou praticar primeiro e em que situação?"
             }
           ],
           "lessonNumber": 11
@@ -881,6 +929,13 @@
               "body": "atraso;\n\ndesculpa;\n\ntrabalho pela metade;\n\ndependência de fiscalização.\n\nPergunta:\n\n> “Se ninguém conferir seu trabalho, sua qualidade cai?”",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual entrega vou melhorar mesmo que ninguém confira?"
             }
           ],
           "lessonNumber": 5
@@ -915,6 +970,20 @@
               "body": "Use as quatro caixas: sobrevivência, construção, proteção e lazer.\n\ndívida;\n\nreserva;\n\nconsumo;\n\naparência;\n\nemergência;\n\nplanejamento.\n\nO foco aqui é organização financeira, não a indicação de investimentos específicos.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — As quatro caixas",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m3-u4"
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual decisão financeira preciso reorganizar entre sobrevivência, construção, proteção e lazer?"
             }
           ],
           "lessonNumber": 7
@@ -935,6 +1004,13 @@
               "body": "",
               "interactive": true,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Auditoria de ostentação",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m3-u4"
             }
           ],
           "lessonNumber": 8
@@ -969,6 +1045,19 @@
               "body": "Retome sua meta de 90 dias e observe os resultados nos marcos:\n\nDia 30.\n\nDia 60.\n\nDia 90.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "FERRAMENTA — CHECKPOINTS DE 90 DIAS",
+              "body": "",
+              "interactive": true,
+              "expansion": true
+            },
+            {
+              "title": "Retomar — Meu mapa de 90 dias",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m3-u5"
             }
           ],
           "lessonNumber": 10
@@ -1166,6 +1255,20 @@
               "body": "Pratique dizer não com respeito em situações de:\n\ndinheiro;\n\nfamília;\n\nrelacionamento;\n\ntrabalho;\n\namizades;\n\npressão social.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Treinador do não",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m4-u2"
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual pedido preciso recusar com clareza e respeito?"
             }
           ],
           "lessonNumber": 5
@@ -1200,6 +1303,13 @@
               "body": "Discrição é uma prática de confiança.\n\nHomem confiável precisa saber guardar:\n\nsegredos;\n\ninformações profissionais;\n\nintimidade do relacionamento;\n\nfraquezas de amigos.\n\nPergunta:\n\n> “As pessoas podem contar algo a você sem virar assunto no próximo grupo?”",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Que informação confiada a mim preciso proteger e como farei isso?"
             }
           ],
           "lessonNumber": 7
@@ -1214,6 +1324,20 @@
               "body": "Desenvolva autonomia em áreas como:\n\ncasa;\n\ncozinha;\n\nfinanças;\n\nemergência;\n\nprimeiros socorros;\n\nautomóvel quando aplicável;\n\ndocumentos;\n\ntecnologia;\n\nviagem;\n\nsegurança doméstica básica.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Matriz de autossuficiência",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m4-u4"
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual habilidade prática vou aprender, com orientação confiável, nesta semana?"
             }
           ],
           "lessonNumber": 8
@@ -1228,6 +1352,13 @@
               "body": "Situações:\n\ntroco errado;\n\nerro profissional escondível;\n\nmentira conveniente;\n\ntraição sem possibilidade aparente de descoberta;\n\napropriar-se do trabalho alheio.\n\nPergunta:\n\n> **“Seu caráter precisa de plateia?”**",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual decisão correta preciso tomar mesmo sem possibilidade de ser observado?"
             }
           ],
           "lessonNumber": 9
@@ -1242,6 +1373,20 @@
               "body": "Observe diariamente:\n\npontualidade;\n\npromessas;\n\natrasos comunicados;\n\ntarefas próprias;\n\nreparações.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Semana da palavra",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m4-u5"
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Que reparação ou aviso de atraso preciso realizar antes do próximo compromisso?"
             }
           ],
           "lessonNumber": 10
@@ -1357,6 +1502,13 @@
               "body": "Além dos sinais já estudados, observe:\n\n### Como trata compromissos.\n\n### Como lida com dinheiro.\n\n### Como fala quando está com raiva.\n\n### Como se comporta diante de atenção externa.\n\n### Como assume erros.\n\n### Como trata limites.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Sinais de caráter",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m5-u1"
             }
           ],
           "expansionTitle": "O RADAR DE CARÁTER",
@@ -1433,6 +1585,13 @@
               "body": "Aprofundar.\n\nReciprocidade não é contabilidade.\n\nÉ padrão de investimento mútuo.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Radar de reciprocidade",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m5-u1"
             }
           ],
           "expansionTitle": "RECIPROCIDADE",
@@ -1468,6 +1627,13 @@
               "body": "Interesse.\n\nConvite.\n\nClareza.\n\nReciprocidade.\n\nAceitação do não.\n\nSem:\n\nmanipulação;\n\njogo infantil;\n\nperseguição.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Como vou demonstrar interesse com clareza e respeitar a liberdade da resposta?"
             }
           ],
           "lessonNumber": 7
@@ -1482,6 +1648,13 @@
               "body": "A liderança defendida pelo treinamento reúne:\n\niniciativa;\n\nresponsabilidade;\n\nproteção;\n\nserviço;\n\ncapacidade de decisão;\n\nestabilidade;\n\nescuta.\n\nNunca como licença para coerção.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual iniciativa de responsabilidade posso assumir ouvindo também a outra pessoa?"
             }
           ],
           "lessonNumber": 8
@@ -1516,6 +1689,13 @@
               "body": "Não entregue:\n\nconfiança absoluta;\n\ndinheiro;\n\nplanos enormes;\n\ndependência;\n\ncompromisso vitalício\n\na uma fantasia recém-formada.\n\nCaráter precisa de tempo.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Que aspecto ainda preciso conhecer antes de assumir um compromisso maior?"
             }
           ],
           "lessonNumber": 10
@@ -1549,6 +1729,12 @@
               "title": "Expansão — ANTES DO COMPROMISSO SÉRIO",
               "body": "Checklist de conversas importantes:\n\nfilhos;\n\ncasamento;\n\nfé;\n\ndinheiro;\n\nfamília;\n\nmoradia;\n\ncarreira;\n\nfidelidade;\n\nprivacidade;\n\nexpectativas;\n\nconflitos.\n\nNão se trata de interrogatório no primeiro encontro.\n\nTrata-se de não chegar ao casamento sem conversar sobre questões fundamentais.",
               "interactive": false,
+              "expansion": true
+            },
+            {
+              "title": "FERRAMENTA — CONVERSAS ANTES DO COMPROMISSO",
+              "body": "",
+              "interactive": true,
               "expansion": true
             }
           ],
@@ -1729,6 +1915,13 @@
               "body": "Homens precisam de bons homens.\n\nUma boa amizade masculina pode conter:\n\nbrincadeira;\n\nlealdade;\n\naventura;\n\ntrabalho;\n\nconfronto;\n\napoio.\n\nMas precisa existir liberdade para dizer:\n\n> “Irmão, você está fazendo besteira.”",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Que amizade posso fortalecer com presença, apoio e confronto respeitoso?"
             }
           ],
           "lessonNumber": 6
@@ -1749,6 +1942,13 @@
               "body": "",
               "interactive": true,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Auditoria da irmandade",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m6-u3"
             }
           ],
           "lessonNumber": 7
@@ -1763,6 +1963,13 @@
               "body": "Quando começar a melhorar, existe uma tentação:\n\nquerer corrigir todo mundo.\n\nNão faça isso.\n\nPrimeiro viva.\n\nDepois ensine quando houver abertura.\n\nNão transforme desenvolvimento em superioridade moral.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Como vou oferecer orientação somente quando houver abertura?"
             }
           ],
           "lessonNumber": 8
@@ -1777,6 +1984,13 @@
               "body": "Motivação sobe.\n\nDesce.\n\nSistema permanece.\n\nmínimo viável.\n\nRotina.\n\nRevisão.\n\nAmbiente.\n\nPlano de retorno.",
               "interactive": false,
               "expansion": true
+            },
+            {
+              "title": "Aplicação — Próximo passo",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reflection": "Qual é meu mínimo viável para um dia sem motivação?"
             }
           ],
           "lessonNumber": 9
@@ -1797,6 +2011,13 @@
               "body": "",
               "interactive": true,
               "expansion": true
+            },
+            {
+              "title": "Retomar — Protocolo de retorno",
+              "body": "",
+              "interactive": true,
+              "expansion": true,
+              "reference": "m6-u5"
             }
           ],
           "lessonNumber": 10
