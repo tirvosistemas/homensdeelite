@@ -18,6 +18,15 @@ export function validateState(value){
  if(!Object.values(value.completed).every(n=>n===true)||!Object.values(value.visited).every(n=>n===true))throw Error('Progresso inválido.');
  if(!Array.isArray(value.dates)||!value.dates.every(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)))throw Error('Datas inválidas.');
  for(const c of Object.values(value.challenges))if(!object(c)||!/^\d{4}-\d{2}-\d{2}$/.test(c.start)||!Array.isArray(c.rows)||!c.rows.every(r=>Array.isArray(r)&&r.every(v=>typeof v==='boolean')))throw Error('Desafio inválido.');
+ for(const a of Object.values(value.answers)){
+  if(!object(a))throw Error('Resposta inválida.');
+  for(const k of ['fields','saved'])if(a[k]!==undefined&&(!object(a[k])||!Object.values(a[k]).every(v=>typeof v==='string')))throw Error('Reflexão inválida.');
+  if(a.values!==undefined&&(!Array.isArray(a.values)||!a.values.every(v=>v===null||(Number.isInteger(v)&&v>=0&&v<=50))))throw Error('Alternativas inválidas.');
+  if(a.index!==undefined&&(!Number.isInteger(a.index)||a.index<0))throw Error('Índice inválido.');
+  if(a.people!==undefined&&(!Array.isArray(a.people)||!a.people.every(p=>object(p)&&typeof p.name==='string'&&['Fortalece','Neutro','Drena'].includes(p.group))))throw Error('Influências inválidas.');
+  if(a.rows!==undefined&&(!Array.isArray(a.rows)||!a.rows.every(r=>Array.isArray(r)&&r.length===4&&r.every(v=>Number.isInteger(v)&&v>=0&&v<=100))))throw Error('Semana inválida.');
+  if(a.counts!==undefined&&(!Array.isArray(a.counts)||a.counts.length!==4||!a.counts.every(v=>Number.isInteger(v)&&v>=0&&v<=50)))throw Error('Contagens inválidas.');
+ }
  if(value.last!==null&&typeof value.last!=='string')throw Error('Última aula inválida.');
  if(typeof value.pledged!=='boolean')throw Error('Código de conduta inválido.');
  return {...fresh(),...value};

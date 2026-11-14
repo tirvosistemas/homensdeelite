@@ -16,7 +16,7 @@ function answer(key,defaults={}){if(!ctx.s.answers[key]||typeof ctx.s.answers[ke
 function finish(a,points=10){ctx.completeActivity(a.key,points);}
 export function mountWidgets(container,unit){unit.blocks.forEach((b,i)=>{const a=definition(b,unit.moduleIndex);if(!a)return;const key=unit.id+'-b'+i;const el=container.querySelector(`[data-widget="${key}"]`);if(el)mount(el,{...a,key,unit});});}
 function mount(el,a){const s=answer(a.key);let timer;
- const draw=()=>{el.innerHTML=title(a)+render(a,s);bind();};
+ const draw=()=>{clearInterval(timer);el.innerHTML=title(a)+render(a,s);bind();};
  const save=()=>ctx.save();
  function bind(){
   el.querySelectorAll('[data-choice]').forEach(btn=>btn.onclick=()=>{
@@ -36,7 +36,7 @@ function mount(el,a){const s=answer(a.key);let timer;
    if(!s.values||Array.from({length},(_,i)=>s.values[i]).some(x=>!Number.isInteger(x)))return;
    s.result=true;
    if(a.type==='scale')finish(a);
-   else{const g=grade(a.questions,s.values);if(!a.exam||g.passed)finish(a,a.exam?100:10);else ctx.toast('Révisez les explications.'.replace('Révisez les explications.','Revise as explicações e tente novamente.'));}
+   else{const g=grade(a.questions,s.values);if(!a.exam||g.passed)finish(a,a.exam?100:10);else ctx.toast('Revise as explicações e tente novamente.');}
    save();draw();
   };
   const redo=el.querySelector('[data-redo]');if(redo)redo.onclick=()=>{s.result=false;s.values=[];s.index=0;s.revealed=false;save();draw();};
