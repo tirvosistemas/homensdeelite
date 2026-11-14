@@ -57,7 +57,7 @@ O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta 
 
 ## Identidade e validação visual
 
-O monograma em escudo é um elemento de interface inspirado na referência fornecida. Não é uma reprodução do arquivo original da logo. A imagem foi apresentada na conversa como referência; para usar a logo exata como arquivo do site, adicionar o original a `assets/`.
+A logo original enviada pelo proprietário está em `assets/logo-homens-de-elite.jpg`. É utilizada no menu, cabeçalho, painel inicial, quadro de patente, celebrações e conclusão, além do ícone da aba do navegador. O arquivo foi preservado sem cortes ou alterações de cor.
 
 A responsividade foi implementada por CSS e as interações foram verificadas por testes automatizados em DOM simulado. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
 

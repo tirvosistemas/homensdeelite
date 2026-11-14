@@ -29,6 +29,6 @@ Patentes: 0, 100, 300, 650, 1000, 1500 e 2200 XP. O total possível permite alca
 - Revisão semanal guarda o registro atual. Exportar o caderno antes de substituir respostas anteriores.
 - Ferramentas de autorrelato não são verificadas por um servidor.
 - A voz depende do navegador e das vozes disponíveis. Sem suporte, a leitura textual permanece disponível.
-- Monograma de interface inspirado na marca; arquivo original da logo ainda não incorporado.
+- Logo original incorporada em `assets/logo-homens-de-elite.jpg`, preservando o arquivo enviado ao GitHub.
 - Sem inspeção visual em navegador real neste ambiente; testes em DOM não comprovam aparência em dispositivos reais.
 - Hospedagem pública não ativada; código entregue no GitHub.
