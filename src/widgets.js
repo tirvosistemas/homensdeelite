@@ -1,3 +1,5 @@
+import {phaseDefinition} from './phase-data.js';
+import {mountPhaseWidget} from './phase-widgets.js';
 import {mountExpansionWidget, expansionScaleResult, initialSnapshot, enhancedFormSummary, bindEnhancedForm} from './expansion-widgets.js';
 import {activities,activityFor} from './activities.js';
 import {exams,finalExam} from './exams.js';
@@ -5,7 +7,7 @@ import {esc,bar,field} from './ui.js';
 import {grade,gadoScore,dateKey,daysSince,challengeStats} from './state.js';
 let ctx;
 export const setContext=c=>ctx=c;
-export function definition(block,m){if(block.reference)return {type:'reference',title:block.title,target:block.reference};if(block.reflection)return {type:'form',title:'Meu próximo passo',fields:[block.reflection]};if(block.title.startsWith('AVALIAÇÃO'))return {type:'quiz',title:'Avaliação de domínio',questions:exams[m],exam:true};if(block.title.startsWith('PROVA FINAL'))return {type:'quiz',title:'Prova final da Fase I',questions:finalExam,exam:true,final:true};const a=activityFor(block.title);return a?{...a,...(block.additionalSignals?{additionalSignals:block.additionalSignals}:{})}:a;}
+export function definition(block,m){if(block.phaseType)return phaseDefinition(block);if(block.reference)return {type:'reference',title:block.title,target:block.reference};if(block.reflection)return {type:'form',title:'Meu próximo passo',fields:[block.reflection]};if(block.title.startsWith('AVALIAÇÃO'))return {type:'quiz',title:'Avaliação de domínio',questions:exams[m],exam:true};if(block.title.startsWith('PROVA FINAL'))return {type:'quiz',title:'Prova integradora · módulos 1 a 6',questions:finalExam,exam:true,final:true};const a=activityFor(block.title);return a?{...a,...(block.additionalSignals?{additionalSignals:block.additionalSignals}:{})}:a;}
 export const requiredActivity=a=>a&&!['comparison','alerts','pledge','signals','translator','reference'].includes(a.type);
 export const widgetShell=(key)=>`<div class="widget" data-widget="${esc(key)}"></div>`;
 const educational='<p class="muted"><small>Ferramenta educacional de autorreflexão. Não é diagnóstico médico ou psicológico.</small></p>';
@@ -16,7 +18,7 @@ function title(a){return `<div class="eyebrow">${a.exam?'Avaliação de domínio
 function answer(key,defaults={}){if(!ctx.s.answers[key]||typeof ctx.s.answers[key]!=='object')ctx.s.answers[key]={...defaults};return ctx.s.answers[key];}
 function finish(a,points=10){ctx.completeActivity(a.key,points);}
 export function mountWidgets(container,unit){unit.blocks.forEach((b,i)=>{const a=definition(b,unit.moduleIndex);if(!a)return;const key=unit.id+'-b'+i;const el=container.querySelector(`[data-widget="${key}"]`);if(el)mount(el,{...a,key,unit});});}
-function mount(el,a){const s=answer(a.key);if(mountExpansionWidget(el,a,s,ctx))return;let timer;
+function mount(el,a){const s=answer(a.key);if(mountPhaseWidget(el,a,s,ctx))return;if(mountExpansionWidget(el,a,s,ctx))return;let timer;
  const draw=()=>{clearInterval(timer);el.innerHTML=title(a)+render(a,s);bind();};
  const save=()=>ctx.save();
  function bind(){
@@ -36,7 +38,7 @@ function mount(el,a){const s=answer(a.key);if(mountExpansionWidget(el,a,s,ctx))r
    const length=a.items?.length||a.questions?.length;
    if(!s.values||Array.from({length},(_,i)=>s.values[i]).some(x=>!Number.isInteger(x)))return;
    if(a.result==='entryComparison'&&!initialSnapshot(ctx)){ctx.toast('Responda primeiro ao Espelho da Arrancada.');return;}
-   s.result=true;if(a.baseline&&!s.baseline)s.baseline=[...s.values];
+   s.result=true;if(a.result==='gado'&&!s.initialValues){s.initialValues=[...s.values];s.initialOrigin='first';}if(a.baseline&&!s.baseline)s.baseline=[...s.values];
    if(a.type==='scale')finish(a);
    else{const g=grade(a.questions,s.values);if(!a.exam||g.passed)finish(a,a.exam?100:10);else ctx.toast('Revise as explicações e tente novamente.');}
    save();draw();
@@ -110,7 +112,7 @@ function render(a,s){
  if(a.type==='pause')return `<p>Estou fazendo isso porque escolhi ou porque estou ansioso?</p><div class="timer" data-countdown>10:00</div><div class="inline-actions"><button data-timer ${s.until?'disabled':''}>Iniciar pausa</button><button data-stop-timer>Reiniciar</button></div><div class="choice-list">${['Enviar conscientemente','Esperar','Voltar para minha prioridade'].map(v=>`<button class="choice" data-pause-choice="${v}">${v}</button>`).join('')}</div>${s.decision==='Voltar para minha prioridade'?`<p>Para onde vai sua atenção?</p><div class="inline-actions">${['Trabalho','Estudo','Treino','Família','Descanso','Outro'].map(v=>`<button class="pill" data-priority="${v}">${v}</button>`).join('')}</div>`:''}${s.response?`<div class="feedback">${esc(s.response)}</div>`:''}`;
  if(a.type==='brotherhood')return renderBrotherhood(s);
  if(a.type==='alerts')return `<p>Estes comportamentos podem existir em homens e mulheres. Considere padrão, gravidade, contexto e segurança. Uma ocorrência isolada não define toda uma pessoa; violência ou ameaça já exigem proteção.</p><div class="reading">${[['Mentira recorrente','Observe contradições repetidas e se existe responsabilidade ao corrigi-las.'],['Humilhação','Desqualificação e exposição constrangedora não são respeito. Expresse limites e procure apoio.'],['Chantagem','Ameaças para forçar escolhas reduzem sua liberdade. Busque apoio e preserve limites.'],['Violência','Priorize sua segurança e procure ajuda adequada. Em emergência no Brasil, acione 190.'],['Ciúme controlador','Vigilância e imposições não são demonstrações de cuidado.'],['Tentativa de isolamento','Afastar você de pessoas de confiança pode aumentar vulnerabilidade. Preserve sua rede de apoio.'],['Infidelidade','Converse sobre acordos, honestidade e confiança. Observe atitudes, não só promessas.'],['Manipulação financeira','Controle coercitivo de recursos exige atenção e apoio.'],['Desrespeito persistente','Limites repetidamente ignorados merecem uma decisão consciente.'],['Dependências graves não tratadas','Perda de controle pode exigir ajuda profissional. Apoiar não significa assumir sozinho o tratamento.'],['Irresponsabilidade extrema','Observe repetição, consequências e disposição real para reparar.']].map(([t,b])=>`<details><summary>${t}</summary><p>${b}</p></details>`).join('')}</div>`;
- if(a.type==='pledge'){const ready=ctx.canFinish();return `<p>Assumir este código é um compromisso com a prática contínua.</p>${!ready?'<div class="notice">Conclua as etapas anteriores, os desafios e as avaliações para encerrar a primeira jornada.</div>':''}<button class="primary" data-pledge ${!ready?'disabled':''}>Eu assumo este código</button>`;}
+ if(a.type==='pledge'){const ready=ctx.canFinish();return `<p>Assumir este código é um compromisso com a prática contínua.</p>${!ready?'<div class="notice">Conclua as etapas anteriores, os desafios e as avaliações deste módulo para assumir o código e seguir à missão de passagem.</div>':''}<button class="primary" data-pledge ${!ready?'disabled':''}>Eu assumo este código</button>`;}
  return '';
 }
 function renderQuestions(a,s){

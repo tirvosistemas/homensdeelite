@@ -1,3 +1,4 @@
+import {phaseAnswerReady} from './phase-flow.js';
 export const KEY='homens-de-elite:v1';
 export const ranks=[['Recruta',0],['Aprendiz da Forja',100],['Homem em Construção',300],['Sentinela',650],['Guardião',1000],['Homem de Estatura',1500],['Homem de Elite',2200]];
 export const fresh=()=>({version:1,completed:{},awards:{},answers:{},notes:{},challenges:{},visited:{},dates:[],last:null,pledged:false});
@@ -26,6 +27,10 @@ export function validateState(value){
   if(a.points!==undefined&&(!Array.isArray(a.points)||!a.points.every(v=>Number.isFinite(v)&&v>=0&&v<=100)))throw Error('Orçamento inválido.');
   if(a.entries!==undefined&&(!Array.isArray(a.entries)||!a.entries.every(v=>object(v)&&typeof v.name==='string'&&typeof v.group==='string')))throw Error('Classificação inválida.');
   if(a.steps!==undefined&&(!Array.isArray(a.steps)||!a.steps.every(v=>typeof v==='boolean')))throw Error('Etapas inválidas.');
+  if(a.snapshot!==undefined&&(!Array.isArray(a.snapshot)||a.snapshot.length!==45||!a.snapshot.every(v=>Number.isInteger(v)&&v>=0&&v<=4)))throw Error('Diagnóstico inválido.');
+  if(a.initialValues!==undefined&&(!Array.isArray(a.initialValues)||a.initialValues.length!==15||!a.initialValues.every(v=>Number.isInteger(v)&&v>=0&&v<=3)))throw Error('Índice inicial inválido.');
+  for(const k of ['started','accepted','recorded'])if(a[k]!==undefined&&(!Number.isFinite(a[k])||a[k]<0))throw Error('Data de atividade inválida.');
+  if(a.logged!==undefined&&(!object(a.logged)||!Object.entries(a.logged).every(([k,v])=>['0','1','2'].includes(k)&&Number.isFinite(v)&&v>=0)))throw Error('Registro diário inválido.');
   if(a.index!==undefined&&(!Number.isInteger(a.index)||a.index<0))throw Error('Índice inválido.');
   if(a.people!==undefined&&(!Array.isArray(a.people)||!a.people.every(p=>object(p)&&typeof p.name==='string'&&['Fortalece','Neutro','Drena'].includes(p.group))))throw Error('Influências inválidas.');
   if(a.rows!==undefined&&(!Array.isArray(a.rows)||!a.rows.every(r=>Array.isArray(r)&&r.length===4&&r.every(v=>Number.isInteger(v)&&v>=0&&v<=100))))throw Error('Semana inválida.');
@@ -45,17 +50,19 @@ export function gadoScore(answers){const total=answers.reduce((a,b)=>a+b,0);retu
 export function reconcileCurriculum(s,course,definitions){
  const units=course.modules.flatMap(m=>m.lessons);
  const revision=s.curriculumRevision||1;
- if(revision<(course.revision||1)){
+ if(revision<2&&(course.revision||1)>=2){
   for(const u of units)if(u.blocks.some(b=>b.expansion))delete s.completed[u.id];
  }
  for(const {key,definition:a,unit} of definitions){
   if(!a)continue;
   const saved=s.answers[key];let valid=true;
+  if(a.result==='gado'&&saved?.result&&saved.values?.length===15&&!saved.initialValues){saved.initialValues=[...saved.values];saved.initialOrigin='legacy';}
   if(a.type==='quiz'||a.type==='scale'){
    const count=(a.questions||a.items).length;
    const firstMissing=Array.from({length:count},(_,i)=>i).find(i=>!Number.isInteger(saved?.values?.[i]));
    if(firstMissing!==undefined){valid=false;if(saved){saved.result=false;saved.index=firstMissing;saved.revealed=false;}}
   }
+  if(a.type==='phase')valid=phaseAnswerReady(a,saved);
   if(a.type==='form')valid=!!saved?.saved&&a.fields.every((_,i)=>String(saved.saved['f'+i]||'').trim());
   if(a.type==='challenge'){
    const c=s.challenges[key];
@@ -64,7 +71,7 @@ export function reconcileCurriculum(s,course,definitions){
   if(!valid){delete s.completed[key];delete s.completed[unit.id];}
  }
  const pledge=units.find(u=>u.kind==='pledge');
- if(units.some(u=>u.kind!=='pledge'&&!s.completed[u.id])){s.pledged=false;if(pledge)delete s.completed[pledge.id];}
+ if(units.filter(u=>u.id.startsWith('m6-')).some(u=>u.kind!=='pledge'&&!s.completed[u.id])){s.pledged=false;if(pledge)delete s.completed[pledge.id];}
  s.curriculumRevision=course.revision||1;
  return s;
 }

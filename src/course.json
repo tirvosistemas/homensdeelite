@@ -2149,9 +2149,176 @@
         }
       ],
       "expansionTitle": "LIDERANÇA, FAMÍLIA, IRMANDADE E LEGADO"
+    },
+    {
+      "id": "m7",
+      "title": "IDENTIDADE, PROPÓSITO E DIREÇÃO MASCULINA",
+      "intro": "Este módulo encerra a Fase I.\n\nNos módulos anteriores você trabalhou o que precisa abandonar, o que precisa controlar, o que precisa construir, como precisa se comportar, como precisa relacionar-se e por quem precisa assumir responsabilidade.\n\nAgora surge a pergunta final: “Para onde você está indo?”\n\nUm homem disciplinado sem direção pode apenas tornar-se extremamente eficiente em caminhar para lugar nenhum.\n\nEste módulo existe para criar direção.",
+      "lessons": [
+        {
+          "id": "m7-a1",
+          "title": "AULA 1 — QUEM VOCÊ ESTÁ SE TORNANDO?",
+          "kind": "lesson",
+          "lessonNumber": 1,
+          "blocks": [
+            {
+              "title": "QUEM VOCÊ ESTÁ SE TORNANDO?",
+              "body": "Existe diferença entre “o que quero ter?” e “quem quero ser?”.\n\nDinheiro é algo que você pode ter. Carro é algo que você pode ter. Cargo é algo que você pode ter.\n\nMas disciplina, honra, coragem, lealdade, competência e responsabilidade são características do homem que você se tornou.\n\nO treinamento precisa deslocar o aluno de metas puramente externas para identidade."
+            },
+            {
+              "title": "HOMEM ATUAL X HOMEM EM CONSTRUÇÃO",
+              "body": "",
+              "phaseType": "identity"
+            }
+          ]
+        },
+        {
+          "id": "m7-a2",
+          "title": "AULA 2 — IDENTIDADE ANTES DE MOTIVAÇÃO",
+          "kind": "lesson",
+          "lessonNumber": 2,
+          "blocks": [
+            {
+              "title": "IDENTIDADE ANTES DE MOTIVAÇÃO",
+              "body": "Motivação pergunta: “Estou com vontade?”\n\nIdentidade pergunta: “O que um homem como eu faz nesta situação?”\n\nO homem que diz “Estou tentando treinar” possui uma relação diferente daquela do homem que diz “Sou um homem que cuida do corpo.”\n\nO objetivo não é mentir para si. É construir evidências. A identidade precisa ser sustentada por ações."
+            },
+            {
+              "title": "VOTO DE IDENTIDADE",
+              "body": "",
+              "phaseType": "votes"
+            }
+          ]
+        },
+        {
+          "id": "m7-a3",
+          "title": "AULA 3 — PRINCÍPIOS INEGOCIÁVEIS",
+          "kind": "lesson",
+          "lessonNumber": 3,
+          "blocks": [
+            {
+              "title": "PRINCÍPIOS INEGOCIÁVEIS",
+              "body": "Homem sem princípios decide tudo conforme humor, pressão, prazer, medo e conveniência.\n\nPrincípios existem justamente para orientar decisões quando obedecê-los custa alguma coisa.\n\n- Não mentir para escapar de consequência.\n- Não trair compromisso assumido.\n- Não dirigir alcoolizado.\n- Não abandonar filhos.\n- Não vender palavra por dinheiro.\n- Não aceitar determinado tipo de desrespeito.\n- Não utilizar violência para dominar."
+            },
+            {
+              "title": "MEUS 5 INEGOCIÁVEIS",
+              "body": "",
+              "phaseType": "principles"
+            }
+          ]
+        },
+        {
+          "id": "m7-a4",
+          "title": "AULA 4 — PROPÓSITO NÃO É UMA FRASE BONITA",
+          "kind": "lesson",
+          "lessonNumber": 4,
+          "blocks": [
+            {
+              "title": "PROPÓSITO NÃO É UMA FRASE BONITA",
+              "body": "Muitos homens ficam paralisados esperando descobrir “o grande propósito da minha existência.”\n\nTalvez propósito não apareça como revelação. Frequentemente ele é construído através de responsabilidade, competência, serviço, família, trabalho, fé, criação e problemas que você decide resolver.\n\nNão utilize propósito como desculpa para permanecer parado procurando uma resposta perfeita.\n\n### QUATRO PERGUNTAS DE DIREÇÃO\n\n1. O que considero importante?\n2. Que problemas quero ajudar a resolver?\n3. Por quem estou disposto a assumir responsabilidade?\n4. Que tipo de homem preciso me tornar para fazer isso?"
+            },
+            {
+              "title": "BÚSSOLA DE PROPÓSITO",
+              "body": "",
+              "phaseType": "compass"
+            }
+          ]
+        },
+        {
+          "id": "m7-a5",
+          "title": "AULA 5 — PRIORIDADE É AQUILO QUE RECEBE SEU TEMPO",
+          "kind": "lesson",
+          "lessonNumber": 5,
+          "blocks": [
+            {
+              "title": "PRIORIDADE É AQUILO QUE RECEBE SEU TEMPO",
+              "body": "Todo mundo diz: “Minha família é prioridade.” “Minha saúde é prioridade.” “Meu futuro é prioridade.”\n\nMas existe um instrumento melhor para descobrir prioridade: agenda.\n\nObserve onde estão suas horas. Aquilo que recebe constantemente seu tempo revela muito da sua hierarquia real."
+            },
+            {
+              "title": "AUDITORIA DAS 168 HORAS",
+              "body": "",
+              "phaseType": "hours"
+            }
+          ]
+        },
+        {
+          "id": "m7-a6",
+          "title": "AULA 6 — ESCOLHA SUAS BATALHAS",
+          "kind": "lesson",
+          "lessonNumber": 6,
+          "blocks": [
+            {
+              "title": "ESCOLHA SUAS BATALHAS",
+              "body": "Querer tudo simultaneamente destrói foco.\n\nVocê não precisa melhorar radicalmente dinheiro, corpo, profissão, relacionamento, idioma, negócio, leitura e vida social na mesma semana.\n\nMaturidade também significa decidir: “O que é prioridade agora?”\n\nFoco exige renúncia. Todo sim importante produz alguns nãos."
+            },
+            {
+              "title": "MATRIZ DE PRIORIDADE",
+              "body": "",
+              "phaseType": "priorities"
+            }
+          ]
+        },
+        {
+          "id": "m7-a7",
+          "title": "AULA 7 — VISÃO DE 1, 3 E 10 ANOS",
+          "kind": "lesson",
+          "lessonNumber": 7,
+          "blocks": [
+            {
+              "title": "VISÃO DE 1, 3 E 10 ANOS",
+              "body": "Não se trata de adivinhar o futuro. Trata-se de produzir direção.\n\nEM 1 ANO: O que quero ter mudado?\n\nEM 3 ANOS: Que nível de competência e estabilidade quero possuir?\n\nEM 10 ANOS: Que tipo de homem, família, trabalho e legado desejo estar construindo?\n\nA vida poderá mudar. O plano poderá mudar. Direção não significa rigidez."
+            },
+            {
+              "title": "LINHA DO TEMPO DA FORJA",
+              "body": "",
+              "phaseType": "timeline"
+            }
+          ]
+        },
+        {
+          "id": "m7-a8",
+          "title": "AULA 8 — A MISSÃO DO HOMEM EM CONSTRUÇÃO",
+          "kind": "lesson",
+          "lessonNumber": 8,
+          "blocks": [
+            {
+              "title": "A MISSÃO DO HOMEM EM CONSTRUÇÃO",
+              "body": "Esta é a última aula formal da Jornada da Forja.\n\nVocê não deverá terminar simplesmente com “Aprendi muita coisa.” Deverá sair com uma direção objetiva."
+            },
+            {
+              "title": "CARTA DE MISSÃO HOMENS DE ELITE",
+              "body": "",
+              "phaseType": "letter"
+            }
+          ]
+        },
+        {
+          "id": "m7-exam",
+          "title": "AVALIAÇÃO DO MÓDULO 7",
+          "kind": "exam",
+          "blocks": [
+            {
+              "title": "AVALIAÇÃO DO MÓDULO 7",
+              "body": "Identidade, princípios, propósito, prioridades, tempo, foco e direção.",
+              "phaseType": "exam7"
+            }
+          ]
+        },
+        {
+          "id": "m7-mission",
+          "title": "72 HORAS DE DIREÇÃO",
+          "kind": "challenge",
+          "blocks": [
+            {
+              "title": "72 HORAS DE DIREÇÃO",
+              "body": "Durante três dias, execute uma ação diária ligada à sua principal missão de 90 dias. Não precisa ser gigantesca. Precisa ser real. Registre uma ação por dia e retorne ao completar 72 horas.",
+              "phaseType": "direction"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "revision": 2,
+  "revision": 3,
   "expansionMap": [
     {
       "module": 1,
@@ -2622,5 +2789,197 @@
       "id": "m6-exp-a12",
       "title": "SUA REGRA DE VIDA"
     }
-  ]
+  ],
+  "phase": {
+    "before": [
+      {
+        "id": "diagnostico-entrada",
+        "title": "DIAGNÓSTICO GERAL DE ENTRADA",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "DIAGNÓSTICO GERAL DE ENTRADA",
+            "body": "O objetivo não é dar uma nota de “valor” ao homem. É estabelecer uma fotografia inicial. Responda pensando em sua rotina recente. Seus resultados serão guardados para comparação no encerramento.",
+            "phaseType": "diagnostic"
+          }
+        ]
+      },
+      {
+        "id": "contrato",
+        "title": "CONTRATO DA FORJA",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "CONTRATO DA FORJA",
+            "body": "EU ENTENDO QUE...\n\nEste treinamento não mudará minha vida apenas porque eu o comprei.\n\nNão mudará minha vida apenas porque assisti ou li suas aulas.\n\nNão mudará minha vida porque concordei com frases fortes.\n\nTransformação exige aplicação.\n\nDurante esta Jornada da Forja, comprometo-me a:\n\n- ser honesto nas avaliações;\n- não falsificar resultados para parecer melhor;\n- executar os desafios;\n- admitir comportamentos que precisam mudar;\n- não culpar terceiros por tudo;\n- não utilizar este treinamento para desenvolver arrogância;\n- buscar progresso em vez de aparência;\n- retornar quando falhar;\n- terminar aquilo que comecei.",
+            "phaseType": "contract"
+          }
+        ]
+      }
+    ],
+    "passages": [
+      {
+        "id": "passagem-1",
+        "title": "RECUPERE SEU CENTRO",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "RECUPERE SEU CENTRO",
+            "body": "Durante 48 horas: não perseguir mensagens; não buscar validação; não abandonar nenhuma responsabilidade para conseguir atenção; realizar ao menos uma atividade sozinho; cumprir uma prioridade pessoal.",
+            "phaseType": "passage",
+            "checks": [
+              "Não persegui mensagens",
+              "Não busquei validação",
+              "Não abandonei responsabilidades para conseguir atenção",
+              "Realizei uma atividade sozinho",
+              "Cumpri uma prioridade pessoal"
+            ],
+            "fields": [
+              "Qual atividade fez sozinho e qual prioridade cumpriu?"
+            ],
+            "success": "PORTÃO DO AUTODOMÍNIO LIBERADO",
+            "delayHours": 48
+          }
+        ]
+      },
+      {
+        "id": "passagem-2",
+        "title": "FAÇA O QUE DISSE",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "FAÇA O QUE DISSE",
+            "body": "Escolha uma tarefa que vem sendo adiada. Execute-a. Não planeje. Execute.",
+            "phaseType": "passage",
+            "checks": [
+              "Executei a tarefa adiada"
+            ],
+            "fields": [
+              "Qual tarefa você executou e qual foi o resultado?"
+            ],
+            "success": "PORTÃO DO CONSTRUTOR LIBERADO",
+            "delayHours": 0
+          }
+        ]
+      },
+      {
+        "id": "passagem-3",
+        "title": "ENTREGUE ALGO REAL",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "ENTREGUE ALGO REAL",
+            "body": "Conclua uma pequena entrega relacionada a trabalho, estudo, organização financeira ou competência.",
+            "phaseType": "passage",
+            "checks": [
+              "Concluí uma entrega real"
+            ],
+            "fields": [
+              "O que existe hoje que não existia antes porque você executou?"
+            ],
+            "success": "PORTÃO DA PALAVRA LIBERADO",
+            "delayHours": 0
+          }
+        ]
+      },
+      {
+        "id": "passagem-4",
+        "title": "UMA CONVERSA FIRME",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "UMA CONVERSA FIRME",
+            "body": "Aplique comunicação assertiva em uma situação real e segura: dizer não; corrigir um compromisso; pedir desculpa; estabelecer limite; resolver um mal-entendido. Registre apenas o aprendizado, sem precisar expor informações privadas.",
+            "phaseType": "passage",
+            "checks": [
+              "Pratiquei uma conversa firme e segura"
+            ],
+            "fields": [
+              "O que você aprendeu com essa conversa? Não registre informações privadas."
+            ],
+            "success": "PORTÃO DO DISCERNIMENTO LIBERADO",
+            "delayHours": 0
+          }
+        ]
+      },
+      {
+        "id": "passagem-5",
+        "title": "OLHE PARA OS DOIS LADOS",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "OLHE PARA OS DOIS LADOS",
+            "body": "Observe os padrões que espera e os que já oferece. Somente depois avance.",
+            "phaseType": "passage",
+            "checks": [],
+            "fields": [
+              "Quais padrões espero de uma futura parceira?",
+              "Quais desses padrões eu já ofereço?"
+            ],
+            "success": "PORTÃO DA RESPONSABILIDADE LIBERADO",
+            "delayHours": 0
+          }
+        ]
+      },
+      {
+        "id": "passagem-6",
+        "title": "QUEM VEM DEPOIS DE VOCÊ?",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "QUEM VEM DEPOIS DE VOCÊ?",
+            "body": "Realize uma ação concreta de responsabilidade: ajudar alguém da família; cumprir uma promessa; orientar alguém; resolver um problema doméstico; estar presente para alguém importante. A ideia é deslocar o “eu” para a responsabilidade.",
+            "phaseType": "passage",
+            "checks": [
+              "Realizei uma ação concreta de responsabilidade"
+            ],
+            "fields": [
+              "Qual ação você realizou e o que aprendeu sobre responsabilidade?"
+            ],
+            "success": "PORTÃO DA DIREÇÃO LIBERADO",
+            "delayHours": 0
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "id": "dossie",
+        "title": "DOSSIÊ DA FORJA",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "DOSSIÊ DA FORJA",
+            "body": "SEU PONTO DE PARTIDA E SUA PRÓXIMA DIREÇÃO",
+            "phaseType": "dossier"
+          }
+        ]
+      },
+      {
+        "id": "diagnostico-final",
+        "title": "DIAGNÓSTICO FINAL",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "DIAGNÓSTICO FINAL",
+            "body": "Refaça o mesmo Raio-X do Homem Atual. A comparação descreve mudanças nas suas respostas declaradas, não uma medida de transformação pessoal.",
+            "phaseType": "exit"
+          }
+        ]
+      },
+      {
+        "id": "ultimo-espelho",
+        "title": "ÚLTIMO ESPELHO",
+        "kind": "phase",
+        "blocks": [
+          {
+            "title": "ÚLTIMO ESPELHO",
+            "body": "Se seu filho se tornasse exatamente o homem que você está sendo hoje, você ficaria orgulhoso?",
+            "phaseType": "mirror"
+          }
+        ]
+      }
+    ],
+    "ending": "JORNADA DA FORJA CONCLUÍDA\n\nVocê não recebeu um título de perfeição.\n\nRecebeu algo mais útil:\n\n- um espelho;\n- uma direção;\n- um sistema;\n- uma missão.\n\nTalvez você tenha descoberto comportamentos dos quais não se orgulha.\n\nÓtimo.\n\nAquilo que você consegue enxergar pode começar a ser corrigido.\n\nTalvez tenha descoberto forças que não reconhecia.\n\nProteja-as.\n\nTalvez tenha percebido que ainda existe muito trabalho.\n\nExiste.\n\nEste treinamento nunca prometeu facilidade.\n\nA Fase I tinha uma missão:\n\n- acordar o homem;\n- colocá-lo diante de si mesmo;\n- quebrar padrões;\n- estabelecer disciplina;\n- construir direção.\n\nAgora começa outra pergunta:\n\n“O que você será capaz de construir com o homem que começou a forjar?”\n\nA FASE I TERMINOU.\n\nA FORMAÇÃO NÃO."
+  }
 }
