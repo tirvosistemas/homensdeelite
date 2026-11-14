@@ -2,7 +2,7 @@
 ## A JORNADA DA FORJA  
 ### Caráter • Autodomínio • Construção • Postura • Relacionamentos • Liderança
 
-Este é o conteúdo oficial inicial do curso **Homens de Elite**.
+Este é o conteúdo oficial inicial do treinamento **Homens de Elite**.
 
 Utilize este material em conjunto com o briefing anterior da sala de aula interativa.
 
@@ -41,11 +41,11 @@ Ela é uma orientação de como aquela parte deverá funcionar dentro da sala in
 
 ---
 
-# ABERTURA DO CURSO
+# ABERTURA DO TREINAMENTO
 
 ## BEM-VINDO À FORJA
 
-Homens de Elite não é um curso de sedução.
+Homens de Elite não é um treinamento de sedução.
 
 Não é um treinamento para ensinar homens a manipular mulheres.
 
@@ -119,7 +119,7 @@ Sua maneira de viver começa a demonstrar.
 
 # CÓDIGO DE CONDUTA DO TREINAMENTO
 
-Este curso trabalhará masculinidade com firmeza, mas não confundirá masculinidade com abuso.
+Este treinamento trabalhará masculinidade com firmeza, mas não confundirá masculinidade com abuso.
 
 Força não é violência.
 
@@ -2163,7 +2163,7 @@ Transporte.
 
 ### CONSTRUÇÃO
 
-Cursos.
+Treinamentos.
 
 Ferramentas.
 
@@ -3105,7 +3105,7 @@ decida.
 
 # AULA 4 — LIDERANÇA NO RELACIONAMENTO
 
-Este curso utilizará a palavra liderança.
+Este treinamento utilizará a palavra liderança.
 
 Mas precisamos defini-la.
 
@@ -4233,7 +4233,7 @@ Ou feedback educacional.
 
 ## 6. NÃO TRANSFORMAR TUDO EM JOGO
 
-O curso precisa continuar adulto.
+O treinamento precisa continuar adulto.
 
 A gamificação existe para estimular constância, não para infantilizar.
 
@@ -4255,7 +4255,7 @@ não apresentar resultado como diagnóstico profissional.
 
 ## 8. PRESERVAR O TOM
 
-O curso deverá ser:
+O treinamento deverá ser:
 
 firme;
 
@@ -4301,7 +4301,7 @@ O conteúdo acima constitui a primeira versão oficial da **Jornada da Forja —
 
 Agora utilize o briefing de interface enviado anteriormente e este conteúdo para construir a primeira versão funcional da sala de aula.
 
-Não transforme o curso em uma simples página.
+Não transforme o treinamento em uma simples página.
 
 Transforme cada módulo em uma verdadeira experiência de treinamento.
 

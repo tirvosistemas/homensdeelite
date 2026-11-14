@@ -2,13 +2,13 @@ Quero que você se prepare para criar uma plataforma educacional interativa cham
 
 # HOMENS DE ELITE
 
-O projeto será um curso digital voltado para formação masculina, caráter, disciplina, autodomínio, desenvolvimento pessoal, responsabilidade, trabalho, saúde, relacionamentos, liderança, família e construção de uma vida de valor.
+O projeto será um treinamento digital voltado para formação masculina, caráter, disciplina, autodomínio, desenvolvimento pessoal, responsabilidade, trabalho, saúde, relacionamentos, liderança, família e construção de uma vida de valor.
 
 Neste primeiro momento, NÃO quero que você escreva código e NÃO quero que comece a construir o projeto.
 
 Este primeiro prompt existe exclusivamente para explicar como quero que seja a experiência da sala de aula.
 
-Posteriormente enviarei um segundo prompt contendo todo o conteúdo real do curso, dividido em módulos, aulas, tópicos, exercícios, testes e atividades.
+Posteriormente enviarei um segundo prompt contendo todo o conteúdo real do treinamento, dividido em módulos, aulas, tópicos, exercícios, testes e atividades.
 
 Somente depois de receber esse conteúdo você deverá começar a construir a sala.
 
@@ -26,7 +26,7 @@ Ela deverá parecer um pequeno aplicativo educacional.
 
 O aluno entra na plataforma e sente que está dentro de uma área de membros profissional.
 
-O curso não deve ter aparência de:
+O treinamento não deve ter aparência de:
 
 - ebook;
 - artigo;
@@ -201,7 +201,7 @@ Esses valores deverão mudar conforme o aluno realiza atividades.
 
 ---
 
-# 6. MENU LATERAL DO CURSO
+# 6. MENU LATERAL DO TREINAMENTO
 
 Quero um menu lateral fixo ou facilmente acessível.
 
@@ -994,7 +994,7 @@ Depois recebe o feedback.
 
 ---
 
-# 32. PROGRESSÃO DO CURSO
+# 32. PROGRESSÃO DO TREINAMENTO
 
 Quero que a experiência passe sensação de jornada.
 
@@ -1040,7 +1040,7 @@ Posteriormente será integrada ao sistema real de usuários.
 
 ---
 
-# 34. TELA INICIAL DO CURSO
+# 34. TELA INICIAL DO TREINAMENTO
 
 Ao abrir a área principal, quero um pequeno painel.
 
@@ -1149,7 +1149,7 @@ A cada período de leitura deverá existir alguma mudança de ritmo.
 
 # 38. NÃO SACRIFICAR PROFUNDIDADE
 
-Apesar da interatividade, não quero transformar o curso em conteúdo superficial.
+Apesar da interatividade, não quero transformar o treinamento em conteúdo superficial.
 
 As ferramentas existem para ajudar o aluno a absorver um conteúdo profundo.
 
@@ -1295,7 +1295,7 @@ Botão:
 
 ---
 
-# 43. EXPERIÊNCIA FINAL DO CURSO
+# 43. EXPERIÊNCIA FINAL DO TREINAMENTO
 
 Quando toda a primeira jornada estiver concluída, quero uma tela forte de encerramento.
 
@@ -1330,7 +1330,7 @@ Todos os exercícios devem utilizar padrão consistente.
 
 Todos os módulos devem manter a mesma organização básica.
 
-Isso fará o curso parecer uma plataforma profissional, e não páginas diferentes coladas umas nas outras.
+Isso fará o treinamento parecer uma plataforma profissional, e não páginas diferentes coladas umas nas outras.
 
 ---
 
@@ -1471,7 +1471,7 @@ Ou seja:
 
 Quero que o aluno tenha a sensação de que não está apenas:
 
-“assistindo a um curso”.
+“assistindo a um treinamento”.
 
 Ele deve sentir que está:
 
@@ -1523,7 +1523,7 @@ Neste momento:
 
 Este primeiro prompt existe exclusivamente para você compreender profundamente como deverá funcionar a plataforma.
 
-Depois deste prompt, eu enviarei um segundo prompt contendo o conteúdo oficial do curso Homens de Elite.
+Depois deste prompt, eu enviarei um segundo prompt contendo o conteúdo oficial do treinamento Homens de Elite.
 
 Esse conteúdo incluirá:
 
@@ -1544,7 +1544,7 @@ Por enquanto, apenas:
 1. analise este briefing;
 2. organize mentalmente a estrutura;
 3. identifique os componentes que serão necessários;
-4. aguarde o conteúdo oficial do curso.
+4. aguarde o conteúdo oficial do treinamento.
 
 Não escreva código ainda.
 

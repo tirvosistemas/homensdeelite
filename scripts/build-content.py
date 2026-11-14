@@ -13,7 +13,7 @@ for s in sections:
  if t.startswith('MÓDULO '):
   current={'id':f'm{len(modules)+1}','title':'','intro':'','lessons':[]}; modules.append(current); lesson=None;continue
  if current is None:
-  if t in ['ABERTURA DO CURSO','CÓDIGO DE CONDUTA DO TREINAMENTO']:intro.append(s)
+  if t in ['ABERTURA DO TREINAMENTO','CÓDIGO DE CONDUTA DO TREINAMENTO']:intro.append(s)
   continue
  if not current['title']:
   current['title']=t;current['intro']=body;continue

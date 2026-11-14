@@ -51,7 +51,7 @@ npm test
 
 Esta versão não tem login, servidor, banco de dados, pagamento nem administração. Os dados ficam em `localStorage` neste navegador, na chave `homens-de-elite:v1`. Limpar o navegador ou trocar de dispositivo pode remover o acesso ao progresso. Exporte um backup periodicamente.
 
-**O GitHub guarda o código e o material do curso, não as respostas pessoais do aluno.** Os backups podem conter reflexões sensíveis; devem ser guardados pelo próprio aluno.
+**O GitHub guarda o código e o material do treinamento, não as respostas pessoais do aluno.** Os backups podem conter reflexões sensíveis; devem ser guardados pelo próprio aluno.
 
 O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta do aluno é enviada a esse serviço.
 
