@@ -1,0 +1,29 @@
+export const KEY='homens-de-elite:v1';
+export const ranks=[['Recruta',0],['Aprendiz da Forja',100],['Homem em Construção',300],['Sentinela',650],['Guardião',1000],['Homem de Estatura',1500],['Homem de Elite',2200]];
+export const fresh=()=>({version:1,completed:{},awards:{},answers:{},notes:{},challenges:{},visited:{},dates:[],last:null,pledged:false});
+export const xp=s=>Object.values(s.awards).reduce((sum,a)=>sum+a,0);
+export const rank=s=>ranks.filter(r=>xp(s)>=r[1]).at(-1);
+export function award(s,id,points){if(Object.hasOwn(s.awards,id))return 0;s.awards[id]=points;return points;}
+export const dateKey=(date=new Date())=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+export function daysSince(start,now=dateKey()) {return Math.floor((Date.parse(now+'T12:00:00Z')-Date.parse(start+'T12:00:00Z'))/86400000);}
+export function streak(dates,now=dateKey()){const unique=new Set(dates);let n=0;let d=new Date(now+'T12:00:00Z');if(!unique.has(now))d.setUTCDate(d.getUTCDate()-1);while(unique.has(d.toISOString().slice(0,10))){n++;d.setUTCDate(d.getUTCDate()-1);}return n;}
+export function challengeStats(rows,width,eligible=rows.length){let best=0,run=0,complete=0;const totals=Array(width).fill(0);for(let i=0;i<Math.min(eligible,rows.length);i++){const row=rows[i]||[];row.forEach((v,j)=>{if(v&&j<width)totals[j]++});if(Array.from({length:width},(_,j)=>!!row[j]).every(Boolean)){run++;complete++;best=Math.max(best,run)}else run=0;}return {complete,best,current:run,totals,percent:Math.round(totals.reduce((a,b)=>a+b,0)/(rows.length*width)*100)};}
+export function validateState(value){
+ if(!value||typeof value!=='object'||value.version!==1)throw Error('Formato de backup incompatível.');
+ const object=v=>v&&typeof v==='object'&&!Array.isArray(v);
+ const safeKey=k=>!['__proto__','constructor','prototype'].includes(k);
+ for(const k of ['completed','awards','answers','notes','challenges','visited'])if(!object(value[k])||!Object.keys(value[k]).every(safeKey))throw Error('Backup inválido: '+k);
+ if(!Object.values(value.awards).every(n=>Number.isFinite(n)&&n>=0&&n<=500))throw Error('XP inválido.');
+ if(!Object.values(value.notes).every(n=>typeof n==='string'))throw Error('Anotações inválidas.');
+ if(!Object.values(value.completed).every(n=>n===true)||!Object.values(value.visited).every(n=>n===true))throw Error('Progresso inválido.');
+ if(!Array.isArray(value.dates)||!value.dates.every(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)))throw Error('Datas inválidas.');
+ for(const c of Object.values(value.challenges))if(!object(c)||!/^\d{4}-\d{2}-\d{2}$/.test(c.start)||!Array.isArray(c.rows)||!c.rows.every(r=>Array.isArray(r)&&r.every(v=>typeof v==='boolean')))throw Error('Desafio inválido.');
+ if(value.last!==null&&typeof value.last!=='string')throw Error('Última aula inválida.');
+ if(typeof value.pledged!=='boolean')throw Error('Código de conduta inválido.');
+ return {...fresh(),...value};
+}
+export function loadState(storage){try{const raw=storage.getItem(KEY);return {state:raw?validateState(JSON.parse(raw)):fresh(),error:null}}catch(e){return {state:fresh(),error:'Não foi possível carregar o progresso local. Exporte seus dados antes de limpar o navegador.'}}}
+export function saveState(storage,state){try{storage.setItem(KEY,JSON.stringify(state));return true}catch{return false}}
+export function grade(questions,answers){const correct=questions.reduce((n,q,i)=>n+(answers[i]===q[2]?1:0),0);return {correct,total:questions.length,percent:Math.round(correct/questions.length*100),passed:correct/questions.length>=.7};}
+export const gadoGroups=[['Carência e ansiedade',[4,5,13]],['Falta de limites',[2,6,11]],['Idealização e insistência',[1,8,14]],['Validação e aparência',[3,7,12]],['Centralidade do relacionamento',[0,9,10]]];
+export function gadoScore(answers){const total=answers.reduce((a,b)=>a+b,0);return {total,band:total<=10?0:total<=20?1:total<=30?2:3,areas:gadoGroups.map(([name,indices])=>({name,value:indices.reduce((n,i)=>n+answers[i],0)})).sort((a,b)=>b.value-a.value)};}
