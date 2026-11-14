@@ -31,6 +31,7 @@ const actionScenarios=[
  ['A revisão semanal está agendada, mas você prefere apenas fazer outra lista.',['Preciso de motivação','Preciso cumprir o sistema'],1,'Revisar o que funcionou e falhou orienta a próxima execução.']
 ];
 const q=(text,good,bad,other,explanation)=>[text,[good,bad,other],0,explanation];
+export const hqFields=[f('Meta principal'),...[1,2,3].flatMap(n=>[f('Indicador '+n+' — nome','text'),f('Indicador '+n+' — unidade','text'),f('Indicador '+n+' — valor inicial','number',{step:'any'}),f('Indicador '+n+' — meta','number',{step:'any'})]),f('Hábito 1'),f('Hábito 2'),f('Hábito 3'),f('Uma coisa que vou abandonar'),f('Uma habilidade a desenvolver'),f('Resultado concreto que pretendo construir')];
 export const toolsByTitle={
  'FERRAMENTA — MOTIVAÇÃO OU DEVER?':{type:'quiz',questions:actionScenarios},
  'FERRAMENTA — TRANSFORMADOR DE INTENÇÃO':form(['Quero…',f('Quando?','time'),'Onde?',f('Durante quantos minutos?','number',{min:1,max:1440}),'Qual é o primeiro passo?'],{summary:'intention'}),
@@ -62,8 +63,8 @@ export const toolsByTitle={
  'FERRAMENTA — DIÁRIO DO GASTO IMPULSIVO':table(['O que queria comprar?',f('Quanto?','number',{min:0,step:.01}),'O que senti antes?',opts('Preciso disso?',['Sim','Não','Ainda avaliando']),opts('Esperarei?',['24 horas','48 horas','Mais tempo']),opts('Comprei depois?',['Ainda esperando','Sim','Não'])],{allowEmpty:'Não observei episódio neste período',summary:'journal'}),
  'FERRAMENTA — CÓDIGO FINANCEIRO PESSOAL':form(['Minha regra para compras de status','Minha regra para parcelas e orçamento','Minha regra para construir reserva','Minha frequência de revisão de gastos','Minha regra para honrar acordos'],{summary:'financial-code'}),
  'FERRAMENTA — TREINO DE VOZ':{mode:'voice'},
- 'FERRAMENTA — ESCUTA EM 3 CAMADAS':{mode:'listening'},
- 'TREINADOR DE ASSERTIVIDADE':{mode:'assertive'},
+ 'FERRAMENTA — ESCUTA EM 3 CAMADAS':{mode:'listening',fields:[opts('Situação',['Colega: o prazo mudou e agora não sei como terminar','Amigo: você cancelou de novo e fiquei esperando','Cliente: recebi algo diferente do que combinamos']),f('Fato relatado'),f('Emoção percebida como hipótese'),f('Pedido/necessidade a confirmar')]},
+ 'TREINADOR DE ASSERTIVIDADE':{mode:'assertive',fields:[opts('Situação',['Colega atrasado','Cliente abusivo','Amigo invasivo','Familiar inconveniente','Chefe com demanda impossível','Vizinho']),f('Quando X acontece'),f('O impacto é Y'),f('Eu preciso/decido Z')]},
  'SIMULADOR — DISCORDÂNCIA':{type:'quiz',questions:[q('Um colega propõe uma solução que você considera arriscada.','Vejo um risco neste ponto. Podemos comparar as alternativas?','Sua proposta mostra que você não entende o assunto.','Concordo agora e reclamo com outros depois.','Apresente razões sem ridicularizar a pessoa.'),q('Um amigo tem uma opinião diferente sobre um tema importante.','Discordo por estes motivos e quero entender seu raciocínio.','Se discordamos, nossa amizade não pode continuar.','Vou provocar até ele desistir de falar.','Discordar não exige insultar ou encerrar automaticamente o vínculo.'),q('Uma brincadeira recorrente incomoda você.','Não gosto dessa brincadeira. Peço que pare.','Vou expor uma falha sua para equilibrar.','Rirei mesmo incomodado, sem comunicar meu limite.','Um limite claro não depende de revanche nem de adivinhação.')]},
  'FERRAMENTA — PREPARADOR DE CONVERSA DIFÍCIL':form(['Situação','Fato observado','Minha interpretação','O que quero resolver','Meu limite','O que posso negociar']),
  'FERRAMENTA — AUDITORIA DO AMBIENTE':form(['Quarto','Mesa','Celular','Cozinha','Roupa','Documentos','Ferramentas'].map(l=>opts(l,['Ajuda','Neutro','Atrasa'])),{summary:'environment'}),
@@ -72,7 +73,7 @@ export const toolsByTitle={
  'FERRAMENTA — MEU CONSELHO DE HOMENS':form(['Homem que me ensina disciplina','Homem que entende profissão','Homem que fala verdade','Homem com experiência familiar','Homem que admiro pelo caráter'].map(l=>f(l+' — identificação opcional','text',{optional:true})).concat([f('Qual referência quero aproximar ou buscar?')]),{summary:'council'}),
  'FERRAMENTA — PAINEL DOS 7 PILARES':scale(pillars,['0 — Abandonado','1 — Frágil','2 — Funcionando','3 — Forte'],{summary:'pillars'}),
  'FERRAMENTA — FRENTE PRINCIPAL':{mode:'front',fields:pillars.map(l=>opts(l,['MANUTENÇÃO','DESENVOLVIMENTO','ATAQUE']))},
- 'FERRAMENTA — QUARTEL-GENERAL 90D':{mode:'hq'},
+ 'FERRAMENTA — QUARTEL-GENERAL 90D':{mode:'hq',fields:hqFields},
  'FERRAMENTA — BOTÃO DE RETORNO':form(['O que aconteceu?','O que aprendi?','Qual será minha próxima ação?'],{button:'VOLTAR PARA A FORJA',summary:'return',journal:true})
 };
 export const moduleChallenges=[
@@ -86,9 +87,9 @@ export const moduleChallenges=[
 ];
 export function consolidationDefinition(block){
  const mode=block.consolidation;if(!mode)return null;
+ if(mode==='passage-days')return {...block,type:'consolidation',mode:'tracker',strict:true,items:block.passage===1?['Cumpri os mínimos pessoais definidos']:['Movimento planejado','Sono organizado','Apresentação cuidada']};
  if(mode==='module-exam')return {type:'quiz',exam:true,title:block.title,questions:consolidationExams[block.module-1]};
  if(mode==='final-exam')return {type:'quiz',exam:true,title:block.title,questions:consolidationFinal,consolidationFinal:true};
  if(mode==='module-challenge')return {type:'consolidation',mode:'tracker',title:block.title,...moduleChallenges[block.module-1],module:block.module};
  const a=toolsByTitle[mode];return a?{type:'consolidation',title:block.title.replace(/^FERRAMENTA — /,''),...a}:{...block,type:'consolidation',mode};
 }
-export const hqKey='f2-m7-a4-b2'; // resolved by title at runtime as well, never shared with Phase I.

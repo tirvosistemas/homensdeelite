@@ -48,3 +48,6 @@ course=runpy.run_path(str(root/'scripts/close-phase.py'))['close'](course)
 course['consolidation']=runpy.run_path(str(root/'scripts/build-consolidation.py'))['build']()
 (root/'src/course.json').write_text(json.dumps(course,ensure_ascii=False,indent=2))
 print(f'{len(modules)} módulos; {sum(u["kind"]=="lesson" for m in modules for u in m["lessons"])} aulas; {sum(len(m["lessons"]) for m in modules)} etapas')
+
+c=course['consolidation']
+print(f'Fase II: {len(c["modules"])} módulos; {sum(u["kind"]=="lesson" for m in c["modules"] for u in m["lessons"])} aulas; {sum(len(m["lessons"]) for m in c["modules"])+len(c["before"])+len(c["passages"])+len(c["after"])} etapas')
