@@ -1,10 +1,10 @@
 # Treinamento Homens de Elite
 
-Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação, a Fase 3 — A Ascensão e a Fase 4 — A Prontidão, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
+Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação, a Fase 3 — A Ascensão, a Fase 4 — A Prontidão e a Fase 5 — A Escolha, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
 
 ## O que está implementado
 
-- Quatro fases separadas, **32 módulos, 346 aulas e 459 etapas**. A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. A Fase 4 acrescenta 10 módulos, 100 aulas e 135 etapas. Todo o conteúdo anterior permanece preservado.
+- Cinco fases separadas, **42 módulos, 446 aulas e 588 etapas**. A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. A Fase 4 acrescenta 10 módulos, 100 aulas e 135 etapas. A Fase 5 acrescenta 10 módulos, 100 aulas e 129 etapas. Todo o conteúdo anterior permanece preservado.
 - Painel de jornada, busca de aulas, navegação anterior/próxima, estados de progresso e menu adaptável ao celular.
 - Índice do Modo Gado com 15 perguntas, cinco indicadores e faixas de resultado oficiais.
 - Termômetro de autodomínio, radar de reciprocidade, filtro de compatibilidade, auditorias de competência, ostentação, irmandade e autossuficiência.
@@ -70,6 +70,17 @@ A [documentação da Fase 4](docs/FASE-4.md) descreve a estrutura e os critério
 - Campanha de 30 dias com cinco ajustes e quatro revisões semanais no módulo 10.
 - Prova de 50 questões, espelho de quinze cenários, comparação de autorrelatos, dossiê com controles de privacidade e código final.
 
+## Fase 5 — A Escolha
+
+A [documentação da Fase 5](docs/FASE-5.md) detalha as ferramentas e os critérios. O [material original](docs/fase-5-oficial.md) está preservado.
+
+- Dez módulos e cem aulas de discernimento anterior ao compromisso, com diagnóstico de 50 afirmações e nove passagens.
+- Radares de caráter, reciprocidade e compatibilidade com fatos, contexto e opção de informação insuficiente.
+- Semáforo com 30 cenários, banco de conversas, reflexão sobre salvamento e aplicação dos mesmos critérios ao próprio aluno.
+- Campanha de 30 dias que permite prática com cenários fictícios, sem exigir uma relação real.
+- Prova de 60 questões e laboratório com quatro perfis fictícios e 32 decisões graduais fundamentadas.
+- Comparação de autorrelatos, dossiê automático com decisão pessoal, download com privacidade e Código da Escolha.
+
 ## Executar
 
 O site é estático, sem dependências de produção. Use um servidor HTTP; abrir `index.html` diretamente como `file://` não permite carregar os módulos JavaScript e o conteúdo JSON.
@@ -90,7 +101,7 @@ npm run build
 npm test
 ```
 
-`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json`, `docs/fase-2-oficial.md`, `docs/fase-3-oficial.md` e `docs/fase-4-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js` `src/consolidation-exams.js` `src/ascension-exams.js` e `src/readiness-exams.js`.
+`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json`, `docs/fase-2-oficial.md`, `docs/fase-3-oficial.md`, `docs/fase-4-oficial.md` e `docs/fase-5-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js`, `src/consolidation-exams.js`, `src/ascension-exams.js`, `src/readiness-exams.js` e `src/selection-exams.js`.
 
 ## Arquivos
 
@@ -102,6 +113,7 @@ npm test
 - `src/ascension*.js`: dados, ferramentas, simulações, campanha de 180 dias, avaliações, regras e dossiê da Fase 3.
 - `scripts/build-consolidation.py` e `scripts/build-ascension.py`: compilam as novas fases sem alterar as anteriores.
 - `src/readiness*.js` e `scripts/build-readiness.py`: conteúdo, ferramentas, simulações, regras e dossiê da Fase 4.
+- `src/selection*.js` e `scripts/build-selection.py`: conteúdo, ferramentas, laboratório, regras e dossiê da Fase 5.
 - `src/state.js`: armazenamento, validação, XP e cálculos.
 - `src/ui.js`: apresentação segura de textos e exportação.
 - `docs/briefing.md` e `docs/conteudo-oficial.md`: materiais oficiais preservados integralmente.
@@ -119,7 +131,7 @@ O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta 
 
 A logo original enviada pelo proprietário está em `assets/logo-homens-de-elite.jpg`. É utilizada no menu, cabeçalho, painel inicial, quadro de patente, celebrações e conclusão, além do ícone da aba do navegador. O arquivo foi preservado sem cortes ou alterações de cor.
 
-A responsividade foi implementada por CSS. Há 116 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1, 2 e 3 e os percursos das quatro fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
+A responsividade foi implementada por CSS. Há 136 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1, 2, 3 e 4 e os percursos das cinco fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
 
 ## Publicação
 
