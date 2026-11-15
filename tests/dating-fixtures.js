@@ -1,0 +1,10 @@
+import {f5Prerequisites} from './selection-fixtures.js';
+import {daysAgo} from './consolidation-fixtures.js';
+import {definition,requiredActivity} from '../src/widgets.js';
+import {consolidationUnits} from '../src/consolidation-state.js';
+import {datingSimulation} from '../src/dating-simulation.js';
+export function seedF6Unit(s,u){s.completed[u.id]=true;u.blocks.forEach((b,i)=>{const a=definition(b,u.moduleIndex),key=u.id+'-b'+i;if(!requiredActivity(a))return;s.completed[key]=true;const f={confirmed:'yes',relationship:'yes'};a.fields?.forEach((field,i)=>f['f'+i]=field.type==='select'?field.options[0]:field.type==='number'?'10':'Reflexão responsável '+i);
+ if(a.mode==='tracker'){f.start=daysAgo(a.days);f.days=JSON.stringify(Object.fromEntries(Array.from({length:a.days},(_,i)=>[i,{states:a.items.map(()=>'feito'),evidence:'Prática responsável e aprendizado '+i,return:''}])));if(a.weekly)for(let i=0;i<Math.floor(a.days/7);i++)f['week'+i]='Revisão da semana '+i;}
+ if(a.mode==='laboratory')f.reason='A decisão considera os fatos, os limites e as lacunas observadas.';if(a.mode==='dossier')f.reviewed='yes';s.answers[key]={fields:f,saved:{...f}};if(a.type==='quiz')Object.assign(s.answers[key],{values:a.questions.map(q=>q[2]),result:true});if(['diagnostic','exit'].includes(a.mode))s.answers[key].snapshot=Array(60).fill(2);if(['contract','code'].includes(a.mode))s.answers[key].accepted=Date.now();if(a.mode==='scale')Object.assign(s.answers[key],{values:a.items.map(()=>2),result:true});if(a.mode==='laboratory')s.answers[key].values=[...datingSimulation.map(scene=>scene.preferred),1];
+ });}
+export function f6Prerequisites(course,id,s=f5Prerequisites(course,'f5-fim')){const c=course.dating;consolidationUnits(c);for(const u of c.before){if(u.id===id)return s;seedF6Unit(s,u);}if(id==='f6-central'||id.startsWith('f6-central:')||c.optional.some(u=>u.id===id))return s;for(let i=0;i<c.modules.length;i++){const m=c.modules[i];if(m.lessons.some(u=>u.id===id))return s;m.lessons.forEach(u=>seedF6Unit(s,u));const p=c.passages[i];if(p){if(p.id===id)return s;seedF6Unit(s,p);}}for(const u of c.after){if(u.id===id)return s;seedF6Unit(s,u);}return s;}
