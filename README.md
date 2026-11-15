@@ -1,10 +1,10 @@
 # Treinamento Homens de Elite
 
-Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação e a Fase 3 — A Ascensão, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
+Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação, a Fase 3 — A Ascensão e a Fase 4 — A Prontidão, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
 
 ## O que está implementado
 
-- Três fases separadas, **22 módulos, 246 aulas e 324 etapas**. A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. Todo o conteúdo anterior permanece preservado.
+- Quatro fases separadas, **32 módulos, 346 aulas e 459 etapas**. A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. A Fase 4 acrescenta 10 módulos, 100 aulas e 135 etapas. Todo o conteúdo anterior permanece preservado.
 - Painel de jornada, busca de aulas, navegação anterior/próxima, estados de progresso e menu adaptável ao celular.
 - Índice do Modo Gado com 15 perguntas, cinco indicadores e faixas de resultado oficiais.
 - Termômetro de autodomínio, radar de reciprocidade, filtro de compatibilidade, auditorias de competência, ostentação, irmandade e autossuficiência.
@@ -59,6 +59,17 @@ A [documentação da Fase 3](docs/FASE-III.md) descreve a sequência, as ferrame
 - Campanha de 180 dias com seis marcos, recursos, cinco riscos, indicadores e revisões.
 - Comparação de autorrelatos, dossiê automático exportável e Código da Ascensão antes do encerramento.
 
+## Fase 4 — A Prontidão
+
+A [documentação da Fase 4](docs/FASE-4.md) descreve a estrutura e os critérios. O [material original](docs/fase-4-oficial.md) está preservado.
+
+- Dez módulos e cem aulas de preparação pessoal para compartilhar a vida.
+- Raio-X de 50 afirmações, contrato e nove missões de passagem, com reaproveitamento dos registros.
+- Motivação, bagagem, autorregulação, vulnerabilidade, limites, vida prática, consentimento e habilidades de convivência.
+- Orçamentos de tempo e vida social, roteiros de comunicação e documentos pessoais exportáveis.
+- Campanha de 30 dias com cinco ajustes e quatro revisões semanais no módulo 10.
+- Prova de 50 questões, espelho de quinze cenários, comparação de autorrelatos, dossiê com controles de privacidade e código final.
+
 ## Executar
 
 O site é estático, sem dependências de produção. Use um servidor HTTP; abrir `index.html` diretamente como `file://` não permite carregar os módulos JavaScript e o conteúdo JSON.
@@ -79,7 +90,7 @@ npm run build
 npm test
 ```
 
-`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json`, `docs/fase-2-oficial.md` e `docs/fase-3-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js` `src/consolidation-exams.js` e `src/ascension-exams.js`.
+`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json`, `docs/fase-2-oficial.md`, `docs/fase-3-oficial.md` e `docs/fase-4-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js` `src/consolidation-exams.js` `src/ascension-exams.js` e `src/readiness-exams.js`.
 
 ## Arquivos
 
@@ -90,6 +101,7 @@ npm test
 - `src/consolidation*.js`: dados, navegação, ferramentas, desafios, ciclo 90D, regras e dossiê da Fase 2.
 - `src/ascension*.js`: dados, ferramentas, simulações, campanha de 180 dias, avaliações, regras e dossiê da Fase 3.
 - `scripts/build-consolidation.py` e `scripts/build-ascension.py`: compilam as novas fases sem alterar as anteriores.
+- `src/readiness*.js` e `scripts/build-readiness.py`: conteúdo, ferramentas, simulações, regras e dossiê da Fase 4.
 - `src/state.js`: armazenamento, validação, XP e cálculos.
 - `src/ui.js`: apresentação segura de textos e exportação.
 - `docs/briefing.md` e `docs/conteudo-oficial.md`: materiais oficiais preservados integralmente.
@@ -107,7 +119,7 @@ O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta 
 
 A logo original enviada pelo proprietário está em `assets/logo-homens-de-elite.jpg`. É utilizada no menu, cabeçalho, painel inicial, quadro de patente, celebrações e conclusão, além do ícone da aba do navegador. O arquivo foi preservado sem cortes ou alterações de cor.
 
-A responsividade foi implementada por CSS. Há 96 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das Fases I e II e os percursos das três fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
+A responsividade foi implementada por CSS. Há 116 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1, 2 e 3 e os percursos das quatro fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
 
 ## Publicação
 

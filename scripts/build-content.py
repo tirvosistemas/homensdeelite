@@ -52,10 +52,10 @@ course['readiness']=runpy.run_path(str(root/'scripts/build-readiness.py'))['buil
 print(f'{len(modules)} módulos; {sum(u["kind"]=="lesson" for m in modules for u in m["lessons"])} aulas; {sum(len(m["lessons"]) for m in modules)} etapas')
 
 c=course['consolidation']
-print(f'Fase II: {len(c["modules"])} módulos; {sum(u["kind"]=="lesson" for m in c["modules"] for u in m["lessons"])} aulas; {sum(len(m["lessons"]) for m in c["modules"])+len(c["before"])+len(c["passages"])+len(c["after"])} etapas')
+print(f'Fase 2: {len(c["modules"])} módulos; {sum(u["kind"]=="lesson" for m in c["modules"] for u in m["lessons"])} aulas; {sum(len(m["lessons"]) for m in c["modules"])+len(c["before"])+len(c["passages"])+len(c["after"])} etapas')
 
 a=course['ascension']
-print(f'Fase III: {len(a["modules"])} módulos; {sum(u["kind"]=="lesson" for m in a["modules"] for u in m["lessons"])} aulas')
+print(f'Fase 3: {len(a["modules"])} módulos; {sum(u["kind"]=="lesson" for m in a["modules"] for u in m["lessons"])} aulas')
 
 r=course['readiness']
 print(f'Fase 4: {len(r["modules"])} módulos; {sum(u["kind"]=="lesson" for m in r["modules"] for u in m["lessons"])} aulas')

@@ -1,3 +1,4 @@
+import {readinessSummary} from './readiness-summary.js';
 import {ascensionSummary} from './ascension-summary.js';
 import {esc,bar} from './ui.js';
 import {dateKey} from './state.js';
@@ -39,7 +40,7 @@ export function mountConsolidationWidget(el,definition,s,ctx){if(definition.type
   if(a.mode==='finance'){const b=budgetValues(v);html+=`<div class="feedback"><h4>Saldo mensal: ${money(b.balance)}</h4><p>Entradas menos despesas fixas, variáveis e parcelas. O saldo total das dívidas e a reserva aparecem separadamente; não são descontados novamente.</p><p>Dívida total: ${money(b.debt)} · Reserva: ${money(b.reserve)}</p></div>`;}
   if(a.mode==='reserve')html+=`<div class="feedback"><h4>${reservePercent(v).toFixed(1)}% da meta financeira definida por você</h4>${bar(reservePercent(v))}<p>Atual: ${money(Number(v.f2))} · Meta: ${money(Number(v.f1))}. Nenhum valor universal é recomendado.</p></div>`;
   if(a.summary==='return')html+='<div class="feedback">VOCÊ CAIU. AGORA RETORNE. Sua próxima ação está registrada. O XP anterior foi preservado.</div>';
-  return html+ascensionSummary(a,v);
+  return html+ascensionSummary(a,v)+readinessSummary(a,v);
  }
  function render(){
   if(['diagnostic','exit'].includes(a.mode)){
@@ -75,7 +76,7 @@ export function mountConsolidationWidget(el,definition,s,ctx){if(definition.type
  el.querySelectorAll('[data-remove-row]').forEach(b=>b.onclick=()=>{const rows=rowsOf(f);rows.splice(Number(b.dataset.removeRow),1);f.rows=JSON.stringify(rows);delete f.edit;ctx.invalidate(a.key,a.unit.id);save();draw();});
  const empty=el.querySelector('[data-empty-table]');if(empty)empty.onchange=()=>{f.empty=empty.checked?'yes':'no';if(empty.checked)f.rows='[]';ctx.invalidate(a.key,a.unit.id);save();draw();};
  on('[data-table-finish]',()=>{if(!(a.allowEmpty&&f.empty==='yes')&&(!rowsOf(f).length||!rowsOf(f).every(r=>validFields(r,a.columns))))return ctx.toast('Adicione ao menos um registro válido ou informe que não se aplica.');finish();});
- on('[data-download-f2]',()=>downloadDocument('Dossiê da Consolidação',el.querySelector('.dossier')));on('[data-confirm-dossier]',()=>{f.reviewed='yes';finish();});
+ on('[data-download-readiness-document]',()=>downloadDocument(a.document,el.querySelector('.readiness-document'),'documento-da-prontidao.html'));on('[data-download-f2]',()=>downloadDocument('Dossiê da Consolidação',el.querySelector('.dossier')));on('[data-confirm-dossier]',()=>{f.reviewed='yes';finish();});
  if(['focus','voice'].includes(a.mode))bindTimer();
  const formEl=el.querySelector('form');if(!formEl)return;
  formEl.oninput=()=>{Object.assign(f,Object.fromEntries(new FormData(formEl)));save();};
