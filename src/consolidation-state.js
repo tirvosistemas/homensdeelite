@@ -25,7 +25,7 @@ export function readyConsolidation(a,s,key,global,ctx){if(!global.completed[key]
  return !!f.confirmed;
 }
 export function consolidationUnits(c){const units=[...c.before];c.modules.forEach((m,i)=>{m.lessons.forEach(u=>u.moduleIndex=i);units.push(...m.lessons);if(c.passages[i])units.push(c.passages[i]);});return [...units,...c.after];}
-export function consolidationGate(route,c,s,unitReady,phaseOneDone){if(!phaseOneDone)return {id:'fim',title:'Conclua a Fase I — Jornada da Forja'};if(route==='fase-2')return null;
+export function consolidationGate(route,c,s,unitReady,phaseOneDone){if(!phaseOneDone)return {id:'fim',title:'Conclua a Fase 1 — Jornada da Forja'};if(route==='fase-2')return null;
  for(const u of c.before){if(u.id===route)return null;if(!s.completed[u.id]||!unitReady(u))return u;}
  for(let i=0;i<c.modules.length;i++){const m=c.modules[i];if(m.lessons.some(u=>u.id===route))return null;const unfinished=m.lessons.find(u=>!s.completed[u.id]||!unitReady(u));if(unfinished)return unfinished;const p=c.passages[i];if(p){if(p.id===route)return null;if(!s.completed[p.id]||!unitReady(p))return p;}}
  for(const u of c.after){if(u.id===route)return null;if(!s.completed[u.id]||!unitReady(u))return u;}return null;

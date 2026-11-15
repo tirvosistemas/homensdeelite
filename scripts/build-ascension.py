@@ -29,6 +29,7 @@ def build():
    elif title in ['DESAFIO DO MÓDULO','DESAFIO','MISSÃO']:
     if n>7:continue
     label=challengeNames[n-1];unit={'id':f'f3-m{n}-challenge','title':label,'kind':'challenge','blocks':[{'title':label,'body':'Realize a missão e registre evidências honestas da aplicação. Evite expor informações privadas de outras pessoas.','ascension':'module-challenge','module':n}]};module['lessons'].append(unit)
+   elif title in challengeNames and unit and unit['kind']=='challenge':unit['blocks'][0]['body']=text.replace('O aluno deverá','Você deverá').replace('O aluno precisa','Você precisa')
    elif title.startswith('AVALIAÇÃO DO MÓDULO'):
     unit={'id':f'f3-m{n}-exam','title':title,'kind':'exam','blocks':[{'title':title,'body':'25 decisões contextualizadas. Aprovação a partir de 70%; revise o raciocínio após responder.','ascension':'module-exam','module':n}]};module['lessons'].append(unit)
    elif title in ['REGRA'] and unit:unit['blocks'].append({'title':title,'body':text})

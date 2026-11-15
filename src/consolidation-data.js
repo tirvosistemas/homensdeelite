@@ -83,7 +83,7 @@ export const moduleChallenges=[
  {days:30,items:['Registrei meus gastos (ou ausência deles)','Evitei compra impulsiva de status','Agi sobre uma fonte de desperdício'],weekly:true,medal:'Dinheiro em Ordem'},
  {days:7,items:['Presença','Escuta','Clareza','Limite respeitoso quando necessário'],evidence:true,medal:'Voz Firme'},
  {days:7,items:['Cuidei do ambiente físico','Revisei o ambiente digital','Reduzi uma influência negativa','Fortaleci uma influência positiva'],medal:'Guardião do Ambiente'},
- {days:30,items:['Corpo','Estudo','Trabalho','Dinheiro','Palavra','Ambiente','Responsabilidade'],maintenance:true,medal:'Homem Consolidado — Fase II'}
+ {days:30,items:['Corpo','Estudo','Trabalho','Dinheiro','Palavra','Ambiente','Responsabilidade'],maintenance:true,medal:'Homem Consolidado — Fase 2'}
 ];
 export function consolidationDefinition(block){
  const mode=block.consolidation;if(!mode)return null;

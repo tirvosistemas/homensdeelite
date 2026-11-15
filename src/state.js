@@ -1,6 +1,6 @@
 import {phaseAnswerReady} from './phase-flow.js';
 export const KEY='homens-de-elite:v1';
-export const ranks=[['Recruta',0],['Aprendiz da Forja',100],['Homem em Construção',300],['Sentinela',650],['Guardião',1000],['Homem de Estatura',1500],['Homem de Elite',2200],['Guardião da Forja',5000],['Construtor',6500],['Homem Consolidado',8000]];
+export const ranks=[['Recruta',0],['Aprendiz da Forja',100],['Homem em Construção',300],['Sentinela',650],['Guardião',1000],['Homem de Estatura',1500],['Homem de Elite',2200],['Guardião da Forja',5000],['Construtor',6500],['Homem Consolidado',8000],['Estrategista',9500],['Comandante da Forja',11000],['Homem de Influência',12500],['Homem de Ascensão',14000]];
 export const fresh=()=>({version:1,completed:{},awards:{},answers:{},notes:{},challenges:{},visited:{},dates:[],last:null,pledged:false});
 export const xp=s=>Object.values(s.awards).reduce((sum,a)=>sum+a,0);
 export const rank=s=>ranks.filter(r=>xp(s)>=r[1]).at(-1);
@@ -22,15 +22,16 @@ export function validateState(value){
  for(const [answerKey,a] of Object.entries(value.answers)){
   if(!object(a))throw Error('Resposta inválida.');
   for(const k of ['fields','saved'])if(a[k]!==undefined&&(!object(a[k])||!Object.values(a[k]).every(v=>typeof v==='string')))throw Error('Reflexão inválida.');
-  if(answerKey.startsWith('f2-'))for(const record of [a.fields,a.saved])if(record){
+  if(/^f[23]-/.test(answerKey))for(const record of [a.fields,a.saved])if(record){
    for(const k of ['rows','history','days','journal'])if(record[k]!==undefined){let parsed;try{parsed=JSON.parse(record[k]);}catch{throw Error('Registro da Consolidação inválido.');}if(['rows','history'].includes(k)?!Array.isArray(parsed):!object(parsed))throw Error('Estrutura da Consolidação inválida.');if(k==='rows'&&!parsed.every(r=>object(r)&&Object.values(r).every(v=>typeof v==='string')))throw Error('Tabela da Consolidação inválida.');if(['days','journal'].includes(k)&&!Object.values(parsed).every(r=>object(r)&&('states' in r?Array.isArray(r.states)&&r.states.every(v=>['feito','manutencao','nao',''].includes(v))&&['return','evidence'].every(f=>r[f]===undefined||typeof r[f]==='string'):Object.values(r).every(v=>typeof v==='string'))))throw Error('Registro diário da Consolidação inválido.');}
   }
+  if(answerKey.startsWith('f3-'))for(const record of [a.fields,a.saved])if(record)for(const [key,value] of Object.entries(record))if(/^order[0-5]$/.test(key)){let order;try{order=JSON.parse(value);}catch{throw Error('Ordem da Ascensão inválida.');}if(!Array.isArray(order)||JSON.stringify([...order].sort())!=='[0,1,2,3]')throw Error('Ordem da Ascensão inválida.');}
   if(a.values!==undefined&&(!Array.isArray(a.values)||!a.values.every(v=>v===null||(Number.isInteger(v)&&v>=0&&v<=50))))throw Error('Alternativas inválidas.');
   if(a.baseline!==undefined&&(!Array.isArray(a.baseline)||a.baseline.length!==12||!a.baseline.every(v=>Number.isInteger(v)&&v>=0&&v<=2)))throw Error('Espelho inicial inválido.');
   if(a.points!==undefined&&(!Array.isArray(a.points)||!a.points.every(v=>Number.isFinite(v)&&v>=0&&v<=100)))throw Error('Orçamento inválido.');
   if(a.entries!==undefined&&(!Array.isArray(a.entries)||!a.entries.every(v=>object(v)&&typeof v.name==='string'&&typeof v.group==='string')))throw Error('Classificação inválida.');
   if(a.steps!==undefined&&(!Array.isArray(a.steps)||!a.steps.every(v=>typeof v==='boolean')))throw Error('Etapas inválidas.');
-  if(a.snapshot!==undefined&&(!Array.isArray(a.snapshot)||a.snapshot.length!==(['f2-entrada-b0','f2-saida-b0'].includes(answerKey)?42:45)||!a.snapshot.every(v=>Number.isInteger(v)&&v>=0&&v<=4)))throw Error('Diagnóstico inválido.');
+  if(a.snapshot!==undefined&&(!Array.isArray(a.snapshot)||a.snapshot.length!==(['f3-entrada-b0','f3-saida-b0'].includes(answerKey)?50:['f2-entrada-b0','f2-saida-b0'].includes(answerKey)?42:45)||!a.snapshot.every(v=>Number.isInteger(v)&&v>=0&&v<=4)))throw Error('Diagnóstico inválido.');
   if(a.initialValues!==undefined&&(!Array.isArray(a.initialValues)||a.initialValues.length!==15||!a.initialValues.every(v=>Number.isInteger(v)&&v>=0&&v<=3)))throw Error('Índice inicial inválido.');
   for(const k of ['started','accepted','recorded'])if(a[k]!==undefined&&(!Number.isFinite(a[k])||a[k]<0))throw Error('Data de atividade inválida.');
   if(a.logged!==undefined&&(!object(a.logged)||!Object.entries(a.logged).every(([k,v])=>['0','1','2'].includes(k)&&Number.isFinite(v)&&v>=0)))throw Error('Registro diário inválido.');

@@ -1,27 +1,27 @@
 # Treinamento Homens de Elite
 
-Sala de aula interativa com a Fase I — Jornada da Forja e a Fase II — A Consolidação, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
+Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação e a Fase 3 — A Ascensão, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
 
 ## O que está implementado
 
-- Duas fases separadas, **14 módulos, 151 aulas e 201 etapas**. A Fase I mantém 7 módulos, 75 aulas e 101 etapas; a Fase II acrescenta 7 módulos, 76 aulas e 100 etapas. Todo o conteúdo anterior da Fase I permanece preservado.
+- Três fases separadas, **22 módulos, 246 aulas e 324 etapas**. A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. Todo o conteúdo anterior permanece preservado.
 - Painel de jornada, busca de aulas, navegação anterior/próxima, estados de progresso e menu adaptável ao celular.
 - Índice do Modo Gado com 15 perguntas, cinco indicadores e faixas de resultado oficiais.
 - Termômetro de autodomínio, radar de reciprocidade, filtro de compatibilidade, auditorias de competência, ostentação, irmandade e autossuficiência.
 - Simuladores de decisão, treinador do não, exercícios de reflexão, regras SE/ENTÃO, mapa de 90 dias e plano antirrecaída.
 - Desafios de 7, 21 e 30 dias; painel semanal de compromissos; registros incompletos permanecem visíveis.
 - Avaliações dos módulos 1 a 5, prova integradora de 30 questões dos módulos 1 a 6 e avaliação de 18 questões do módulo 7. Aprovação: 70%.
-- XP concedido uma vez por atividade, dez patentes globais, conquistas e encerramento condicionado às etapas concluídas.
+- XP concedido uma vez por atividade, 14 patentes globais, conquistas e encerramento condicionado às etapas concluídas.
 - Leitura por voz do navegador, com pausar, continuar, parar e destaque do trecho. Depende de suporte à Web Speech API e de vozes instaladas no dispositivo.
 - Anotações por aula, exportação do caderno e reflexões em Markdown, backup completo em JSON e restauração validada.
 
-## Expansão da Fase I
+## Expansão da Fase 1
 
 As 27 aulas anteriores foram complementadas, sem substituição dos seus textos, e 40 aulas novas foram inseridas na ordem numérica de cada módulo. O [mapa completo da integração](docs/EXPANSAO.md) registra o destino de cada aula e a migração dos dados.
 
 Inclui Espelho da Arrancada com comparação final, Raio-X de 21 sinais, tradutor da carência, orçamento de atenção, sprint de aprendizagem, mapas de responsabilidade e influência, código pessoal para download e o desafio de 14 dias. As avaliações dos módulos 1 e 5 têm 25 questões; as dos módulos 2, 3 e 4 têm 20; a prova integradora dos seis primeiros módulos mantém suas 30 questões.
 
-## Fechamento oficial da Fase I
+## Fechamento oficial da Fase 1
 
 A [documentação do fechamento](docs/FECHAMENTO.md) descreve a ordem, os critérios e a preservação dos registros.
 
@@ -32,11 +32,11 @@ A [documentação do fechamento](docs/FECHAMENTO.md) descreve a ordem, os crité
 - Depois do módulo 7: dossiê automático, diagnóstico final equivalente, comparação de autorrelatos, último espelho e encerramento definitivo.
 - Carta de missão e dossiê exportáveis como documentos HTML independentes, legíveis e imprimíveis sem dependências externas.
 
-## Fase II — A Consolidação
+## Fase 2 — A Consolidação
 
-A [documentação da Fase II](docs/FASE-II.md) registra a ordem, as ferramentas, a persistência e os critérios. O material enviado está preservado em [fase-2-oficial.md](docs/fase-2-oficial.md).
+A [documentação da Fase 2](docs/FASE-II.md) registra a ordem, as ferramentas, a persistência e os critérios. O material enviado está preservado em [fase-2-oficial.md](docs/fase-2-oficial.md).
 
-- Acesso após a conclusão da Fase I, com navegação própria e continuidade do XP global.
+- Acesso após a conclusão da Fase 1, com navegação própria e continuidade do XP global.
 - Índice de Consolidação com 42 afirmações, sete áreas e contrato antes do primeiro módulo.
 - Sete módulos: disciplina; corpo; trabalho; dinheiro; comunicação; ambiente; constância.
 - 76 aulas, com ferramentas inseridas na aula correspondente; seis missões entre módulos.
@@ -47,6 +47,17 @@ A [documentação da Fase II](docs/FASE-II.md) registra a ordem, as ferramentas,
 - Quartel-General 90D com meta, três indicadores, três hábitos, registros e checkpoints nos dias 30, 60 e 90.
 - Avaliações de 20 questões nos módulos 1 a 6 e prova final de 40 questões, com aprovação de 70%.
 - Diagnóstico equivalente de saída, comparação de autorrelatos e dossiê automático exportável.
+
+## Fase 3 — A Ascensão
+
+A [documentação da Fase 3](docs/FASE-III.md) descreve a sequência, as ferramentas e os critérios. O [material oficial](docs/fase-3-oficial.md) está preservado integralmente.
+
+- Oito módulos de estratégia, carreira, liderança, negociação, renda, capital, reputação e grandes projetos.
+- Diagnóstico de 50 afirmações, contrato, 95 aulas, sete missões de passagem e continuidade do XP global.
+- Matrizes de decisão e risco, cálculos financeiros educativos, CRM local e quadro de escopo com arrastar ou selecionar.
+- Sete avaliações de 25 questões e prova final de 50; simulação de 12 decisões com consequências encadeadas.
+- Campanha de 180 dias com seis marcos, recursos, cinco riscos, indicadores e revisões.
+- Comparação de autorrelatos, dossiê automático exportável e Código da Ascensão antes do encerramento.
 
 ## Executar
 
@@ -68,7 +79,7 @@ npm run build
 npm test
 ```
 
-`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json` e `docs/fase-2-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js` e `src/consolidation-exams.js`.
+`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json`, `docs/fase-2-oficial.md` e `docs/fase-3-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js` `src/consolidation-exams.js` e `src/ascension-exams.js`.
 
 ## Arquivos
 
@@ -76,8 +87,9 @@ npm test
 - `src/app.js`: navegação, painel, progresso, caderno e áudio.
 - `src/widgets.js`: ferramentas, testes, desafios e formulários.
 - `src/phase-flow.js`, `src/phase-data.js`, `src/phase-widgets.js`, `src/phase-dossier.js`: sequência final, diagnóstico, ferramentas do módulo 7 e dossiê.
-- `src/consolidation*.js`: dados, navegação, ferramentas, desafios, ciclo 90D, regras e dossiê da Fase II.
-- `scripts/build-consolidation.py`: compila a segunda fase sem alterar a primeira.
+- `src/consolidation*.js`: dados, navegação, ferramentas, desafios, ciclo 90D, regras e dossiê da Fase 2.
+- `src/ascension*.js`: dados, ferramentas, simulações, campanha de 180 dias, avaliações, regras e dossiê da Fase 3.
+- `scripts/build-consolidation.py` e `scripts/build-ascension.py`: compilam as novas fases sem alterar as anteriores.
 - `src/state.js`: armazenamento, validação, XP e cálculos.
 - `src/ui.js`: apresentação segura de textos e exportação.
 - `docs/briefing.md` e `docs/conteudo-oficial.md`: materiais oficiais preservados integralmente.
@@ -95,7 +107,7 @@ O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta 
 
 A logo original enviada pelo proprietário está em `assets/logo-homens-de-elite.jpg`. É utilizada no menu, cabeçalho, painel inicial, quadro de patente, celebrações e conclusão, além do ícone da aba do navegador. O arquivo foi preservado sem cortes ou alterações de cor.
 
-A responsividade foi implementada por CSS. Há 75 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral da Fase I e os percursos de ambas as fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
+A responsividade foi implementada por CSS. Há 96 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das Fases I e II e os percursos das três fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
 
 ## Publicação
 

@@ -1,3 +1,5 @@
+import {ascensionDefinition} from './ascension-data.js';
+import {mountAscensionWidget} from './ascension-widgets.js';
 import {consolidationDefinition} from './consolidation-data.js';
 import {mountConsolidationWidget} from './consolidation-widgets.js';
 import {phaseDefinition} from './phase-data.js';
@@ -9,7 +11,7 @@ import {esc,bar,field} from './ui.js';
 import {grade,gadoScore,dateKey,daysSince,challengeStats} from './state.js';
 let ctx;
 export const setContext=c=>ctx=c;
-export function definition(block,m){if(block.consolidation)return consolidationDefinition(block);if(block.phaseType)return phaseDefinition(block);if(block.reference)return {type:'reference',title:block.title,target:block.reference};if(block.reflection)return {type:'form',title:'Meu próximo passo',fields:[block.reflection]};if(block.title.startsWith('AVALIAÇÃO'))return {type:'quiz',title:'Avaliação de domínio',questions:exams[m],exam:true};if(block.title.startsWith('PROVA FINAL'))return {type:'quiz',title:'Prova integradora · módulos 1 a 6',questions:finalExam,exam:true,final:true};const a=activityFor(block.title);return a?{...a,...(block.additionalSignals?{additionalSignals:block.additionalSignals}:{})}:a;}
+export function definition(block,m){if(block.ascension)return ascensionDefinition(block);if(block.consolidation)return consolidationDefinition(block);if(block.phaseType)return phaseDefinition(block);if(block.reference)return {type:'reference',title:block.title,target:block.reference};if(block.reflection)return {type:'form',title:'Meu próximo passo',fields:[block.reflection]};if(block.title.startsWith('AVALIAÇÃO'))return {type:'quiz',title:'Avaliação de domínio',questions:exams[m],exam:true};if(block.title.startsWith('PROVA FINAL'))return {type:'quiz',title:'Prova integradora · módulos 1 a 6',questions:finalExam,exam:true,final:true};const a=activityFor(block.title);return a?{...a,...(block.additionalSignals?{additionalSignals:block.additionalSignals}:{})}:a;}
 export const requiredActivity=a=>a&&!['comparison','alerts','pledge','signals','translator','reference'].includes(a.type);
 export const widgetShell=(key)=>`<div class="widget" data-widget="${esc(key)}"></div>`;
 const educational='<p class="muted"><small>Ferramenta educacional de autorreflexão. Não é diagnóstico médico ou psicológico.</small></p>';
@@ -20,7 +22,7 @@ function title(a){return `<div class="eyebrow">${a.exam?'Avaliação de domínio
 function answer(key,defaults={}){if(!ctx.s.answers[key]||typeof ctx.s.answers[key]!=='object')ctx.s.answers[key]={...defaults};return ctx.s.answers[key];}
 function finish(a,points=10){ctx.completeActivity(a.key,points);}
 export function mountWidgets(container,unit){unit.blocks.forEach((b,i)=>{const a=definition(b,unit.moduleIndex);if(!a)return;const key=unit.id+'-b'+i;const el=container.querySelector(`[data-widget="${key}"]`);if(el)mount(el,{...a,key,unit});});}
-function mount(el,a){const s=answer(a.key);if(mountConsolidationWidget(el,a,s,ctx))return;if(mountPhaseWidget(el,a,s,ctx))return;if(mountExpansionWidget(el,a,s,ctx))return;let timer;
+function mount(el,a){const s=answer(a.key);if(mountAscensionWidget(el,a,s,ctx))return;if(mountConsolidationWidget(el,a,s,ctx))return;if(mountPhaseWidget(el,a,s,ctx))return;if(mountExpansionWidget(el,a,s,ctx))return;let timer;
  const draw=()=>{clearInterval(timer);el.innerHTML=title(a)+render(a,s);bind();};
  const save=()=>ctx.save();
  function bind(){
