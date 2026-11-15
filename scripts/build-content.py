@@ -47,6 +47,7 @@ course=runpy.run_path(str(root/'scripts/expand-content.py'))['expand'](course)
 course=runpy.run_path(str(root/'scripts/close-phase.py'))['close'](course)
 course['consolidation']=runpy.run_path(str(root/'scripts/build-consolidation.py'))['build']()
 course['ascension']=runpy.run_path(str(root/'scripts/build-ascension.py'))['build']()
+course['readiness']=runpy.run_path(str(root/'scripts/build-readiness.py'))['build']()
 (root/'src/course.json').write_text(json.dumps(course,ensure_ascii=False,indent=2))
 print(f'{len(modules)} módulos; {sum(u["kind"]=="lesson" for m in modules for u in m["lessons"])} aulas; {sum(len(m["lessons"]) for m in modules)} etapas')
 
@@ -55,3 +56,6 @@ print(f'Fase II: {len(c["modules"])} módulos; {sum(u["kind"]=="lesson" for m in
 
 a=course['ascension']
 print(f'Fase III: {len(a["modules"])} módulos; {sum(u["kind"]=="lesson" for m in a["modules"] for u in m["lessons"])} aulas')
+
+r=course['readiness']
+print(f'Fase 4: {len(r["modules"])} módulos; {sum(u["kind"]=="lesson" for m in r["modules"] for u in m["lessons"])} aulas')
