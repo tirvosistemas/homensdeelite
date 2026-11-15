@@ -1,10 +1,10 @@
 # Treinamento Homens de Elite
 
-Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação, a Fase 3 — A Ascensão, a Fase 4 — A Prontidão e a Fase 5 — A Escolha, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
+Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação, a Fase 3 — A Ascensão, a Fase 4 — A Prontidão, a Fase 5 — A Escolha e a Fase 6 — O Namoro, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
 
 ## O que está implementado
 
-- Cinco fases separadas, **42 módulos, 446 aulas e 588 etapas**. A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. A Fase 4 acrescenta 10 módulos, 100 aulas e 135 etapas. A Fase 5 acrescenta 10 módulos, 100 aulas e 129 etapas. Todo o conteúdo anterior permanece preservado.
+- Seis fases separadas, **54 módulos, 566 aulas e 750 etapas** (incluindo nove atividades opcionais da Fase 6). A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. A Fase 4 acrescenta 10 módulos, 100 aulas e 135 etapas. A Fase 5 acrescenta 10 módulos, 100 aulas e 129 etapas. A Fase 6 acrescenta 12 módulos, 120 aulas e 162 etapas. Todo o conteúdo anterior permanece preservado.
 - Painel de jornada, busca de aulas, navegação anterior/próxima, estados de progresso e menu adaptável ao celular.
 - Índice do Modo Gado com 15 perguntas, cinco indicadores e faixas de resultado oficiais.
 - Termômetro de autodomínio, radar de reciprocidade, filtro de compatibilidade, auditorias de competência, ostentação, irmandade e autossuficiência.
@@ -81,6 +81,17 @@ A [documentação da Fase 5](docs/FASE-5.md) detalha as ferramentas e os critér
 - Prova de 60 questões e laboratório com quatro perfis fictícios e 32 decisões graduais fundamentadas.
 - Comparação de autorrelatos, dossiê automático com decisão pessoal, download com privacidade e Código da Escolha.
 
+## Fase 6 — O Namoro
+
+A [documentação da Fase 6](docs/FASE-6.md) descreve a implementação do [material original](docs/fase-6-oficial.md).
+
+- Doze módulos e 120 aulas sobre construção de um namoro assumido, com diagnóstico de 60 afirmações e onze passagens.
+- Central do Namoro com onze ferramentas, registros compartilhados com as aulas e histórico de revisões.
+- Comunicação, confiança, fidelidade, limites, conflitos, intimidade responsável, reciprocidade, família, crescimento, crises e futuro.
+- Sete testes especiais revisitáveis e campanha opcional de sessenta dias, sem bloquear conclusão.
+- Prova de oitenta questões e laboratório de vinte decisões com consequências narrativas.
+- Comparação de autorrelatos, dossiê automático de dezesseis seções com privacidade e Código do Namoro.
+
 ## Executar
 
 O site é estático, sem dependências de produção. Use um servidor HTTP; abrir `index.html` diretamente como `file://` não permite carregar os módulos JavaScript e o conteúdo JSON.
@@ -101,7 +112,7 @@ npm run build
 npm test
 ```
 
-`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json`, `docs/fase-2-oficial.md`, `docs/fase-3-oficial.md`, `docs/fase-4-oficial.md` e `docs/fase-5-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js`, `src/consolidation-exams.js`, `src/ascension-exams.js`, `src/readiness-exams.js` e `src/selection-exams.js`.
+`npm run build` recompila `src/course.json` a partir de `docs/conteudo-oficial.md`, `docs/expansao-fase-1.md`, `docs/fechamento-fase-1.json`, `docs/fase-2-oficial.md`, `docs/fase-3-oficial.md`, `docs/fase-4-oficial.md`, `docs/fase-5-oficial.md` e `docs/fase-6-oficial.md`. Não altera os arquivos originais. As ferramentas interativas estão em `src/activities.js`; as questões adicionais derivadas do conteúdo ficam em `src/exams.js`, `src/expansion-exams.js`, `src/phase-data.js`, `src/consolidation-exams.js`, `src/ascension-exams.js`, `src/readiness-exams.js`, `src/selection-exams.js` e `src/dating-exams.js`.
 
 ## Arquivos
 
@@ -114,6 +125,7 @@ npm test
 - `scripts/build-consolidation.py` e `scripts/build-ascension.py`: compilam as novas fases sem alterar as anteriores.
 - `src/readiness*.js` e `scripts/build-readiness.py`: conteúdo, ferramentas, simulações, regras e dossiê da Fase 4.
 - `src/selection*.js` e `scripts/build-selection.py`: conteúdo, ferramentas, laboratório, regras e dossiê da Fase 5.
+- `src/dating*.js` e `scripts/build-dating.py`: aulas, Central, ferramentas, laboratório e fechamento da Fase 6.
 - `src/state.js`: armazenamento, validação, XP e cálculos.
 - `src/ui.js`: apresentação segura de textos e exportação.
 - `docs/briefing.md` e `docs/conteudo-oficial.md`: materiais oficiais preservados integralmente.
@@ -131,7 +143,7 @@ O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta 
 
 A logo original enviada pelo proprietário está em `assets/logo-homens-de-elite.jpg`. É utilizada no menu, cabeçalho, painel inicial, quadro de patente, celebrações e conclusão, além do ícone da aba do navegador. O arquivo foi preservado sem cortes ou alterações de cor.
 
-A responsividade foi implementada por CSS. Há 136 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1, 2, 3 e 4 e os percursos das cinco fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
+A responsividade foi implementada por CSS. Há 157 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1, 2, 3, 4 e 5 e os percursos das seis fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
 
 ## Publicação
 
