@@ -1,3 +1,4 @@
+import {trainingOverview} from './training-overview.js';
 import {createDating} from './dating.js';
 import {medals6} from './dating-data.js';
 import {createSelection} from './selection.js';
@@ -89,6 +90,7 @@ function renderRoute(focus=true){stopAudio();setContext(widgetContext);const rou
  else if(route==='boas-vindas')content=`<div class="eyebrow">O propósito da jornada</div><h1>Bem-vindo à Forja</h1>${course.intro.map(b=>`<article class="content-block"><div class="reading">${markdown(b.body)}</div></article>`).join('')}<a class="primary" href="${href(units[0].id)}">Começar treinamento →</a>`;
  else if(route==='revisao'){const found=allTools().find(t=>t.definition.match==='REVISÃO SEMANAL');content=`<div class="eyebrow">Consciência, ajuste e continuidade</div><h1>Revisão da Forja</h1><p class="muted">Faça uma revisão semanal. Exporte o caderno antes de substituir uma reflexão anterior.</p>${widgetShell(found.key)}`;}
  else content=dashboard();
+ if(route==='inicio'||route==='boas-vindas'||/^fase-\d+$/.test(route))content=trainingOverview(course)+content;
  $('#main').innerHTML=(loadError||storageWarning?`<div class="notice" role="alert">${esc(loadError||'O salvamento local está indisponível. Exporte um backup para não perder seus registros.')} <a href="#caderno">Abrir caderno e backups →</a></div>`:'')+content;
  updateChrome();bindPage();
  if(consolidation?.active())consolidation.mount($('#main'));
