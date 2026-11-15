@@ -1,0 +1,43 @@
+export const signalOptions=['🟢 Saudável','🟡 Observe/contexto','🔴 Grave','⚪ Informação insuficiente'];
+export const signalScenarios=[
+ ['Ela avisa com antecedência que não poderá cumprir um horário e oferece uma alternativa possível.',0,'Há responsabilidade com o tempo neste episódio; isso não certifica toda a pessoa.'],
+ ['Ela humilha deliberadamente um funcionário por sua posição social.',2,'Humilhação e crueldade são relevantes mesmo que haja gentileza com você.'],
+ ['Uma foto mostra pessoas conversando, mas você não sabe a relação ou o contexto.',3,'Uma imagem não permite concluir flerte, caráter ou intenção.'],
+ ['Ela se atrasa uma vez e explica um imprevisto plausível.',1,'Considere contexto, impacto, reparação e recorrência.'],
+ ['Ela respeita um não sem pressão ou punição.',0,'Respeito à recusa é um comportamento positivo.'],
+ ['Ela ameaça divulgar informações privadas se você não fizer o que quer.',2,'Ameaça e coerção são graves; não precisam de testes adicionais.'],
+ ['Ela tem amigos homens, mas você não conhece a natureza dessas relações.',3,'O gênero dos amigos não determina limites ou caráter.'],
+ ['Um ex permanece próximo e ainda há dúvidas sobre os limites atuais.',1,'A situação pede contexto e conversa legítima, sem invasão.'],
+ ['Ela assume um erro e realiza a correção combinada.',0,'Responsabilidade se demonstra em ação, além de palavras.'],
+ ['Há fraude deliberada e verificável envolvendo dinheiro.',2,'Fraude é uma conduta grave e não uma diferença de preferência.'],
+ ['Ela cresceu sem pai; você não sabe como lida com sua história hoje.',3,'Origem não é sentença de caráter.'],
+ ['Ela usa álcool com frequência, mas faltam informações sobre contexto e consequências.',1,'Observe quantidade, responsabilidade e conduta; não diagnostique.'],
+ ['Ela recebe um elogio e agradece educadamente, respeitando limites claros.',0,'Educação não equivale a flerte ou dependência de validação.'],
+ ['Ela tenta isolá-lo de todos os vínculos e usa ameaças para impor isso.',2,'Isolamento controlador e ameaça são graves.'],
+ ['Ela faz terapia, sem outras informações sobre sua conduta.',3,'Tratamento não é sinal negativo nem prova completa de maturidade.'],
+ ['Ela relata muitos conflitos em que nunca reconhece participação própria.',1,'Observe fatos e padrão de responsabilidade, sem diagnóstico.'],
+ ['Ela mantém interesse, faz perguntas e cria tempo de maneira consistente.',0,'São sinais observáveis de reciprocidade, sem obrigação de igualdade matemática.'],
+ ['Ela pratica violência deliberada grave.',2,'Segurança e limites são prioritários; não é necessário esperar repetição.'],
+ ['Ela usa roupa que você considera moderna, sem outras informações.',3,'Vestuário não revela caráter; preferências podem ser discutidas como compatibilidade.'],
+ ['A vida financeira parece desorganizada e o contexto ainda precisa ser compreendido.',1,'Investigue responsabilidade e condições reais por conversa legítima.'],
+ ['Ela preserva a privacidade de amigos mesmo quando o grupo pede detalhes.',0,'Há respeito à intimidade de terceiros neste contexto.'],
+ ['Ela rouba um bem e admite que agiu deliberadamente para prejudicar alguém.',2,'Roubo deliberado é grave, independentemente de atração ou aparência.'],
+ ['Você ouviu um boato sem fonte ou contexto verificável.',3,'Não transforme rumor em fato ou espalhe acusação.'],
+ ['Você percebe oscilação de interesse durante um período difícil conhecido.',1,'O contexto pede observação do conjunto e dos limites reais.'],
+ ['Ela consegue discordar sem insultos e escuta outro ponto de vista.',0,'Diálogo respeitoso é um sinal positivo.'],
+ ['Ela repete mentiras graves que afetam acordos e usa chantagem quando questionada.',2,'A gravidade e a recorrência não devem ser normalizadas por explicações.'],
+ ['O perfil público está desatualizado e você não conhece a rotina atual.',3,'Informação antiga não basta para definir comportamento presente.'],
+ ['A família interfere muito, mas ainda não está claro como ela estabelece limites.',1,'O manejo atual precisa ser conhecido; a origem não condena.'],
+ ['Ela reconhece não saber algo e busca aprender sem humilhar quem sabe.',0,'Humildade e curiosidade aparecem em comportamentos concretos.'],
+ ['Ela pede desculpas após uma resposta ríspida pontual e você ainda observará a mudança.',1,'Considere impacto, reparação e consistência, sem sentença por um episódio.']
+];
+export const waiterScenarios=[
+ ['Um pedido vem errado; ela solicita correção de forma respeitosa.',0,'Reclamar com respeito é compatível com um comportamento saudável.'],
+ ['Ela humilha um funcionário por sua posição social.',2,'A crueldade não é justificada por status.'],
+ ['Você vê a conversa de longe, mas não ouve o que aconteceu.',3,'Não há informação suficiente para concluir.'],
+ ['Ela responde de forma ríspida em um dia difícil, reconhece o erro e repara a atitude.',1,'Considere o episódio, a reparação e a recorrência.'],
+ ['Ela agradece o atendimento sem esperar vantagem.',0,'É um sinal positivo naquele contexto.'],
+ ['Ela é gentil com você e repetidamente cruel com quem presta serviços.',2,'O padrão com terceiros também importa.'],
+ ['Um vídeo curto começa no meio de uma discussão e não mostra o contexto.',3,'O recorte não permite conhecer toda a situação.'],
+ ['Ela se frustra com uma espera, comunica o incômodo e respeita as pessoas.',0,'Frustração não exige desrespeito.']
+];
