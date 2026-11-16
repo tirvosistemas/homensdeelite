@@ -42,4 +42,6 @@ As chaves `f7-` compartilham `homens-de-elite:v1` com as fases anteriores. XP, p
 
 ## Verificação
 
-A suíte cobre estrutura, contagem automática, preservação da Fase 6, avaliações, progressão, dependências da Central, cálculos financeiros, campanha, simulação, privacidade, restauração e todas as 212 rotas em DOM simulado. Também foi feita inspeção em Chromium nas larguras de 1440 e 390 pixels: painel inicial, entrada da Fase 7, menu móvel e dossiê. A reprodução efetiva do áudio depende das vozes e permissões de cada dispositivo e não foi validada auditivamente.
+Validação concluída: **179 testes aprovados, sem falhas** — 22 da Fase 7 e 157 de regressão das fases anteriores.
+
+A suíte cobre estrutura, contagem automática, preservação da Fase 6, avaliações, progressão, dependências da Central, cálculos financeiros, campanha, simulação, privacidade, restauração e todas as 212 rotas em DOM simulado. Também foi feita inspeção em Chromium nas larguras de 1440 e 390 pixels: painel inicial, entrada da Fase 7, menu móvel e dossiê. O download do dossiê também foi exercitado em Chromium: gerou HTML independente com os detalhes privados excluídos por padrão. O arquivo oficial foi comparado byte a byte com o anexo e permanece idêntico. A reprodução efetiva do áudio depende das vozes e permissões de cada dispositivo e não foi validada auditivamente.

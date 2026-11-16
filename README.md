@@ -157,7 +157,7 @@ O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta 
 
 A logo original enviada pelo proprietário está em `assets/logo-homens-de-elite.jpg`. É utilizada no menu, cabeçalho, painel inicial, quadro de patente, celebrações e conclusão, além do ícone da aba do navegador. O arquivo foi preservado sem cortes ou alterações de cor.
 
-A responsividade foi implementada por CSS. Há testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1 a 6 e os percursos das sete fases até o encerramento. O painel inicial, a entrada da Fase 7, o menu móvel e o dossiê foram inspecionados em Chromium nas larguras de 1440 e 390 pixels. A reprodução efetiva de áudio em cada dispositivo ainda precisa ser validada.
+A responsividade foi implementada por CSS. Foram aprovados 179 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1 a 6 e os percursos das sete fases até o encerramento. O painel inicial, a entrada da Fase 7, o menu móvel e o dossiê foram inspecionados em Chromium nas larguras de 1440 e 390 pixels. A reprodução efetiva de áudio em cada dispositivo ainda precisa ser validada.
 
 ## Publicação
 
