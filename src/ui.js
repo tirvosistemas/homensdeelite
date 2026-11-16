@@ -1,4 +1,4 @@
-export const phaseLabel=text=>String(text??'').replace(/\b(fase) (VI|IV|III|II|I|V)\b/gi,(_,word,number)=>word+' '+({I:1,II:2,III:3,IV:4,V:5,VI:6})[number.toUpperCase()]);
+export const phaseLabel=text=>String(text??'').replace(/\b(fase) (VII|VI|IV|III|II|I|V)\b/gi,(_,word,number)=>word+' '+({I:1,II:2,III:3,IV:4,V:5,VI:6,VII:7})[number.toUpperCase()]);
 export function phaseLabelsInContent(value){if(typeof value==='string')return phaseLabel(value);if(Array.isArray(value))return value.map(phaseLabelsInContent);if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).map(([key,item])=>[key,phaseLabelsInContent(item)]));return value;}
 export const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const inline=t=>esc(t).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');

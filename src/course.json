@@ -14510,6 +14510,11 @@
                 "title": "FERRAMENTA — MAPA DE LEGADO CONJUGAL",
                 "body": "",
                 "marriage": "FERRAMENTA — MAPA DE LEGADO CONJUGAL"
+              },
+              {
+                "title": "MISSÃO CONJUGAL DE 12 MESES",
+                "body": "",
+                "marriage": "MISSÃO CONJUGAL DE 12 MESES"
               }
             ]
           },
@@ -14904,7 +14909,7 @@
         "blocks": [
           {
             "title": "PROVA FINAL DA FASE 7",
-            "body": "117 questões: a soma da distribuição solicitada nos dezesseis temas. Aprovação a partir de 70%.",
+            "body": "113 questões: a soma da distribuição solicitada nos dezesseis temas. Aprovação a partir de 70%.",
             "marriage": "final-exam"
           }
         ]
