@@ -1,0 +1,12 @@
+import {f6Prerequisites} from './dating-fixtures.js';
+import {daysAgo} from './consolidation-fixtures.js';
+import {definition,requiredActivity} from '../src/widgets.js';
+import {marriageUnits} from '../src/marriage-state.js';
+import {passageTools7} from '../src/marriage-data.js';
+import {marriageSimulation} from '../src/marriage-simulation.js';
+export function seedF7Tool(s,u,b,i){const a=definition(b,u.moduleIndex),key=u.id+'-b'+i;if(!requiredActivity(a))return;s.completed[key]=true;const f={confirmed:'yes'};a.fields?.forEach((field,i)=>f['f'+i]=field.type==='select'?field.options[0]:field.type==='number'?'10':'Reflexão responsável '+i);
+ if(a.mode==='tracker'){f.start=daysAgo(a.days);f.days=JSON.stringify(Object.fromEntries(Array.from({length:a.days},(_,i)=>[i,{states:a.items.map(()=>'feito'),evidence:'Prática responsável e aprendizado '+i,return:''}])));if(a.weekly)for(let i=0;i<Math.floor(a.days/(a.reviewEvery||7));i++)f['week'+i]='Revisão do período '+i;}
+ if(a.mode==='laboratory')f.reason='A decisão considera fatos, limites e responsabilidade por mudanças reais.';if(a.mode==='dossier')f.reviewed='yes';s.answers[key]={fields:f,saved:{...f}};if(a.type==='quiz')Object.assign(s.answers[key],{values:a.questions.map(q=>q[2]),result:true});if(['diagnostic','exit'].includes(a.mode))s.answers[key].snapshot=Array(75).fill(2);if(['contract','code'].includes(a.mode))s.answers[key].accepted=Date.now();if(a.mode==='scale')Object.assign(s.answers[key],{values:a.items.map(()=>2),result:true});if(a.mode==='laboratory')s.answers[key].values=marriageSimulation.map(scene=>scene.preferred);
+}
+export function seedF7Unit(s,u,c){s.completed[u.id]=true;u.blocks.forEach((b,i)=>{seedF7Tool(s,u,b,i);if(b.marriage==='passage')for(const name of passageTools7[b.passage-1])for(const v of marriageUnits(c))v.blocks.forEach((block,j)=>{if(block.marriage?.replace(/^(FERRAMENTA|SIMULADOR) — /,'')===name)seedF7Tool(s,v,block,j);});});}
+export function f7Prerequisites(course,id,s=f6Prerequisites(course,'f6-fim')){const c=course.marriage;marriageUnits(c);for(const u of c.before){if(u.id===id)return s;seedF7Unit(s,u,c);}if(id==='f7-central'||id.startsWith('f7-central:')||id==='f7-campanha'||c.optional.some(u=>u.id===id))return s;for(let i=0;i<c.modules.length;i++){const m=c.modules[i];if(m.lessons.some(u=>u.id===id))return s;m.lessons.forEach(u=>seedF7Unit(s,u,c));const p=c.passages[i];if(p){if(p.id===id)return s;seedF7Unit(s,p,c);}}for(const u of c.after){if(u.id===id)return s;seedF7Unit(s,u,c);}return s;}

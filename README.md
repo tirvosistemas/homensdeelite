@@ -1,10 +1,11 @@
 # Treinamento Homens de Elite
 
-Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação, a Fase 3 — A Ascensão, a Fase 4 — A Prontidão, a Fase 5 — A Escolha e a Fase 6 — O Namoro, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
+Sala de aula interativa com a Fase 1 — Jornada da Forja, a Fase 2 — A Consolidação, a Fase 3 — A Ascensão, a Fase 4 — A Prontidão, a Fase 5 — A Escolha a Fase 6 — O Namoro e a Fase 7 — O Casamento, em português, com a identidade preta, creme e vermelha da marca e destaques em laranja fluorescente.
 
 ## O que está implementado
 
-- Seis fases separadas, **54 módulos, 566 aulas e 750 etapas** (incluindo nove atividades opcionais da Fase 6). A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. A Fase 4 acrescenta 10 módulos, 100 aulas e 135 etapas. A Fase 5 acrescenta 10 módulos, 100 aulas e 129 etapas. A Fase 6 acrescenta 12 módulos, 120 aulas e 162 etapas. Todo o conteúdo anterior permanece preservado.
+- Sete fases separadas, **70 módulos, 726 aulas e 962 etapas** (incluindo nove atividades opcionais da Fase 6 e dez testes especiais da Fase 7). A Fase 1 mantém 7 módulos, 75 aulas e 101 etapas; a Fase 2 acrescenta 7 módulos, 76 aulas e 100 etapas. A Fase 3 acrescenta 8 módulos, 95 aulas e 123 etapas. A Fase 4 acrescenta 10 módulos, 100 aulas e 135 etapas. A Fase 5 acrescenta 10 módulos, 100 aulas e 129 etapas. A Fase 6 acrescenta 12 módulos, 120 aulas e 162 etapas. A Fase 7 acrescenta 16 módulos, 160 aulas e 212 etapas. Todo o conteúdo anterior permanece preservado.
+- Totais de fases, módulos e aulas calculados automaticamente no topo da entrada.
 - Painel de jornada, busca de aulas, navegação anterior/próxima, estados de progresso e menu adaptável ao celular.
 - Índice do Modo Gado com 15 perguntas, cinco indicadores e faixas de resultado oficiais.
 - Termômetro de autodomínio, radar de reciprocidade, filtro de compatibilidade, auditorias de competência, ostentação, irmandade e autossuficiência.
@@ -92,6 +93,17 @@ A [documentação da Fase 6](docs/FASE-6.md) descreve a implementação do [mate
 - Prova de oitenta questões e laboratório de vinte decisões com consequências narrativas.
 - Comparação de autorrelatos, dossiê automático de dezesseis seções com privacidade e Código do Namoro.
 
+## Fase 7 — O Casamento
+
+A [documentação da Fase 7](docs/FASE-7.md) descreve a implementação do [material original](docs/fase-7-oficial.md).
+
+- Dezesseis módulos e 160 aulas sobre aliança, liderança servidora, casa, dinheiro, intimidade, fidelidade, filhos, fé, crises e legado.
+- Diagnóstico de 75 afirmações, contrato e quinze missões de passagem.
+- Central do Casamento com quinze ferramentas, registros compartilhados com aulas, histórico e documentos exportáveis.
+- Dez testes especiais com 250 cenários e campanha integrada de 90 dias, em seis períodos de quinze dias.
+- Prova final de 113 questões, conforme a soma da distribuição solicitada, e simulação “30 Anos em 30 Decisões”.
+- Comparação de autorrelatos, Dossiê do Marido com vinte seções e privacidade, missão conjugal de doze meses e Código do Marido com quarenta compromissos.
+
 ## Executar
 
 O site é estático, sem dependências de produção. Use um servidor HTTP; abrir `index.html` diretamente como `file://` não permite carregar os módulos JavaScript e o conteúdo JSON.
@@ -126,6 +138,8 @@ npm test
 - `src/readiness*.js` e `scripts/build-readiness.py`: conteúdo, ferramentas, simulações, regras e dossiê da Fase 4.
 - `src/selection*.js` e `scripts/build-selection.py`: conteúdo, ferramentas, laboratório, regras e dossiê da Fase 5.
 - `src/dating*.js` e `scripts/build-dating.py`: aulas, Central, ferramentas, laboratório e fechamento da Fase 6.
+- `src/marriage*.js` e `scripts/build-marriage.py`: aulas, Central, ferramentas, campanha e fechamento da Fase 7.
+- `src/training-overview.js`: totais automáticos do treinamento.
 - `src/state.js`: armazenamento, validação, XP e cálculos.
 - `src/ui.js`: apresentação segura de textos e exportação.
 - `docs/briefing.md` e `docs/conteudo-oficial.md`: materiais oficiais preservados integralmente.
@@ -143,7 +157,7 @@ O site utiliza fontes do Google Fonts com alternativas locais. Nenhuma resposta 
 
 A logo original enviada pelo proprietário está em `assets/logo-homens-de-elite.jpg`. É utilizada no menu, cabeçalho, painel inicial, quadro de patente, celebrações e conclusão, além do ícone da aba do navegador. O arquivo foi preservado sem cortes ou alterações de cor.
 
-A responsividade foi implementada por CSS. Há 157 testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1, 2, 3, 4 e 5 e os percursos das seis fases até o encerramento. A inspeção visual em navegador real e a reprodução efetiva de áudio em cada dispositivo ainda precisam ser realizadas. O ambiente desta implementação não ofereceu a rota de pré-visualização gerenciada necessária para esses testes.
+A responsividade foi implementada por CSS. Há testes automatizados de conteúdo, migração, regras e interações em DOM simulado, incluindo a preservação integral das fases 1 a 6 e os percursos das sete fases até o encerramento. O painel inicial, a entrada da Fase 7, o menu móvel e o dossiê foram inspecionados em Chromium nas larguras de 1440 e 390 pixels. A reprodução efetiva de áudio em cada dispositivo ainda precisa ser validada.
 
 ## Publicação
 
